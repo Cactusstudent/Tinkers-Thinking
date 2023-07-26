@@ -59,7 +59,7 @@ public class TinkersThinkingFluids {
     public static final RegistryObject<Fluid> syrup_flowing =  FLUIDS.register("syrup_flowing", () -> new ForgeFlowingFluid.Flowing(TinkersThinkingFluids.syrup_PROPERTIES ));
     public static final ForgeFlowingFluid.Properties syrup_PROPERTIES = new ForgeFlowingFluid.Properties(() -> syrup.get(),() -> syrup_flowing.get(), FluidAttributes.builder(Stew,Stew_Flowing)
             .color(0XFFd27814).density(2000).luminosity(6).viscosity(10000).sound(SoundEvents.BUCKET_EMPTY,SoundEvents.BUCKET_FILL)).block(() -> TinkersThinkingFluids.syrup_block.get()).bucket(() -> TinkersThinkingItems.syrup_bucket.get());
-    public static final RegistryObject<LiquidBlock> syrup_block = TinkersThinkingBlocks.BLOCKS.register("syrup_block", () -> new LiquidBlock(() -> (FlowingFluid) TinkersThinkingFluids.syrup.get(), BlockBehaviour.Properties.of(Material.LAVA).noCollission().strength(100f)
+    public static final RegistryObject<LiquidBlock> syrup_block = TinkersThinkingBlocks.BLOCKS.register("syrup_block", () -> new LiquidBlock(() -> (FlowingFluid) TinkersThinkingFluids.syrup.get(), BlockBehaviour.Properties.of(Material.WATER).noCollission().strength(100f)
             .noDrops()));
 
 
@@ -76,6 +76,13 @@ public class TinkersThinkingFluids {
     public static final ForgeFlowingFluid.Properties molten_white_chocolate_PROPERTIES = new ForgeFlowingFluid.Properties(() -> molten_white_chocolate.get(),() -> molten_white_chocolate_flowing.get(), FluidAttributes.builder(Molten,Molten_Flowing)
             .color(0XFFdba76d).density(2000).luminosity(6).viscosity(10000).sound(SoundEvents.BUCKET_EMPTY_LAVA,SoundEvents.BUCKET_FILL_LAVA)).block(() -> TinkersThinkingFluids.molten_white_chocolate_block.get()).bucket(() -> TinkersThinkingItems.molten_white_chocolate_bucket.get());
     public static final RegistryObject<LiquidBlock> molten_white_chocolate_block = TinkersThinkingBlocks.BLOCKS.register("molten_white_chocolate_block", () -> new LiquidBlock(() -> (FlowingFluid) TinkersThinkingFluids.molten_white_chocolate.get(), BlockBehaviour.Properties.of(Material.LAVA).noCollission().strength(100f)
+            .noDrops()));
+
+    public static final RegistryObject<Fluid> molten_chlorophyte =  FLUIDS.register("molten_chlorophyte", () -> new ForgeFlowingFluid.Source(TinkersThinkingFluids.molten_chlorophyte_PROPERTIES ));
+    public static final RegistryObject<Fluid> molten_chlorophyte_flowing =  FLUIDS.register("molten_chlorophyte_flowing", () -> new ForgeFlowingFluid.Flowing(TinkersThinkingFluids.molten_chlorophyte_PROPERTIES ));
+    public static final ForgeFlowingFluid.Properties molten_chlorophyte_PROPERTIES = new ForgeFlowingFluid.Properties(() -> molten_chlorophyte.get(),() -> molten_chlorophyte_flowing.get(), FluidAttributes.builder(Molten,Molten_Flowing)
+            .color(0XFF248900).density(2000).luminosity(6).viscosity(10000).sound(SoundEvents.BUCKET_EMPTY_LAVA,SoundEvents.BUCKET_FILL_LAVA)).block(() -> TinkersThinkingFluids.molten_chlorophyte_block.get()).bucket(() -> TinkersThinkingItems.molten_chlorophyte_bucket.get());
+    public static final RegistryObject<LiquidBlock> molten_chlorophyte_block = TinkersThinkingBlocks.BLOCKS.register("molten_chlorophyte_block", () -> new LiquidBlock(() -> (FlowingFluid) TinkersThinkingFluids.molten_chlorophyte.get(), BlockBehaviour.Properties.of(Material.LAVA).noCollission().strength(100f)
             .noDrops()));
     public static void regeisters(IEventBus eventBus) {
         FLUIDS.register(eventBus);

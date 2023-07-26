@@ -7,6 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import slimeknights.tconstruct.library.tools.item.ModifiableItem;
+import slimeknights.tconstruct.library.tools.item.ModifiableLauncherItem;
 import slimeknights.tconstruct.library.tools.part.ToolPartItem;
 import slimeknights.tconstruct.tools.item.ModifiableBowItem;
 import slimeknights.tconstruct.tools.stats.HeadMaterialStats;
@@ -19,7 +20,9 @@ public class TinkersThinkingItems {
         return new Item(new Item.Properties().tab(Tinkers_Thinking_Tab));
     }
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, com.creeping_creeper.tinkers_thinking.tinkers_thinking.MOD_ID);
+
     public static final RegistryObject<Item> raw_ardite = ITEMS.register("raw_ardite", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
+
     public static final RegistryObject<Item> ardite_ingot = ITEMS.register("ardite_ingot", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
     public static final RegistryObject<Item> ardite_nugget = ITEMS.register("ardite_nugget", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
     public static final RegistryObject<Item>  blood_crystal= ITEMS.register("blood_crystal", TinkersThinkingItems::register);
@@ -28,15 +31,23 @@ public class TinkersThinkingItems {
     public static final RegistryObject<Item>  clay_crystal= ITEMS.register("clay_crystal", TinkersThinkingItems::register);
     public static final RegistryObject<Item> chromatic_crystal = ITEMS.register("chromatic_crystal", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  gilded_silky_cloth= ITEMS.register("gilded_silky_cloth", TinkersThinkingItems::register);
+
     public static final RegistryObject<Item>  lightite_ingot= ITEMS.register("lightite_ingot", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  lightite_nugget= ITEMS.register("lightite_nugget", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  lightite_compound= ITEMS.register("lightite_compound", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  lightite_reinforcement= ITEMS.register("lightite_reinforcement", TinkersThinkingItems::register);
+
     public static final RegistryObject<Item>  silky_jewel= ITEMS.register("silky_jewel", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  stone_stick= ITEMS.register("stone_stick", TinkersThinkingItems::register);
     public static final RegistryObject<Item> surging_wellspring = ITEMS.register("surging_wellspring", TinkersThinkingItems::register);
+
     public static final RegistryObject<Item>  tinkers_bronze_ingot= ITEMS.register("tinkers_bronze_ingot", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  tinkers_bronze_nugget= ITEMS.register("tinkers_bronze_nugget", TinkersThinkingItems::register);
+    public static final RegistryObject<Item>  chlorophyll_a= ITEMS.register("chlorophyll_a", TinkersThinkingItems::register);
+    public static final RegistryObject<Item>  chlorophyll_b= ITEMS.register("chlorophyll_b", TinkersThinkingItems::register);
+    public static final RegistryObject<Item>  chlorophyte_compound= ITEMS.register("chlorophyte_compound", TinkersThinkingItems::register);
+    public static final RegistryObject<Item>  chlorophyte_ingot= ITEMS.register("chlorophyte_ingot", TinkersThinkingItems::register);
+    public static final RegistryObject<Item>  chlorophyte_nugget= ITEMS.register("chlorophyte_nugget", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  narrow_blade_sand_cast= ITEMS.register("narrow_blade_sand_cast", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  narrow_blade_red_sand_cast= ITEMS.register("narrow_blade_red_sand_cast", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  narrow_blade_gold_cast= ITEMS.register("narrow_blade_gold_cast", TinkersThinkingItems::register);
@@ -63,7 +74,7 @@ public class TinkersThinkingItems {
     //Tools&ToolParts
     public static final RegistryObject<ModifiableItem> Paxel = ITEMS.register("paxel", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Paxel));
     public static final RegistryObject<ModifiableItem> Knife = ITEMS.register("knife", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Knife));
-    public static final RegistryObject<ModifiableBowItem> Arrow_Thrower = ITEMS.register("arrow_thrower", () -> new ModifiableBowItem(ToolItem, TinkersThinkingToolDefinitions.Arrow_Thrower));
+    public static final RegistryObject<ModifiableLauncherItem> Arrow_Thrower = ITEMS.register("arrow_thrower", () -> new ModifiableBowItem(ToolItem, TinkersThinkingToolDefinitions.Arrow_Thrower));
     public static final RegistryObject<ModifiableItem> Magma_Staff = ITEMS.register("magma_staff", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Magma_STAFF));
     public static final RegistryObject<ModifiableItem> Blood_Staff = ITEMS.register("blood_staff", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Blood_STAFF));
     public static final RegistryObject<ModifiableItem> Clay_Staff = ITEMS.register("clay_staff", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Clay_STAFF));
@@ -85,6 +96,7 @@ public class TinkersThinkingItems {
 
     public static final RegistryObject<Item>  molten_black_chocolate_bucket= ITEMS.register("molten_black_chocolate_bucket", () -> new BucketItem(TinkersThinkingFluids.molten_black_chocolate, new Item.Properties().tab(Tinkers_Thinking_Tab).stacksTo(1)));
     public static final RegistryObject<Item>  molten_white_chocolate_bucket= ITEMS.register("molten_white_chocolate_bucket", () -> new BucketItem(TinkersThinkingFluids.molten_white_chocolate, new Item.Properties().tab(Tinkers_Thinking_Tab).stacksTo(1)));
+    public static final RegistryObject<Item>  molten_chlorophyte_bucket= ITEMS.register("molten_chlorophyte_bucket", () -> new BucketItem(TinkersThinkingFluids.molten_chlorophyte, new Item.Properties().tab(Tinkers_Thinking_Tab).stacksTo(1)));
 
     public static void regeisters(IEventBus eventBus) {
         ITEMS.register(eventBus);
