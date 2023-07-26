@@ -16,8 +16,9 @@ import java.util.function.Supplier;
 
 import static net.minecraft.world.level.block.SoundType.METAL;
 import static net.minecraft.world.level.block.SoundType.WOOL;
-import static net.minecraft.world.level.material.MaterialColor.COLOR_GRAY;
-import static net.minecraft.world.level.material.MaterialColor.COLOR_YELLOW;
+import static net.minecraft.world.level.block.SoundType.STONE;
+import static net.minecraft.world.level.block.SoundType.DEEPSLATE;
+import static net.minecraft.world.level.material.MaterialColor.*;
 
 
 public class TinkersThinkingBlocks2 {
@@ -28,7 +29,12 @@ public class TinkersThinkingBlocks2 {
             BlockBehaviour.Properties.of(Material.METAL).strength(8f).explosionResistance(400).requiresCorrectToolForDrops().sound(WOOL).color(COLOR_GRAY)), TinkersThinkingCreativeModeTab.Tinkers_Thinking_Tab);
     public static final RegistryObject<Block> silky_jewel_block = registerBlock("silky_jewel_block", () -> new Block(
             BlockBehaviour.Properties.of(Material.METAL).strength(10f).explosionResistance(600).requiresCorrectToolForDrops().sound(METAL).color(COLOR_YELLOW)), TinkersThinkingCreativeModeTab.Tinkers_Thinking_Tab);
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
+    public static final RegistryObject<Block> chlorophyll_ore = registerBlock("chlorophyll_ore", () -> new Block(
+            BlockBehaviour.Properties.of(Material.DIRT).strength(6f).explosionResistance(400).requiresCorrectToolForDrops().sound(STONE).color(COLOR_GREEN)), TinkersThinkingCreativeModeTab.Tinkers_Thinking_Tab);
+    public static final RegistryObject<Block> deepslate_chlorophyll_ore = registerBlock("deepslate_chlorophyll_ore", () -> new Block(
+            BlockBehaviour.Properties.of(Material.DIRT).strength(6f).explosionResistance(400).requiresCorrectToolForDrops().sound(DEEPSLATE).color(COLOR_GREEN)), TinkersThinkingCreativeModeTab.Tinkers_Thinking_Tab);
+    public static final RegistryObject<Block> chlorophyte_block = registerBlock("chlorophyte_block", () -> new Block(
+            BlockBehaviour.Properties.of(Material.METAL).strength(10f).explosionResistance(400).requiresCorrectToolForDrops().sound(METAL).color(COLOR_GREEN)), TinkersThinkingCreativeModeTab.Tinkers_Thinking_Tab);private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
         return toReturn;

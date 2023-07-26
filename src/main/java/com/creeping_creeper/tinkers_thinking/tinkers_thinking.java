@@ -1,5 +1,6 @@
 package com.creeping_creeper.tinkers_thinking;
 
+import com.creeping_creeper.tinkers_thinking.modifers.TinkersThinkingModifiers;
 import com.creeping_creeper.tinkers_thinking.things.*;
 import com.mojang.logging.LogUtils;
 import net.minecraft.data.DataGenerator;
@@ -30,6 +31,7 @@ public class tinkers_thinking {
         TinkersThinkingBlocks.BLOCKS.register(eventBus);
         TinkersThinkingBlocks2.BLOCKS.register(eventBus);
         TinkersThinkingFluids.FLUIDS.register(eventBus);
+        TinkersThinkingModifiers.MODIFIERS.register(eventBus);
         eventBus.addListener(this::setup);
 
         // Register ourselves for server and other game events we are interested in
