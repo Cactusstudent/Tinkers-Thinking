@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:mob_effect",
+  "effect": "minecraft:weakness",
+  "level": {
+    "base": 5,  
+    "multiplier": 0
+  },
+  "time": {
+    "base": 60
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:nuggets/tinkers_bronze",
+    "#forge:nuggets/ardite",
+    "#forge:nuggets/lightite",
+    "#forge:nuggets/chlorophyte"
+  ]
+}

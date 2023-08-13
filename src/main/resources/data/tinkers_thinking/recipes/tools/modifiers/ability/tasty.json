@@ -1,0 +1,26 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "tag": "forge:ingots/pig_iron"
+    },
+    {
+      "item": "tinkers_thinking:blood_crystal"
+    },
+    {
+      "tag": "forge:ingots/pig_iron"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/staffs"
+  },
+  "slots": {
+    "abilities": 1
+  },
+  "allow_crystal": true,
+  "result": {
+    "name": "tconstruct:tasty",
+    "level": 1
+  },
+  "max_level": 3
+}

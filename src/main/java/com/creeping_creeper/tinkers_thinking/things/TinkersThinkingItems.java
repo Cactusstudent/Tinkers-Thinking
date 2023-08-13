@@ -1,7 +1,9 @@
 package com.creeping_creeper.tinkers_thinking.things;
 
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.StandingAndWallBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -48,6 +50,12 @@ public class TinkersThinkingItems {
     public static final RegistryObject<Item>  chlorophyte_compound= ITEMS.register("chlorophyte_compound", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  chlorophyte_ingot= ITEMS.register("chlorophyte_ingot", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  chlorophyte_nugget= ITEMS.register("chlorophyte_nugget", TinkersThinkingItems::register);
+    public static final RegistryObject<Item>  spectre_compound= ITEMS.register("spectre_compound", TinkersThinkingItems::register);
+    public static final RegistryObject<Item>  spectre_ingot= ITEMS.register("spectre_ingot", TinkersThinkingItems::register);
+    public static final RegistryObject<Item>  spectre_nugget= ITEMS.register("spectre_nugget", TinkersThinkingItems::register);
+    public static final RegistryObject<Item>  shroomite_compound= ITEMS.register("shroomite_compound", TinkersThinkingItems::register);
+    public static final RegistryObject<Item>  shroomite_ingot= ITEMS.register("shroomite_ingot", TinkersThinkingItems::register);
+    public static final RegistryObject<Item>  shroomite_nugget= ITEMS.register("shroomite_nugget", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  narrow_blade_sand_cast= ITEMS.register("narrow_blade_sand_cast", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  narrow_blade_red_sand_cast= ITEMS.register("narrow_blade_red_sand_cast", TinkersThinkingItems::register);
     public static final RegistryObject<Item>  narrow_blade_gold_cast= ITEMS.register("narrow_blade_gold_cast", TinkersThinkingItems::register);
@@ -97,6 +105,20 @@ public class TinkersThinkingItems {
     public static final RegistryObject<Item>  molten_black_chocolate_bucket= ITEMS.register("molten_black_chocolate_bucket", () -> new BucketItem(TinkersThinkingFluids.molten_black_chocolate, new Item.Properties().tab(Tinkers_Thinking_Tab).stacksTo(1)));
     public static final RegistryObject<Item>  molten_white_chocolate_bucket= ITEMS.register("molten_white_chocolate_bucket", () -> new BucketItem(TinkersThinkingFluids.molten_white_chocolate, new Item.Properties().tab(Tinkers_Thinking_Tab).stacksTo(1)));
     public static final RegistryObject<Item>  molten_chlorophyte_bucket= ITEMS.register("molten_chlorophyte_bucket", () -> new BucketItem(TinkersThinkingFluids.molten_chlorophyte, new Item.Properties().tab(Tinkers_Thinking_Tab).stacksTo(1)));
+
+    public static final RegistryObject<Item>  ardite_block = ITEMS.register("ardite_block", () -> new BlockItem(TinkersThinkingBlocks.ardite_block.get(), new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
+    public static final RegistryObject<Item>  ardite_ore = ITEMS.register("ardite_ore", () -> new BlockItem(TinkersThinkingBlocks.ardite_ore.get(), new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
+    public static final RegistryObject<Item>  raw_ardite_block = ITEMS.register("raw_ardite_block", () -> new BlockItem(TinkersThinkingBlocks.raw_ardite_block.get(), new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
+    public static final RegistryObject<Item>  tinkers_bronze_block = ITEMS.register("tinkers_bronze_block", () -> new BlockItem(TinkersThinkingBlocks.tinkers_bronze_block.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
+    public static final RegistryObject<Item>  lightite_block = ITEMS.register("lightite_block", () -> new BlockItem(TinkersThinkingBlocks.lightite_block.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
+    public static final RegistryObject<Item>  silky_jewel_block = ITEMS.register("silky_jewel_block", () -> new BlockItem(TinkersThinkingBlocks.silky_jewel_block.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
+    public static final RegistryObject<Item>  deepslate_chlorophyll_ore = ITEMS.register("deepslate_chlorophyll_ore", () -> new BlockItem(TinkersThinkingBlocks.deepslate_chlorophyll_ore.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
+    public static final RegistryObject<Item>  chlorophyll_ore = ITEMS.register("chlorophyll_ore", () -> new BlockItem(TinkersThinkingBlocks.deepslate_chlorophyll_ore.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
+    public static final RegistryObject<Item>  chlorophyte_block = ITEMS.register("chlorophyte_block", () -> new BlockItem(TinkersThinkingBlocks.chlorophyte_block.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
+    public static final RegistryObject<Item>  ardite_platform = ITEMS.register("ardite_platform", () -> new BlockItem(TinkersThinkingBlocks.ardite_platform.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
+    public static final RegistryObject<Item>  stone_ladder = ITEMS.register("stone_ladder", () -> new BlockItem(TinkersThinkingBlocks.stone_ladder.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
+    public static final RegistryObject<Item>  stone_torch = ITEMS.register("stone_torch", () -> new StandingAndWallBlockItem(TinkersThinkingBlocks.stone_torch.get(), TinkersThinkingBlocks.wall_stone_torch.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
+    public static final RegistryObject<Item>  stone_soul_torch = ITEMS.register("stone_soul_torch", () -> new StandingAndWallBlockItem(TinkersThinkingBlocks.stone_soul_torch.get(), TinkersThinkingBlocks.wall_stone_soul_torch.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
 
     public static void regeisters(IEventBus eventBus) {
         ITEMS.register(eventBus);

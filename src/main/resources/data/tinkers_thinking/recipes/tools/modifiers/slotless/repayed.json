@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "tag": "forge:gems/silky_jewel"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "allow_crystal": true,
+  "result": {
+    "name": "tinkers_thinking:repayed",
+    "level": 1
+  },
+  "max_level": 1
+}

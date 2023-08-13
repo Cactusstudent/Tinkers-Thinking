@@ -1,0 +1,10 @@
+{
+  "type": "tconstruct:mob_effect",
+  "effect": "minecraft:levitation",
+  "level": {
+    "base": 51
+  },
+  "time": {
+    "base": 2
+  }
+}

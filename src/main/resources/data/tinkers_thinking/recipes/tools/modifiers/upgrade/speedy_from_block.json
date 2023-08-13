@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:incremental_modifier",
+  "input": { "tag": "forge:storage_blocks/redstone" },
+  "amount_per_item": 9,
+  "needed_per_level": 45,
+  "tools": { "item": "tinkers_thinking:blood_staff" },
+  "slots": { "upgrades": 1 },
+  "allow_crystal": false,
+  "result": {
+    "name": "tinkers_thinking:speedy",
+    "level": 1
+  },
+  "max_level": 4
+}

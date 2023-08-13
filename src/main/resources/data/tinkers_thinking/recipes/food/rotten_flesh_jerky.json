@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "minecraft:rotten_flesh"
+  },
+  "result": "tinkers_thinking:rotten_flesh_jerky",
+  "experience": 0.35,
+  "cookingtime": 600
+}

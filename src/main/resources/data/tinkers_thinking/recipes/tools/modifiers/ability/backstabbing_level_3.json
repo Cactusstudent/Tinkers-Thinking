@@ -1,0 +1,43 @@
+{  
+"conditions": [
+    {
+      "modid": "farmersdelight",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "tag": "forge:ingots/pig_iron"
+    },
+    {
+      "item": "farmersdelight:honey_glazed_ham_block"
+    },
+    {
+      "tag": "forge:ingots/pig_iron"
+    },
+   {
+      "tag": "forge:ingots/pig_iron"
+    },
+   {
+      "tag": "forge:ingots/pig_iron"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/melee"
+  },
+  "slots": {
+    "abilities": 1
+  },
+  "requirements": {
+    "name": "tinkers_thinking:backstabbing",
+    "level": 3,
+    "error": "recipe.tinkers_thinking.modifier.backstabbing.level_3"
+  },
+  "allow_crystal": true,
+  "result": {
+    "name": "tinkers_thinking:backstabbing",
+    "level": 1
+  },
+  "max_level": 3
+}

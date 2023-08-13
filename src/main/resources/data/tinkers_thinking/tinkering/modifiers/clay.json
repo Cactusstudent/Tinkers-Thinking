@@ -1,0 +1,35 @@
+{
+  "type": "tconstruct:stat_boost",
+  "modifier_display": "never",
+  "level_display": "tconstruct:single_level",
+  "attributes": [
+    {
+      "unique": "tinkers_thinking.modifier.test",
+      "attribute": "forge:attack_range",
+      "operation": "addition",
+      "amount": -99.0,
+      "slots": [ "offhand" ]
+    },
+    {
+      "unique": "tinkers_thinking.modifier.test",
+      "attribute": "forge:reach_distance",
+      "operation": "addition",
+      "amount": 3.5,
+      "slots": [ "offhand" ]
+    },
+    {
+      "unique": "tinkers_thinking.modifier.test",
+      "attribute": "forge:attack_range",
+      "operation": "addition",
+      "amount": -99.0,
+      "slots": [ "mainhand" ]
+    },   
+    {
+      "unique": "tinkers_thinking.modifier.test",
+      "attribute": "forge:reach_distance",
+      "operation": "addition",
+      "amount": 3.5,
+      "slots": [ "mainhand" ]
+    }
+  ]
+}

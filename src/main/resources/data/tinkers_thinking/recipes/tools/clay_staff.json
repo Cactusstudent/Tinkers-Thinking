@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+    "conditions": [
+          {
+            "value": {
+                "modid": "clay_no_more_balanced",
+                "type": "forge:mod_loaded"
+            },
+            "type": "forge:not"
+          }
+        ],
+  "pattern": [
+    "AWA",
+    " I ",
+    " W "
+  ],
+  "key": {
+    "A": {
+      "item": "tinkers_thinking:clay_crystal"
+    },
+    "W": {
+      "tag": "minecraft:logs"
+    },
+    "I": {
+      "tag": "forge:ingots/brick"
+    }
+  },
+  "result": {
+    "item": "tinkers_thinking:clay_staff"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "tag": "forge:slimeball/earth"
+  },
+  "result": "tinkers_thinking:earth_slime_drop",
+  "experience": 0.35,
+  "cookingtime": 600
+}

@@ -1,0 +1,26 @@
+{
+  "type": "tconstruct:conditional_mining_speed",
+  "blocks": {
+    "type": "tconstruct:or",
+    "predicates": [
+      {
+        "type": "tconstruct:tag",
+        "tag": "forge:stone"
+      },
+      {
+        "type": "tconstruct:tag",
+        "tag": "forge:blackstone"
+      },
+     {
+        "type": "tconstruct:tag",
+        "tag": "forge:cobblestone"
+      },
+     {
+        "type": "tconstruct:tag",
+        "tag": "tinkers_thinking:cuttable_blocks"
+     }
+    ]
+  },
+  "require_effective": false,
+  "bonus": 5
+}

@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:conditional_damage",
+  "entity": {
+    "type": "tconstruct:tag",
+    "tag": "forge:slimes"
+  },
+  "damage": 2.0,
+  "effect": {
+    "name": "minecraft:poison",
+    "level": 2
+  },
+  "flags": [
+    "tconstruct:overslime_friend"
+ ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": { 
+    "item": "tinkers_thinking:blood_crystal" },
+  "result": {
+    "fluid": "tconstruct:blood",
+    "amount": 250
+  },
+  "temperature": 36,
+  "time": 40
+}

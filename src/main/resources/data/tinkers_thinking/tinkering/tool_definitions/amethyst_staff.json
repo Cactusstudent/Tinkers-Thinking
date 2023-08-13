@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "base": {
+      "tconstruct:durability": 1575.0,
+      "tconstruct:block_amount": 20.0,
+      "tconstruct:use_item_speed": 0.6
+    }
+  },
+  "slots": {
+    "upgrades": 2,
+    "abilities": 2
+  },
+  "traits": [
+    {
+      "name": "tconstruct:reinforced",
+      "level": 1
+    }
+  ],
+  "harvest": {
+    "aoe": {
+      "type": "tconstruct:circle",
+      "diameter": 1,
+      "3D": false
+    }
+  },
+  "modules": {
+    "tconstruct:tool_interaction": {
+      "type": "tconstruct:dual_option_interaction"
+    }
+  }
+}

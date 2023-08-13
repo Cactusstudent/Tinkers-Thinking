@@ -1,0 +1,32 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "tag": "forge:ingots/lightite"
+    },
+    {
+      "item": "minecraft:shulker_shell"
+    },
+    {
+      "tag": "forge:ingots/lightite"
+    },
+    {
+      "item": "minecraft:popped_chorus_fruit"
+    },   
+    {
+      "item": "minecraft:popped_chorus_fruit"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/held"
+  },
+  "slots": {
+    "abilities": 1
+  },
+  "allow_crystal": true,
+  "result": {
+    "name": "tinkers_thinking:levitation",
+    "level": 1
+  },
+  "max_level": 3
+}

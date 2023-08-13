@@ -1,0 +1,14 @@
+{
+  "conditions": [
+    {
+      "modid": "farmersdelight",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "tconstruct:enchantment",
+  "level_display": "tconstruct:default",
+  "enchantment": {
+    "name": "farmersdelight:backstabbing",
+    "level": 1
+  }
+}

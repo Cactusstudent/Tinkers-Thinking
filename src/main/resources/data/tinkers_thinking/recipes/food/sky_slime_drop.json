@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "tag": "forge:slimeball/sky"
+  },
+  "result": "tinkers_thinking:sky_slime_drop",
+  "experience": 0.35,
+  "cookingtime": 600
+}

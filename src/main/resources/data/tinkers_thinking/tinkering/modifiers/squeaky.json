@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:stat_boost",
+  "level_display": "tconstruct:default",
+  "stats": [
+    {
+      "stat": "tconstruct:attack_damage",
+      "type": "multiply_base",
+      "value": -1.0
+    }
+  ],
+  "enchantment": {
+    "name": "minecraft:silk_touch",
+    "level": 1
+  }
+}

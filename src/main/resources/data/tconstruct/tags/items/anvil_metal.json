@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:storage_blocks/tinkers_bronze",
+    "#forge:storage_blocks/lightite"
+  ]
+}

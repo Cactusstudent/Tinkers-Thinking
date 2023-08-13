@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:stat_boost",
+  "level_display": "tconstruct:single_level",
+  "rarity": "uncommon",
+  "stats": [
+    {
+      "stat": "tconstruct:attack_damage",
+      "type": "multiply_conditional",
+      "value": 0.5
+    }
+  ]
+}

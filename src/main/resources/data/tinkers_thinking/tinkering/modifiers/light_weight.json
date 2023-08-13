@@ -1,0 +1,23 @@
+{
+  "type": "tconstruct:stat_boost",
+  "level_display": "tconstruct:default",
+  "stats": [
+    {
+      "stat": "tconstruct:use_item_speed",
+      "type": "add",
+      "value": 0.25
+    }
+  ],
+  "attributes": [
+    {
+      "unique": "tconstruct.modifier.speedy",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_total",
+      "amount": 0.05,
+      "slots": [
+        "mainhand",
+        "offhand"
+      ]
+    }
+  ]
+}

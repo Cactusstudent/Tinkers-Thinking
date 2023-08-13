@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "tag": "forge:slimeball/ichor"
+  },
+  "result": "tinkers_thinking:ichor_slime_drop",
+  "experience": 0.35,
+  "cookingtime": 600
+}
