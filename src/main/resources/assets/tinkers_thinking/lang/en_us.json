@@ -60,7 +60,7 @@
   "item.tinkers_thinking.ardite_ingot": "Ardite Ingot",
   "item.tinkers_thinking.ardite_nugget": "Ardite Nugget",
   "block.tinkers_thinking.ardite_block": "Block of Ardite",
-  "block.tinkers_thinking.ardite_ore": "Ardite Ore",
+  "block.tinkers_thinking.ardite_ore": "Nether Ardite Ore",
   "item.tinkers_thinking.raw_ardite": "Raw Ardite",
   "block.tinkers_thinking.raw_ardite_block": "Block of Raw Ardite",
   "fluid.tinkers_thinking.molten_ardite": "Molten Ardite",
@@ -84,6 +84,20 @@
   "block.tinkers_thinking.chlorophyte_block": "Chlorophyte Block",
   "fluid.tinkers_thinking.molten_chlorophyte": "Molten Chlorophyte",
   "item.tinkers_thinking.molten_chlorophyte_bucket": "Molten Chlorophyte Bucket",
+
+  "item.tinkers_thinking.spectre_compound": "Spectre Compound",
+  "item.tinkers_thinking.spectre_ingot": "Spectre Ingot",
+  "item.tinkers_thinking.spectre_nugget": "Spectre Nugget",
+  "block.tinkers_thinking.spectre_block": "Spectre Block",
+  "fluid.tinkers_thinking.molten_spectre": "Molten Spectre",
+  "item.tinkers_thinking.molten_spectre_bucket": "Molten Spectre Bucket",
+
+  "item.tinkers_thinking.shroomite_compound": "Shroomite Compound",
+  "item.tinkers_thinking.shroomite_ingot": "Shroomite Ingot",
+  "item.tinkers_thinking.shroomite_nugget": "Shroomite Nugget",
+  "block.tinkers_thinking.shroomite_block": "Shroomite Block",
+  "fluid.tinkers_thinking.molten_shroomite": "Molten Shroomite",
+  "item.tinkers_thinking.molten_shroomite_bucket": "Molten Shroomite Bucket",
 
   "item.tinkers_thinking.amethyst_staff": "Amethyst Staff",
   "item.tinkers_thinking.clay_staff": "Super Magic Clay staff", 
@@ -140,8 +154,8 @@
   "material.tinkers_thinking.ardite.encyclopedia": "-0.417% durability cost pre block per level below 128,the maximum is 80%",
   
   "material.tinkers_thinking.stewium": "Stewium",
-  "material.tinkers_thinking.stewium.flavor": "Drinking or eating",
-  "material.tinkers_thinking.stewium.encyclopedia": "Tool can be repair by Gelatinous Slime Drop,only one level",
+  "material.tinkers_thinking.stewium.flavor": "Drinking or eating?",
+  "material.tinkers_thinking.stewium.encyclopedia": "Having 15% chance repairing 1 durability while having  33 % chance to cost 1 overslime per second ,also can be repair by Gelatinous Slime Dropl",
 
   "material.tinkers_thinking.dusk": "Dusk",
   "material.tinkers_thinking.dusk.flavor": "Where is my Moonflower?",
@@ -153,16 +167,25 @@
 
   "material.tinkers_thinking.black_chocolate": "Black Chocolate",
   "material.tinkers_thinking.black_chocolate.flavor": "Dark Oak Trapdoor?",
-  "material.tinkers_thinking.black_chocolate.encyclopedia": "Target will get strength Ⅲ for 15 seconds per level",
+  "material.tinkers_thinking.black_chocolate.encyclopedia": "While attacking a target,there has a 25% chance to get Strength Ⅲ for 6 seconds,cost 5 durability",
 
   "material.tinkers_thinking.white_chocolate": "White Chocolate",
   "material.tinkers_thinking.white_chocolate.flavor": "Birch Trapdoor?",
-  "material.tinkers_thinking.white_chocolate.encyclopedia": "Target will get regeneration Ⅲ for 15 seconds per level",
+  "material.tinkers_thinking.white_chocolate.encyclopedia": "While mining a block,there has a 25% chance to get Haste Ⅲ for 6 seconds,cost 5 durability",
 
   "material.tinkers_thinking.chlorophyte": "Chlorophyte",
   "material.tinkers_thinking.chlorophyte.flavor": "Life Essence",
   "material.tinkers_thinking.chlorophyte.encyclopedia": "Every seconds has a chance in (lost heart *2)% to heal a heart, cost 8 durability",
  
+  "material.tinkers_thinking.spectre": "Spectre",
+  "material.tinkers_thinking.spectre.flavor": "Of Course,Ghasts are made from cats",
+  "material.tinkers_thinking.spectre.encyclopedia": "Attack give target Invisibility for 10 seconds,increases the damage of 25% to target that has Invisibility per level",
+
+  "material.tinkers_thinking.shroomite": "Shroomite",
+  "material.tinkers_thinking.shroomite.flavor": "Mushroom Ore",
+  "material.tinkers_thinking.shroomite.encyclopedia": "According to  a quarter of the block light minuing the sky light increased damage per level",
+
+
   "modifier.tinkers_thinking.soft": "Soft",
   "modifier.tinkers_thinking.soft.flavor": "Too Soft to use",
   "modifier.tinkers_thinking.soft.description": "Durability reduce",
@@ -191,7 +214,7 @@
   "modifier.tinkers_thinking.deposition": "Deposition",
   "modifier.tinkers_thinking.deposition.flavor": "Hiden in the depths",
   "modifier.tinkers_thinking.deposition.description": "The lower height is,the less the durability is cost",
-  "modifier.tinkers_thinking.deposition.description": "Deposition Reinforce",
+  "modifier.tinkers_thinking.deposition.chance": "Deposition Reinforced",
 
   "modifier.tinkers_thinking.cutting": "Cutting",
   "modifier.tinkers_thinking.cutting.flavor": "Stonecucucucucucucucucutter",
@@ -207,7 +230,7 @@
 
   "modifier.tinkers_thinking.overeat": "Overeat",
   "modifier.tinkers_thinking.overeat.flavor": "Appetizer!",
-  "modifier.tinkers_thinking.overeat.description": "Tool can eat Gelatinous Slime Drop",
+  "modifier.tinkers_thinking.overeat.description": "Tool can eat Overslime and Gelatinous Slime Drop to repair itslef",
 
   "modifier.tinkers_thinking.speedy": "Speed Up",
   "modifier.tinkers_thinking.speedy.flavor": "Speed Up!",
@@ -239,6 +262,16 @@
   "modifier.tinkers_thinking.symbiotic.description": "Tool can use durability to heal you",
   "modifier.tinkers_thinking.symbiotic.chance": "Symbiotic Chance",
 
+  "modifier.tinkers_thinking.concealer": "Concealer",
+  "modifier.tinkers_thinking.concealer.flavor": "A coward need to hide",
+  "modifier.tinkers_thinking.concealer.description": "Attack give target Invisibility,increases the damage to target that has Invisibility",
+  "modifier.tconstruct.concealer.attack_damage": "Concealer Damage",
+
+  "modifier.tinkers_thinking.light_power": "Photosensitive",
+  "modifier.tinkers_thinking.light_power.flavor": "Bright light shining",
+  "modifier.tinkers_thinking.light_power.description": "According to the  block light minuing the sky light increased damage",
+  "modifier.tinkers_thinking.light_power.attack_damage": "Photosensitive Damage",
+
   "modifier.tinkers_thinking.backstabbing": "Backstabbing",
   "modifier.tinkers_thinking.backstabbing.flavor": "Make use of the precarious situation...",
   "modifier.tinkers_thinking.backstabbing.description": "Amplifies damage when striking a target from behind",
@@ -254,5 +287,6 @@
   "modifier.tconstruct.draconic.description": "The head of the great beast allows your tool a third ability slot!",
 
   "recipe.tinkers_thinking.modifier.backstabbing.level_2": "BackstabbingⅡ requires a different recipe for the first level",
-  "recipe.tinkers_thinking.modifier.backstabbing.level_3": "BackstabbingⅢ requires a different recipe for the first level"
+  "recipe.tinkers_thinking.modifier.backstabbing.level_3": "BackstabbingⅢ requires a different recipe for the first level",
+  "block.tinkers_thinking.wooden_hopper": "block.tinkers_thinking.wooden_hopper"
 }

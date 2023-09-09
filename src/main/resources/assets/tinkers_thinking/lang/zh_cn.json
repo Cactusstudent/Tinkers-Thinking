@@ -60,7 +60,7 @@
   "item.tinkers_thinking.ardite_ingot": "阿迪特锭",
   "item.tinkers_thinking.ardite_nugget": "阿迪特粒",
   "block.tinkers_thinking.ardite_block": "阿迪特块",
-  "block.tinkers_thinking.ardite_ore": "阿迪特矿石",
+  "block.tinkers_thinking.ardite_ore": "下界阿迪特矿石",
   "item.tinkers_thinking.raw_ardite": "粗阿迪特",
   "block.tinkers_thinking.raw_ardite_block": "粗阿迪特块",
   "fluid.tinkers_thinking.molten_ardite": "熔融阿迪特",
@@ -84,6 +84,20 @@
   "block.tinkers_thinking.chlorophyte_block": "叶绿块",
   "fluid.tinkers_thinking.molten_chlorophyte": "熔融叶绿",
   "item.tinkers_thinking.molten_chlorophyte_bucket": "熔融叶绿桶",
+
+  "item.tinkers_thinking.spectre_compound": "幽灵混合物",
+  "item.tinkers_thinking.spectre_ingot": "幽灵锭",
+  "item.tinkers_thinking.spectre_nugget": "幽灵粒",
+  "block.tinkers_thinking.spectre_block": "幽灵块",
+  "fluid.tinkers_thinking.molten_spectre": "熔融幽灵",
+  "item.tinkers_thinking.molten_spectre_bucket": "熔融幽灵桶",
+
+  "item.tinkers_thinking.shroomite_compound": "蘑菇矿混合物",
+  "item.tinkers_thinking.shroomite_ingot": "蘑菇矿锭",
+  "item.tinkers_thinking.shroomite_nugget": "蘑菇矿粒",
+  "block.tinkers_thinking.shroomite_block": "蘑菇矿块",
+  "fluid.tinkers_thinking.molten_shroomite": "熔融蘑菇矿",
+  "item.tinkers_thinking.molten_shroomite_bucket": "熔融蘑菇矿桶",
 
   "item.tinkers_thinking.amethyst_staff": "紫水晶手杖",
   "item.tinkers_thinking.clay_staff": "超级黏土魔杖", 
@@ -141,7 +155,7 @@
 
   "material.tinkers_thinking.stewium": "钖",
   "material.tinkers_thinking.stewium.flavor": "要喝掉它还是吃掉它？",
-  "material.tinkers_thinking.stewium.encyclopedia": "工具可使用胶状黏液液滴修复，单个等级",
+  "material.tinkers_thinking.stewium.encyclopedia": "每秒有15%的概率恢复1点耐久度，并有33%的概率消耗一点黏液覆层，可使用胶状黏液液滴修复",
 
   "material.tinkers_thinking.dusk": "幽暮",
   "material.tinkers_thinking.dusk.flavor": "我的月光花去哪里了？",
@@ -153,15 +167,23 @@
 
   "material.tinkers_thinking.black_chocolate": "黑巧克力",
   "material.tinkers_thinking.black_chocolate.flavor": "深色橡木活板门？",
-  "material.tinkers_thinking.black_chocolate.encyclopedia": "每级对攻击目标造成15秒力量Ⅲ",
+  "material.tinkers_thinking.black_chocolate.encyclopedia": "每级在攻击时有 25%概率获得6秒力量Ⅲ，消耗 5点耐久度",
 
   "material.tinkers_thinking.white_chocolate": "白巧克力",
   "material.tinkers_thinking.white_chocolate.flavor": "白桦木活板门？",
-  "material.tinkers_thinking.white_chocolate.encyclopedia": "每级对攻击目标造成15秒生命恢复Ⅲ",
+  "material.tinkers_thinking.white_chocolate.encyclopedia": "每级在挖掘时有 25%概率获得6秒急迫Ⅲ，消耗 5点耐久度",
 
   "material.tinkers_thinking.chlorophyte": "叶绿",
   "material.tinkers_thinking.chlorophyte.flavor": "生命源质",
-  "material.tinkers_thinking.chlorophyte.encyclopedia": "每秒每级有（ 4×已损失生命值）%的概率消耗 8点耐久度回复 2点生命值",
+  "material.tinkers_thinking.chlorophyte.encyclopedia": "每秒每级有（ 4×已损失生命值）%的概率消耗 8点耐久度回复 10%已损失生命值",
+
+  "material.tinkers_thinking.spectre": "幽灵",
+  "material.tinkers_thinking.spectre.flavor": "当然，恶魂是用猫做成的",
+  "material.tinkers_thinking.spectre.encyclopedia": "攻击使目标获得10秒隐身，每级增加25%对隐身生物的伤害",
+
+  "material.tinkers_thinking.shroomite": "蘑菇矿",
+  "material.tinkers_thinking.shroomite.flavor": "蘑菇矿石",
+  "material.tinkers_thinking.shroomite.encyclopedia": "每级按所在位置方块光与天空光之差的四分之一增加伤害",
 
   "modifier.tinkers_thinking.soft": "柔软",
   "modifier.tinkers_thinking.soft.flavor": "软弱无力",
@@ -207,7 +229,7 @@
 
   "modifier.tinkers_thinking.overeat": "暴食",
   "modifier.tinkers_thinking.overeat.flavor": "开胃小菜！",
-  "modifier.tinkers_thinking.overeat.description": "工具能吃掉胶状黏液液滴",
+  "modifier.tinkers_thinking.overeat.description": "工具能吃掉黏液覆层和胶状黏液液滴来恢复耐久度",
 
   "modifier.tinkers_thinking.speedy": "加速",
   "modifier.tinkers_thinking.speedy.flavor": "加速！",
@@ -238,6 +260,16 @@
   "modifier.tinkers_thinking.symbiotic.flavor": "友谊的治愈力！",
   "modifier.tinkers_thinking.symbiotic.description": "工具会消耗耐久度治愈你",
   "modifier.tinkers_thinking.symbiotic.chance": "共生概率",
+
+  "modifier.tinkers_thinking.concealer": "匿迹",
+  "modifier.tinkers_thinking.concealer.flavor": "懦夫才需要躲藏",
+  "modifier.tinkers_thinking.concealer.description": "攻击使目标隐身，对隐身目标造成额外伤害",
+  "modifier.tconstruct.concealer.attack_damage": "匿迹伤害",
+
+  "modifier.tinkers_thinking.light_power": "光敏",
+  "modifier.tinkers_thinking.light_power.flavor": "强光耀眼",
+  "modifier.tinkers_thinking.light_power.description": "根据方块光与天空光的差值增加伤害",
+  "modifier.tinkers_thinking.light_power.attack_damage": "光敏伤害",
 
   "modifier.tinkers_thinking.backstabbing": "背刺",
   "modifier.tinkers_thinking.backstabbing.flavor": "乘人之危...",

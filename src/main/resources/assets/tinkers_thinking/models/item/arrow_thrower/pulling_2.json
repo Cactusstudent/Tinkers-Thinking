@@ -15,9 +15,9 @@
   "large": true,
   "large_offset": [-3, 13],
  "parts": [
-    { "name": "grip_bottom", "index": 0 },
-    { "name": "grip_top",    "index": 2 },
-   { "name": "limb",        "index": 3 },
+    { "name": "grip_bottom", "index": 1 },
+    { "name": "grip_top",    "index": 1 },
+    { "name": "limb",        "index": 2 },
     { "name": "arrow"}
   ]
 }

@@ -82,7 +82,7 @@ public class TinkersThinkingItems {
     //Tools&ToolParts
     public static final RegistryObject<ModifiableItem> Paxel = ITEMS.register("paxel", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Paxel));
     public static final RegistryObject<ModifiableItem> Knife = ITEMS.register("knife", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Knife));
-    public static final RegistryObject<ModifiableLauncherItem> Arrow_Thrower = ITEMS.register("arrow_thrower", () -> new ModifiableBowItem(ToolItem, TinkersThinkingToolDefinitions.Arrow_Thrower));
+    public static final RegistryObject<ModifiableLauncherItem> Arrow_Thrower = ITEMS.register("arrow_thrower", () -> new ModifiableBowItem(ToolItem,  TinkersThinkingToolDefinitions.Arrow_Thrower) );
     public static final RegistryObject<ModifiableItem> Magma_Staff = ITEMS.register("magma_staff", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Magma_STAFF));
     public static final RegistryObject<ModifiableItem> Blood_Staff = ITEMS.register("blood_staff", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Blood_STAFF));
     public static final RegistryObject<ModifiableItem> Clay_Staff = ITEMS.register("clay_staff", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Clay_STAFF));
@@ -90,7 +90,7 @@ public class TinkersThinkingItems {
     public static final RegistryObject<ModifiableItem> Amethyst_Staff = ITEMS.register("amethyst_staff", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Amethyst_STAFF));
     public static final RegistryObject<ModifiableItem> Seared_Bucket = ITEMS.register("seared_bucket", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Seared_Bucket));
     public static final RegistryObject<ModifiableItem> Tinkers_Bronze_Bucket = ITEMS.register("tinkers_bronze_bucket", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Tinkers_Bronze_Bucket));
-    public static final RegistryObject<ModifiableItem> Battle_Bucket = ITEMS.register("battle_bucket", () -> new ModifiableItem(ToolItem, TinkersThinkingToolDefinitions.Battle_Bucket));
+    public static final RegistryObject<ModifiableItem> Battle_Bucket = ITEMS.register("battle_bucket", () -> new ModifiableItem(ToolItem.fireResistant(), TinkersThinkingToolDefinitions.Battle_Bucket));
     public static final RegistryObject<ToolPartItem> Narrow_Blade = ITEMS.register("narrow_blade", () -> new ToolPartItem(ToolItem, HeadMaterialStats.ID));
     //Buckets
     public static final RegistryObject<Item>  molten_ardite_bucket= ITEMS.register("molten_ardite_bucket", () -> new BucketItem(TinkersThinkingFluids.molten_ardite, new Item.Properties().tab(Tinkers_Thinking_Tab).stacksTo(1)));
@@ -105,6 +105,9 @@ public class TinkersThinkingItems {
     public static final RegistryObject<Item>  molten_black_chocolate_bucket= ITEMS.register("molten_black_chocolate_bucket", () -> new BucketItem(TinkersThinkingFluids.molten_black_chocolate, new Item.Properties().tab(Tinkers_Thinking_Tab).stacksTo(1)));
     public static final RegistryObject<Item>  molten_white_chocolate_bucket= ITEMS.register("molten_white_chocolate_bucket", () -> new BucketItem(TinkersThinkingFluids.molten_white_chocolate, new Item.Properties().tab(Tinkers_Thinking_Tab).stacksTo(1)));
     public static final RegistryObject<Item>  molten_chlorophyte_bucket= ITEMS.register("molten_chlorophyte_bucket", () -> new BucketItem(TinkersThinkingFluids.molten_chlorophyte, new Item.Properties().tab(Tinkers_Thinking_Tab).stacksTo(1)));
+    public static final RegistryObject<Item>  molten_spectre_bucket= ITEMS.register("molten_spectre_bucket", () -> new BucketItem(TinkersThinkingFluids.molten_spectre, new Item.Properties().tab(Tinkers_Thinking_Tab).stacksTo(1)));
+    public static final RegistryObject<Item>  molten_shroomite_bucket= ITEMS.register("molten_shroomite_bucket", () -> new BucketItem(TinkersThinkingFluids.molten_shroomite, new Item.Properties().tab(Tinkers_Thinking_Tab).stacksTo(1)));
+
 
     public static final RegistryObject<Item>  ardite_block = ITEMS.register("ardite_block", () -> new BlockItem(TinkersThinkingBlocks.ardite_block.get(), new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
     public static final RegistryObject<Item>  ardite_ore = ITEMS.register("ardite_ore", () -> new BlockItem(TinkersThinkingBlocks.ardite_ore.get(), new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
@@ -115,7 +118,9 @@ public class TinkersThinkingItems {
     public static final RegistryObject<Item>  deepslate_chlorophyll_ore = ITEMS.register("deepslate_chlorophyll_ore", () -> new BlockItem(TinkersThinkingBlocks.deepslate_chlorophyll_ore.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
     public static final RegistryObject<Item>  chlorophyll_ore = ITEMS.register("chlorophyll_ore", () -> new BlockItem(TinkersThinkingBlocks.deepslate_chlorophyll_ore.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
     public static final RegistryObject<Item>  chlorophyte_block = ITEMS.register("chlorophyte_block", () -> new BlockItem(TinkersThinkingBlocks.chlorophyte_block.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
-    public static final RegistryObject<Item>  ardite_platform = ITEMS.register("ardite_platform", () -> new BlockItem(TinkersThinkingBlocks.ardite_platform.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
+    public static final RegistryObject<Item>  spectre_block = ITEMS.register("spectre_block", () -> new BlockItem(TinkersThinkingBlocks.spectre_block.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
+    public static final RegistryObject<Item>  shroomite_block = ITEMS.register("shroomite_block", () -> new BlockItem(TinkersThinkingBlocks.shroomite_block.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
+    public static final RegistryObject<Item>  ardite_platform = ITEMS.register("ardite_platform", () -> new BlockItem(TinkersThinkingBlocks.ardite_platform.get(), new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
     public static final RegistryObject<Item>  stone_ladder = ITEMS.register("stone_ladder", () -> new BlockItem(TinkersThinkingBlocks.stone_ladder.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
     public static final RegistryObject<Item>  stone_torch = ITEMS.register("stone_torch", () -> new StandingAndWallBlockItem(TinkersThinkingBlocks.stone_torch.get(), TinkersThinkingBlocks.wall_stone_torch.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));
     public static final RegistryObject<Item>  stone_soul_torch = ITEMS.register("stone_soul_torch", () -> new StandingAndWallBlockItem(TinkersThinkingBlocks.stone_soul_torch.get(), TinkersThinkingBlocks.wall_stone_soul_torch.get(), new Item.Properties().tab(Tinkers_Thinking_Tab)));

@@ -7,6 +7,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.common.TinkerTags;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
@@ -22,7 +23,7 @@ public class DepositionModifier extends Modifier {
         return 180; // after , before
     }
     private static final Component Percent = tinkers_thinking.makeTranslation("modifier", "deposition.chance");
-    public int onDamageTool(IToolStackView tool, int level, int amount, @Nullable LivingEntity holder)  {
+    public int onDamageTool(@NotNull IToolStackView tool, int level, int amount, @Nullable LivingEntity holder)  {
             if (holder != null){
                 Level world = holder.getCommandSenderWorld();
             double maxy = (world.getMaxBuildHeight() - world.getMinBuildHeight()) ;
@@ -40,11 +41,17 @@ public class DepositionModifier extends Modifier {
             }
         return amount;
     }
-    public void addInformation(IToolStackView tool, int level, @Nullable Player player, List<Component> tooltip, TooltipKey key, TooltipFlag flag) {
+    public void addInformation(IToolStackView tool, int level, @Nullable Player player, @NotNull List<Component> tooltip, @NotNull TooltipKey key, @NotNull TooltipFlag flag) {
         if (tool.hasTag(TinkerTags.Items.RANGED) || tool.hasTag(TinkerTags.Items.MELEE)) {
-            Level world = player.getCommandSenderWorld();
-            float chance = (float) Math.min(((world.getMaxBuildHeight()  - player.getY()  )/ (world.getMaxBuildHeight() - world.getMinBuildHeight()) *level *0.40),0.80);
-            tooltip.add(this.applyStyle((new TextComponent(Util.PERCENT_BOOST_FORMAT.format((double)chance) + " ")).append(Percent)));
+            Level world = null;
+            if (player != null) {
+                world = player.getCommandSenderWorld();
+            }
+            float chance = 0;
+            if (world != null) {
+                chance = (float) Math.min(((world.getMaxBuildHeight()  - player.getY()  )/ (world.getMaxBuildHeight() - world.getMinBuildHeight()) *level *0.40),0.80);
+            }
+            tooltip.add(this.applyStyle((new TextComponent(Util.PERCENT_BOOST_FORMAT.format(chance) + " ")).append(Percent)));
         }
     }
 }

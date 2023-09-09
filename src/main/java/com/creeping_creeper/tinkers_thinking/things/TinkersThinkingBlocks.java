@@ -39,10 +39,15 @@ public class TinkersThinkingBlocks {
             BlockBehaviour.Properties.of(Material.DIRT).strength(9f).explosionResistance(400).requiresCorrectToolForDrops().sound(DEEPSLATE).color(COLOR_GREEN)));
     public static final RegistryObject<Block> chlorophyte_block = BLOCKS.register("chlorophyte_block", () -> new Block(
             BlockBehaviour.Properties.of(Material.METAL).strength(10f).explosionResistance(400).requiresCorrectToolForDrops().sound(METAL).color(COLOR_GREEN)));
+    public static final RegistryObject<Block> spectre_block = BLOCKS.register("spectre_block", () -> new Block(
+            BlockBehaviour.Properties.of(Material.METAL).strength(8f).explosionResistance(400).requiresCorrectToolForDrops().sound(METAL).color(COLOR_LIGHT_BLUE)));
+    public static final RegistryObject<Block> shroomite_block = BLOCKS.register("shroomite_block", () -> new Block(
+            BlockBehaviour.Properties.of(Material.METAL).strength(9f).explosionResistance(400).requiresCorrectToolForDrops().sound(METAL).color(COLOR_BLUE)));
 
     public static final RegistryObject<Block> ardite_platform = BLOCKS.register("ardite_platform",() ->
-            new PlatformBlock(BlockBehaviour.Properties.of(Material.METAL).strength(20f).explosionResistance(1200).requiresCorrectToolForDrops()
+            new PlatformBlock(BlockBehaviour.Properties.of(Material.METAL).strength(8f).explosionResistance(1200).requiresCorrectToolForDrops()
                             .sound(ANCIENT_DEBRIS).color(COLOR_ORANGE)));
+
     public static final RegistryObject<Block> stone_ladder = BLOCKS.register("stone_ladder", () ->
             new LadderBlock(
             BlockBehaviour.Properties.copy(Blocks.LADDER).sound(STONE).strength(0.8f)));

@@ -1,5 +1,7 @@
 package com.creeping_creeper.tinkers_thinking;
 
+import com.creeping_creeper.tinkers_thinking.configs.TinkersThinkingClientConfigs;
+import com.creeping_creeper.tinkers_thinking.configs.TinkersThinkingCommanConfigs;
 import com.creeping_creeper.tinkers_thinking.modifers.TinkersThinkingModifiers;
 import com.creeping_creeper.tinkers_thinking.things.*;
 import com.mojang.logging.LogUtils;
@@ -14,7 +16,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -44,7 +48,8 @@ public class tinkers_thinking {
         TinkersThinkingModifiers.MODIFIERS.register(eventBus);
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
-
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, TinkersThinkingClientConfigs.SPEC,"tinkers_thinking-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, TinkersThinkingCommanConfigs.SPEC,"tinkers_thinking-common.toml");
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -97,11 +102,6 @@ public class tinkers_thinking {
     public static void gatherData(final GatherDataEvent event) {
         DataGenerator gen = event.getGenerator();
         ExistingFileHelper fileHelper = event.getExistingFileHelper();
-        if (event.includeServer()) {
-            gen.addProvider(new TinkersThinkingToolDefinitionDataProvider(gen));
-            gen.addProvider(new TinkersThinkingToolSlotLayout(gen));
-
-        }
 
 }
 }

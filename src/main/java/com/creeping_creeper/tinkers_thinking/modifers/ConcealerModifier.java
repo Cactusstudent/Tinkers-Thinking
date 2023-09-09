@@ -11,6 +11,7 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.phys.EntityHitResult;
+import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.common.TinkerTags;
 import slimeknights.tconstruct.library.modifiers.Modifier;
@@ -36,7 +37,7 @@ public class ConcealerModifier extends Modifier implements ProjectileHitModifier
     public int getPriority() {
         return 90;
     }
-    protected void registerHooks(ModifierHookMap.Builder hookBuilder)
+    protected void registerHooks(ModifierHookMap.@NotNull Builder hookBuilder)
     {
         super.registerHooks(hookBuilder);
         hookBuilder.addHook(this, TinkerHooks.PROJECTILE_HIT);
@@ -45,7 +46,7 @@ public class ConcealerModifier extends Modifier implements ProjectileHitModifier
         return 0.25f*(float) level;
     }
 
-    public float getEntityDamage(IToolStackView tool, int level, ToolAttackContext context, float baseDamage, float damage) {
+    public float getEntityDamage(@NotNull IToolStackView tool, int level, ToolAttackContext context, float baseDamage, float damage) {
         LivingEntity target = context.getLivingTarget();
         if (target != null && target.isAlive() && !context.isExtraAttack() && context.isFullyCharged()&& target.hasEffect(MobEffects.INVISIBILITY) ) {
             float bonus = getBonus(context.getAttacker(), level);
@@ -53,17 +54,17 @@ public class ConcealerModifier extends Modifier implements ProjectileHitModifier
         }
         return damage;
     }
-    public int afterEntityHit( IToolStackView tool, int level,ToolAttackContext context, float damageDealt) {
+    public int afterEntityHit(@NotNull IToolStackView tool, int level, ToolAttackContext context, float damageDealt) {
         LivingEntity target = context.getLivingTarget();
-            if (target != null && target.isAlive() && !context.isExtraAttack() && context.isFullyCharged()&&RANDOM.nextFloat() < 0.5) {
+            if (target != null && target.isAlive() && !context.isExtraAttack() && context.isFullyCharged()){
                 target.setLastHurtMob(context.getAttacker());
                 MobEffectInstance effect = new MobEffectInstance(MobEffects.INVISIBILITY, 200, 2);
                 target.addEffect(effect);
             }
         return 0;
     }
-    public boolean onProjectileHitEntity(ModifierNBT modifiers, NamespacedNBT persistentData, ModifierEntry modifier, Projectile projectile, EntityHitResult hit, @Nullable LivingEntity attacker, @Nullable LivingEntity target) {
-        if (target != null && (!(projectile instanceof AbstractArrow arrow) || arrow.isCritArrow()) && target.isAlive() && RANDOM.nextFloat() < 0.5) {
+    public boolean onProjectileHitEntity(@NotNull ModifierNBT modifiers, @NotNull NamespacedNBT persistentData, @NotNull ModifierEntry modifier, @NotNull Projectile projectile, @NotNull EntityHitResult hit, @Nullable LivingEntity attacker, @Nullable LivingEntity target) {
+        if (target != null && (!(projectile instanceof AbstractArrow arrow) || arrow.isCritArrow()) && target.isAlive() ) {
             Entity owner = projectile.getOwner();
             if (owner != null) {
                 target.setLastHurtMob(owner);
@@ -77,10 +78,10 @@ public class ConcealerModifier extends Modifier implements ProjectileHitModifier
         }
         return false;
     }
-    public void addInformation(IToolStackView tool, int level, @Nullable Player player, List<Component> tooltip, TooltipKey key, TooltipFlag flag) {
+    public void addInformation(IToolStackView tool, int level, @Nullable Player player, List<Component> tooltip, @NotNull TooltipKey key, @NotNull TooltipFlag flag) {
         if (tool.hasTag(TinkerTags.Items.RANGED) || tool.hasTag(TinkerTags.Items.MELEE)) {
             float bonus = 0.25F * (float)level;
-            tooltip.add(this.applyStyle((new TextComponent(Util.PERCENT_BOOST_FORMAT.format((double)bonus) + " ")).append(ATTACK_DAMAGE)));
+            tooltip.add(this.applyStyle((new TextComponent(Util.PERCENT_BOOST_FORMAT.format(bonus) + " ")).append(ATTACK_DAMAGE)));
         }
     }
 }

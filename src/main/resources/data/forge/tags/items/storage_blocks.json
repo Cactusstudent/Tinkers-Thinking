@@ -6,6 +6,8 @@
     "#forge:storage_blocks/silky_jewel",
     "#forge:storage_blocks/raw_ardite",
     "#forge:storage_blocks/lightite",
-    "#forge:storage_blocks/chlorophyte"
+    "#forge:storage_blocks/chlorophyte",
+    "#forge:storage_blocks/spectre",
+    "#forge:storage_blocks/shroomite"
   ]
 }

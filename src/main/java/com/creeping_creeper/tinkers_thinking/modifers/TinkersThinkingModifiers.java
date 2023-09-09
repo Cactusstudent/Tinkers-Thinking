@@ -14,6 +14,7 @@ public class TinkersThinkingModifiers {
     public static final StaticModifier<Modifier> Inspired = MODIFIERS.register("inspired", InspiredModifier::new);
     public static final StaticModifier<Modifier> Concealer = MODIFIERS.register("concealer", ConcealerModifier::new);
     public static final StaticModifier<Modifier> LightPower = MODIFIERS.register("light_power", LightPowerModifier::new);
+    public static final StaticModifier<Modifier> Overeat = MODIFIERS.register("overeat",OvereatModifier::new);
     public static void regeisters(IEventBus eventBus) {
         MODIFIERS.register(eventBus);
     }

@@ -8,7 +8,7 @@
       "type": "tconstruct:effect",
       "name": "minecraft:regeneration",
       "time": 5,
-      "level": 6
+      "level": 3
     }
   ]
 }

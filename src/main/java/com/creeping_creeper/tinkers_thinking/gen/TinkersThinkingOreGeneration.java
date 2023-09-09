@@ -1,5 +1,6 @@
 package com.creeping_creeper.tinkers_thinking.gen;
 
+import com.creeping_creeper.tinkers_thinking.configs.TinkersThinkingCommanConfigs;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.biome.Biome;
@@ -14,10 +15,10 @@ public class TinkersThinkingOreGeneration {
 
     public static void generateOres(final BiomeLoadingEvent event) {
         List<Holder<PlacedFeature>> base = event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
-        if (event.getCategory() == Biome.BiomeCategory.JUNGLE){
+        if (TinkersThinkingCommanConfigs.Ardite_Ore_Spawn.get() && event.getCategory() == Biome.BiomeCategory.NETHER){
             base.add(TinkersThinkingPlacedFeatures.Ardite_Ore_Placed);
         };
-        if ((event.getCategory() == Biome.BiomeCategory.JUNGLE || is(Biomes.LUSH_CAVES)))
+        if ((TinkersThinkingCommanConfigs.Chlorophyll_Ore_Spawn.get() && (event.getCategory() == Biome.BiomeCategory.JUNGLE || is(Biomes.LUSH_CAVES))))
          {
             base.add(TinkersThinkingPlacedFeatures.Chlorophyll_Ore_Placed);
         }

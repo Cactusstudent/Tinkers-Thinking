@@ -6,6 +6,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LightLayer;
+import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.TinkerHooks;
@@ -28,13 +29,12 @@ public class LightPowerModifier extends Modifier implements ProjectileHitModifie
     private static float getBonus(int level, @Nullable LivingEntity holder) {
         if (holder != null) {
             Level world = holder.getCommandSenderWorld();
-            int light = world.getBrightness(LightLayer.SKY, holder.blockPosition()) - world.getSkyDarken();
+            int light = Math.max(world.getBrightness(LightLayer.BLOCK,holder.blockPosition()) - (world.getBrightness(LightLayer.SKY, holder.blockPosition()) - world.getSkyDarken()),0);
             return (float) (level * light);
         }
         return 0;
     }
 
-    ;
 
 
     protected void registerHooks(ModifierHookMap.Builder hookBuilder) {
@@ -42,20 +42,22 @@ public class LightPowerModifier extends Modifier implements ProjectileHitModifie
     }
 
     public float getEntityDamage(IToolStackView tool, int level, ToolAttackContext context, float baseDamage, float damage) {
-        return damage + getBonus(level, context.getAttacker()) * 0.2f * tool.getMultiplier(ToolStats.ATTACK_DAMAGE);
+        return damage + getBonus(level, context.getAttacker()) * 0.25f * tool.getMultiplier(ToolStats.ATTACK_DAMAGE);
     }
     @Override
-    public float modifyStat(IToolStackView tool, ModifierEntry modifier,  LivingEntity living, FloatToolStat stat, float baseValue, float multiplier) {
+    public float modifyStat(@NotNull IToolStackView tool, @NotNull ModifierEntry modifier, @NotNull LivingEntity living, @NotNull FloatToolStat stat, float baseValue, float multiplier) {
         if (stat == ToolStats.PROJECTILE_DAMAGE) {
-            return baseValue += getBonus(modifier.getLevel(), (LivingEntity) living) * 0.2f * multiplier;
+            return baseValue += getBonus(modifier.getLevel(), living) * 0.25f * multiplier;
         }
         return baseValue;
     }
 
-    public void addInformation(IToolStackView tool, int level, @Nullable Player player, List<Component> tooltip, TooltipKey key, TooltipFlag flag) {
-        Level world = player.getCommandSenderWorld();
-        float bonus = level * Math.abs(world.getBrightness(LightLayer.SKY, player.blockPosition()) - world.getSkyDarken());
-        this.addDamageTooltip(tool, bonus, tooltip);
+    public void addInformation(@NotNull IToolStackView tool, int level, @Nullable Player player, @NotNull List<Component> tooltip, @NotNull TooltipKey key, @NotNull TooltipFlag flag) {
+        if (player!=null) {
+            Level world = player.getCommandSenderWorld();
+            float bonus = (float) (level * 0.25 * Math.max((world.getBrightness(LightLayer.BLOCK, player.blockPosition()) - (world.getBrightness(LightLayer.SKY, player.blockPosition()) - world.getSkyDarken())), 0));
+            this.addDamageTooltip(tool, bonus, tooltip);
+        }
     }
 }
 

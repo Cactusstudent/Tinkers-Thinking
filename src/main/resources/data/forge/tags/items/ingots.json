@@ -6,6 +6,8 @@
     "#forge:ingots/lightite",
     "#forge:ingots/black_chocolate",
     "#forge:ingots/white_chocolate",
-    "#forge:ingots/chlorophyte"
+    "#forge:ingots/chlorophyte",
+    "#forge:ingots/spectre",
+    "#forge:ingots/shroomite"
   ]
 }

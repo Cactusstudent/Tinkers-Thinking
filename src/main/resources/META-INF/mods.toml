@@ -1,11 +1,11 @@
 modLoader="javafml"
 loaderVersion="[40,)"
-issueTrackerURL="https://modrinth.com/mod/tinkers-thinking"
+issueTrackerURL="https://github.com/CreepingCreeper/Tinkers-Thinking/issues"
 logoFile="logo.png"
 license="MIT"
 [[mods]]
 modId="tinkers_thinking"
-version="0.0.5.3"
+version="0.1.1.0"
 displayName="Thinkers' Thinking"
 authors="creeping_creeper"
 description='''

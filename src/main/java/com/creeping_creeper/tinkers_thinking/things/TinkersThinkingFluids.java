@@ -84,6 +84,18 @@ public class TinkersThinkingFluids {
             .color(0XFF248900).density(2000).luminosity(6).viscosity(10000).sound(SoundEvents.BUCKET_EMPTY_LAVA,SoundEvents.BUCKET_FILL_LAVA)).block(() -> TinkersThinkingFluids.molten_chlorophyte_block.get()).bucket(() -> TinkersThinkingItems.molten_chlorophyte_bucket.get());
     public static final RegistryObject<LiquidBlock> molten_chlorophyte_block = TinkersThinkingBlocks.BLOCKS.register("molten_chlorophyte_block", () -> new LiquidBlock(() -> (FlowingFluid) TinkersThinkingFluids.molten_chlorophyte.get(), BlockBehaviour.Properties.of(Material.LAVA).noCollission().strength(100f)
             .noDrops()));
+    public static final RegistryObject<Fluid> molten_spectre =  FLUIDS.register("molten_spectre", () -> new ForgeFlowingFluid.Source(TinkersThinkingFluids.molten_spectre_PROPERTIES ));
+    public static final RegistryObject<Fluid> molten_spectre_flowing =  FLUIDS.register("molten_spectre_flowing", () -> new ForgeFlowingFluid.Flowing(TinkersThinkingFluids.molten_spectre_PROPERTIES ));
+    public static final ForgeFlowingFluid.Properties molten_spectre_PROPERTIES = new ForgeFlowingFluid.Properties(() -> molten_spectre.get(),() -> molten_spectre_flowing.get(), FluidAttributes.builder(Molten,Molten_Flowing)
+            .color(0XFF58dbff).density(2000).luminosity(6).viscosity(10000).sound(SoundEvents.BUCKET_EMPTY_LAVA,SoundEvents.BUCKET_FILL_LAVA)).block(() -> TinkersThinkingFluids.molten_spectre_block.get()).bucket(() -> TinkersThinkingItems.molten_spectre_bucket.get());
+    public static final RegistryObject<LiquidBlock> molten_spectre_block = TinkersThinkingBlocks.BLOCKS.register("molten_spectre_block", () -> new LiquidBlock(() -> (FlowingFluid) TinkersThinkingFluids.molten_spectre.get(), BlockBehaviour.Properties.of(Material.LAVA).noCollission().strength(100f)
+            .noDrops()));
+    public static final RegistryObject<Fluid> molten_shroomite =  FLUIDS.register("molten_shroomite", () -> new ForgeFlowingFluid.Source(TinkersThinkingFluids.molten_shroomite_PROPERTIES ));
+    public static final RegistryObject<Fluid> molten_shroomite_flowing =  FLUIDS.register("molten_shroomite_flowing", () -> new ForgeFlowingFluid.Flowing(TinkersThinkingFluids.molten_shroomite_PROPERTIES ));
+    public static final ForgeFlowingFluid.Properties molten_shroomite_PROPERTIES = new ForgeFlowingFluid.Properties(() -> molten_shroomite.get(),() -> molten_shroomite_flowing.get(), FluidAttributes.builder(Molten,Molten_Flowing)
+            .color(0XFF008cf4).density(2000).luminosity(6).viscosity(10000).sound(SoundEvents.BUCKET_EMPTY_LAVA,SoundEvents.BUCKET_FILL_LAVA)).block(() -> TinkersThinkingFluids.molten_shroomite_block.get()).bucket(() -> TinkersThinkingItems.molten_shroomite_bucket.get());
+    public static final RegistryObject<LiquidBlock> molten_shroomite_block = TinkersThinkingBlocks.BLOCKS.register("molten_shroomite_block", () -> new LiquidBlock(() -> (FlowingFluid) TinkersThinkingFluids.molten_shroomite.get(), BlockBehaviour.Properties.of(Material.LAVA).noCollission().strength(100f)
+            .noDrops()));
     public static void regeisters(IEventBus eventBus) {
         FLUIDS.register(eventBus);
     }

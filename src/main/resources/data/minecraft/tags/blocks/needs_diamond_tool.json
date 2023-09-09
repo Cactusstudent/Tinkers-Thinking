@@ -6,6 +6,8 @@
     "tinkers_thinking:raw_ardite_block",
     "#forge:ores/chlorophyll",
     "tinkers_thinking:chlorophyte_block",
+    "tinkers_thinking:spectre_block",
+    "tinkers_thinking:shroomite_block",
     "tinkers_thinking:ardite_platform"
   ]
 }
