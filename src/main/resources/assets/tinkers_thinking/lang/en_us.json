@@ -122,14 +122,14 @@
   "item.tinkers_thinking.knife.description": "Knife is a kind of cheap lightweight weapon, is also applicable to cutting ingredients.\n May need to consult a farmer.",
 
   "item.tinkers_thinking.arrow_thrower": "Arrow Thrower",
-  "item.tinkers_thinking.arrow_thrower.description": "Arrow Thrower is a tool that can throw arrow,it allows doing ranged damage in melee.\n",
+  "item.tinkers_thinking.arrow_thrower.description": "Arrow Thrower is a tool that can throw arrow, it allows doing ranged damage in melee.\n",
 
   "material.tinkers_thinking.paper": "Paper",
   "material.tinkers_thinking.paper.flavor": "Cutted by paper is really painful",
   "material.tinkers_thinking.paper.encyclopedia": "Grants two additional upgrade slots, but durability reduce by 25% per level",
 
   "material.tinkers_thinking.cactus": "Cactus",
-  "material.tinkers_thinking.cactus.flavor": "This is not Cactusstudent,and cannot help you translate mods,either",
+  "material.tinkers_thinking.cactus.flavor": "This is not Cactusstudent, and cannot help you translate mods, either",
   "material.tinkers_thinking.cactus.encyclopedia": "+0.85 damage and -3% durability per level",
 
   "material.tinkers_thinking.prismarine": "Prismarine",
@@ -146,20 +146,20 @@
 
   "material.tinkers_thinking.tinkers_bronze": "Tinkers' Bronze",
   "material.tinkers_thinking.tinkers_bronze.flavor": "Not to be confused with Tinkers Bronze",
-  "material.tinkers_thinking.tinkers_bronze.encyclopedia": "+5 mining speed  per lever when breaking some of blocks that can be cut in the stonecutter , such as stone",
+  "material.tinkers_thinking.tinkers_bronze.encyclopedia": "+5 mining speed  per lever when breaking some of blocks that can be cut in the stonecutter, such as stone",
   "material.tinkers_thinking.tinkers_bronze.ranged":"Arrows have 85% velocity, but deal 130% damage",
 
   "material.tinkers_thinking.ardite": "Ardite",
   "material.tinkers_thinking.ardite.flavor": "A missing legend",
-  "material.tinkers_thinking.ardite.encyclopedia": "-0.417% durability cost pre block per level below 128,the maximum is 80%",
+  "material.tinkers_thinking.ardite.encyclopedia": "-0.417% durability cost pre block per level below 128, the maximum is 80%",
   
   "material.tinkers_thinking.stewium": "Stewium",
   "material.tinkers_thinking.stewium.flavor": "Drinking or eating?",
-  "material.tinkers_thinking.stewium.encyclopedia": "Having 15% chance repairing 1 durability while having  33 % chance to cost 1 overslime per second ,also can be repair by Gelatinous Slime Dropl",
+  "material.tinkers_thinking.stewium.encyclopedia": "Having 15% chance repairing 1 durability while having 33 % chance to cost 1 overslime per second, also can be repair by Gelatinous Slime Drop",
 
   "material.tinkers_thinking.dusk": "Dusk",
   "material.tinkers_thinking.dusk.flavor": "Where is my Moonflower?",
-  "material.tinkers_thinking.dusk.encyclopedia": "+2 damage per level when against slimes,and poison them",
+  "material.tinkers_thinking.dusk.encyclopedia": "+2 damage per level when against slimes, and poison them",
 
   "material.tinkers_thinking.lightite": "Lightite",
   "material.tinkers_thinking.lightite.flavor": "Lighter than the air",
@@ -167,23 +167,23 @@
 
   "material.tinkers_thinking.black_chocolate": "Black Chocolate",
   "material.tinkers_thinking.black_chocolate.flavor": "Dark Oak Trapdoor?",
-  "material.tinkers_thinking.black_chocolate.encyclopedia": "While attacking a target,there has a 25% chance to get Strength Ⅲ for 6 seconds,cost 5 durability",
+  "material.tinkers_thinking.black_chocolate.encyclopedia": "While attacking a target, there has a 25% chance to get Strength III for 6 seconds, cost 5 durability",
 
   "material.tinkers_thinking.white_chocolate": "White Chocolate",
   "material.tinkers_thinking.white_chocolate.flavor": "Birch Trapdoor?",
-  "material.tinkers_thinking.white_chocolate.encyclopedia": "While mining a block,there has a 25% chance to get Haste Ⅲ for 6 seconds,cost 5 durability",
+  "material.tinkers_thinking.white_chocolate.encyclopedia": "While mining a block, there has a 25% chance to get Haste III for 6 seconds, cost 5 durability",
 
   "material.tinkers_thinking.chlorophyte": "Chlorophyte",
   "material.tinkers_thinking.chlorophyte.flavor": "Life Essence",
   "material.tinkers_thinking.chlorophyte.encyclopedia": "Every seconds has a chance in (lost heart *2)% to heal a heart, cost 8 durability",
  
   "material.tinkers_thinking.spectre": "Spectre",
-  "material.tinkers_thinking.spectre.flavor": "Of Course,Ghasts are made from cats",
-  "material.tinkers_thinking.spectre.encyclopedia": "Attack give target Invisibility for 10 seconds,increases the damage of 25% to target that has Invisibility per level",
+  "material.tinkers_thinking.spectre.flavor": "Of Course, Ghasts are made from cats",
+  "material.tinkers_thinking.spectre.encyclopedia": "Attack give target Invisibility for 10 seconds, increases the damage of 25% to target that has Invisibility per level",
 
   "material.tinkers_thinking.shroomite": "Shroomite",
   "material.tinkers_thinking.shroomite.flavor": "Mushroom Ore",
-  "material.tinkers_thinking.shroomite.encyclopedia": "According to  a quarter of the block light minuing the sky light increased damage per level",
+  "material.tinkers_thinking.shroomite.encyclopedia": "According to a quarter of the block light minuing the sky light increased damage per level",
 
 
   "modifier.tinkers_thinking.soft": "Soft",
@@ -192,7 +192,7 @@
   
   "modifier.tinkers_thinking.prickly": "Prickly",
   "modifier.tinkers_thinking.prickly.flavor": "Pricklily prickly",
-  "modifier.tinkers_thinking.prickly.description": "Boost damage,but reduce a few durability",
+  "modifier.tinkers_thinking.prickly.description": "Boost damage, but reduce a few durability",
 
   "modifier.tinkers_thinking.hellish": "Hellish",
   "modifier.tinkers_thinking.hellish.flavor": "Hellish test!",
@@ -213,12 +213,12 @@
 
   "modifier.tinkers_thinking.deposition": "Deposition",
   "modifier.tinkers_thinking.deposition.flavor": "Hiden in the depths",
-  "modifier.tinkers_thinking.deposition.description": "The lower height is,the less the durability is cost",
+  "modifier.tinkers_thinking.deposition.description": "The lower height is, the less the durability is cost",
   "modifier.tinkers_thinking.deposition.chance": "Deposition Reinforced",
 
   "modifier.tinkers_thinking.cutting": "Cutting",
   "modifier.tinkers_thinking.cutting.flavor": "Stonecucucucucucucucucutter",
-  "modifier.tinkers_thinking.cutting.description": "Your tool breaks some of blocks that can be cut in the stonecutter , such as stone, faster!",
+  "modifier.tinkers_thinking.cutting.description": "Your tool breaks some of blocks that can be cut in the stonecutter, such as stone, faster!",
   "modifier.tinkers_thinking.cutting.mining_speed": "Cutting Mining Speed",
   "modifier.tinkers_thinking.impact": "Impact",
   "modifier.tinkers_thinking.impact.flavor": "The strength will come out in the end",
@@ -230,7 +230,7 @@
 
   "modifier.tinkers_thinking.overeat": "Overeat",
   "modifier.tinkers_thinking.overeat.flavor": "Appetizer!",
-  "modifier.tinkers_thinking.overeat.description": "Tool can eat Overslime and Gelatinous Slime Drop to repair itslef",
+  "modifier.tinkers_thinking.overeat.description": "Tool can eat Overslime and Gelatinous Slime Drop to repair itself",
 
   "modifier.tinkers_thinking.speedy": "Speed Up",
   "modifier.tinkers_thinking.speedy.flavor": "Speed Up!",
@@ -238,11 +238,11 @@
 
   "modifier.tinkers_thinking.overdose": "Overdose",
   "modifier.tinkers_thinking.overdose.flavor": "Osmotic pressure!",
-  "modifier.tinkers_thinking.overdose.description": "Tool does bonus damage against slimes,and poison them",
+  "modifier.tinkers_thinking.overdose.description": "Tool does bonus damage against slimes, and poison them",
   "modifier.tinkers_thinking.overdose.attack_damage": "Overdose Damage",
 
   "modifier.tinkers_thinking.disarm": "Disarm",
-  "modifier.tinkers_thinking.disarm.flavor": "Traditional kungfu,enough is enough",
+  "modifier.tinkers_thinking.disarm.flavor": "Traditional kungfu, enough is enough",
   "modifier.tinkers_thinking.disarm.description": "Make target cannot melee for a while",
 
   "modifier.tinkers_thinking.stimulation": "Stimulation",
@@ -264,12 +264,12 @@
 
   "modifier.tinkers_thinking.concealer": "Concealer",
   "modifier.tinkers_thinking.concealer.flavor": "A coward need to hide",
-  "modifier.tinkers_thinking.concealer.description": "Attack give target Invisibility,increases the damage to target that has Invisibility",
+  "modifier.tinkers_thinking.concealer.description": "Attack give target Invisibility, increases the damage to target that has Invisibility",
   "modifier.tconstruct.concealer.attack_damage": "Concealer Damage",
 
   "modifier.tinkers_thinking.light_power": "Photosensitive",
   "modifier.tinkers_thinking.light_power.flavor": "Bright light shining",
-  "modifier.tinkers_thinking.light_power.description": "According to the  block light minuing the sky light increased damage",
+  "modifier.tinkers_thinking.light_power.description": "According to the block light minuing the sky light increased damage",
   "modifier.tinkers_thinking.light_power.attack_damage": "Photosensitive Damage",
 
   "modifier.tinkers_thinking.backstabbing": "Backstabbing",
@@ -282,11 +282,11 @@
 
   "modifier.tinkers_thinking.broad": "Broad",
   "modifier.tinkers_thinking.broad.flavor": "Tell a story without missing a single circumstance!",
-  "modifier.tinkers_thinking.broad.description": "Boost block angle,cannot above maximum(180°).",
+  "modifier.tinkers_thinking.broad.description": "Boost block angle, cannot above maximum (180°).",
 
   "modifier.tconstruct.draconic.description": "The head of the great beast allows your tool a third ability slot!",
 
-  "recipe.tinkers_thinking.modifier.backstabbing.level_2": "BackstabbingⅡ requires a different recipe for the first level",
-  "recipe.tinkers_thinking.modifier.backstabbing.level_3": "BackstabbingⅢ requires a different recipe for the first level",
+  "recipe.tinkers_thinking.modifier.backstabbing.level_2": "Backstabbing II requires a different recipe for the first level",
+  "recipe.tinkers_thinking.modifier.backstabbing.level_3": "Backstabbing III requires a different recipe for the first level",
   "block.tinkers_thinking.wooden_hopper": "block.tinkers_thinking.wooden_hopper"
 }
