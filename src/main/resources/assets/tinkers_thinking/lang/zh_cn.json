@@ -126,32 +126,32 @@
 
   "material.tinkers_thinking.paper": "纸",
   "material.tinkers_thinking.paper.flavor": "被纸划伤真的很疼",
-  "material.tinkers_thinking.paper.encyclopedia": "每级增加 2个升级槽，但减少 25%耐久度",
+  "material.tinkers_thinking.paper.encyclopedia": "每级增加2个升级槽，但减少25%耐久度",
 
   "material.tinkers_thinking.cactus": "仙人掌",
   "material.tinkers_thinking.cactus.flavor": "这不是Cactusstudent，也不能帮你翻译模组",
-  "material.tinkers_thinking.cactus.encyclopedia": "每级 +0.85伤害, -3%耐久度",
+  "material.tinkers_thinking.cactus.encyclopedia": "每级+0.85伤害，-3%耐久度",
   
   "material.tinkers_thinking.prismarine": "海晶石",
   "material.tinkers_thinking.prismarine.flavor": "愿陪你纵横七海，请伴我阅遍千秋",
-  "material.tinkers_thinking.prismarine.encyclopedia": "在雨中每级采掘速度 +4；在水下则改为每级采掘速度 +8",
+  "material.tinkers_thinking.prismarine.encyclopedia": "在雨中每级采掘速度+4；在水下则改为每级采掘速度+8",
 
   "material.tinkers_thinking.sponge": "海绵",
   "material.tinkers_thinking.sponge.flavor": "不适宜在高温下使用",
-  "material.tinkers_thinking.sponge.encyclopedia": "每级使目标 3秒内无法近程攻击",
+  "material.tinkers_thinking.sponge.encyclopedia": "每级使目标3秒内无法近程攻击",
 
   "material.tinkers_thinking.netherrack": "下界岩",
   "material.tinkers_thinking.netherrack.flavor": "不灭之火",
-  "material.tinkers_thinking.netherrack.encyclopedia": "每级对不免疫火焰伤害的生物 +1.5伤害",
+  "material.tinkers_thinking.netherrack.encyclopedia": "每级对不免疫火焰伤害的生物+1.5伤害",
 
   "material.tinkers_thinking.tinkers_bronze": "工匠青铜",
   "material.tinkers_thinking.tinkers_bronze.flavor": "别和工匠青铜搞混了",
-  "material.tinkers_thinking.tinkers_bronze.encyclopedia": "每级对部分可被切石机切割的方块 +5采掘速度，例如石头",
-  "material.tinkers_thinking.tinkers_bronze.ranged":"每级减少 15%初速度，但弹射物伤害增加 30%",
+  "material.tinkers_thinking.tinkers_bronze.encyclopedia": "每级对部分可被切石机切割的方块+5采掘速度，例如石头",
+  "material.tinkers_thinking.tinkers_bronze.ranged":"每级减少15%初速度，但弹射物伤害增加30%",
 
   "material.tinkers_thinking.ardite": "阿迪特",
   "material.tinkers_thinking.ardite.flavor": "遗失的传说",
-  "material.tinkers_thinking.ardite.encyclopedia": "自 128格往下每级每降低1格，消耗耐久度的概率减少0.417%，最高减少80%",
+  "material.tinkers_thinking.ardite.encyclopedia": "自128格往下每级每降低1格，消耗耐久度的概率减少0.417%，最高减少80%",
 
   "material.tinkers_thinking.stewium": "钖",
   "material.tinkers_thinking.stewium.flavor": "要喝掉它还是吃掉它？",
@@ -167,15 +167,15 @@
 
   "material.tinkers_thinking.black_chocolate": "黑巧克力",
   "material.tinkers_thinking.black_chocolate.flavor": "深色橡木活板门？",
-  "material.tinkers_thinking.black_chocolate.encyclopedia": "每级在攻击时有 25%概率获得6秒力量Ⅲ，消耗 5点耐久度",
+  "material.tinkers_thinking.black_chocolate.encyclopedia": "每级在攻击时有25%概率获得6秒力量 III，消耗5点耐久度",
 
   "material.tinkers_thinking.white_chocolate": "白巧克力",
   "material.tinkers_thinking.white_chocolate.flavor": "白桦木活板门？",
-  "material.tinkers_thinking.white_chocolate.encyclopedia": "每级在挖掘时有 25%概率获得6秒急迫Ⅲ，消耗 5点耐久度",
+  "material.tinkers_thinking.white_chocolate.encyclopedia": "每级在挖掘时有25%概率获得6秒急迫 III，消耗5点耐久度",
 
   "material.tinkers_thinking.chlorophyte": "叶绿",
   "material.tinkers_thinking.chlorophyte.flavor": "生命源质",
-  "material.tinkers_thinking.chlorophyte.encyclopedia": "每秒每级有（ 4×已损失生命值）%的概率消耗 8点耐久度回复 10%已损失生命值",
+  "material.tinkers_thinking.chlorophyte.encyclopedia": "每秒每级有（4×已损失生命值）%的概率消耗8点耐久度回复10%已损失生命值",
 
   "material.tinkers_thinking.spectre": "幽灵",
   "material.tinkers_thinking.spectre.flavor": "当然，恶魂是用猫做成的",
@@ -191,7 +191,7 @@
 
   "modifier.tinkers_thinking.prickly": "尖刺",
   "modifier.tinkers_thinking.prickly.flavor": "尖锐似芒",
-  "modifier.tinkers_thinking.prickly.description": "提升攻击力,但略微减少耐久度",
+  "modifier.tinkers_thinking.prickly.description": "提升攻击力，但略微减少耐久度",
 
   "modifier.tinkers_thinking.hellish": "炼狱",
   "modifier.tinkers_thinking.hellish.flavor": "炼狱试炼！",
@@ -204,7 +204,7 @@
 
   "modifier.tinkers_thinking.withernic": "灵族",
   "modifier.tinkers_thinking.withernic.flavor": "统领下界！",
-  "modifier.tinkers_thinking.withernic.description": "这颗来自远古亡灵的头颅，为你的工具带来了第二个能力槽！",
+  "modifier.tinkers_thinking.withernic.description": "这颗来自远古亡灵的头颅，为你的工具带来了第2个能力槽！",
 
   "modifier.tinkers_thinking.targeted": "针对",
   "modifier.tinkers_thinking.targeted.flavor": "差异化对待",
@@ -220,7 +220,7 @@
   "modifier.tinkers_thinking.cutting.description": "提升对可被切石机切割的方块的采掘速度，例如石头",
   "modifier.tinkers_thinking.cutting.mining_speed": "切割采掘速度",
   "modifier.tinkers_thinking.impact": "碰撞",
-  "modifier.tinkers_thinking.impact.flavor": "力量...终将体现",
+  "modifier.tinkers_thinking.impact.flavor": "力量……终将体现",
   "modifier.tinkers_thinking.impact.description": "箭矢飞行速度下降，但造成的伤害提升",
 
   "modifier.tinkers_thinking.clay": "黏土",
@@ -272,7 +272,7 @@
   "modifier.tinkers_thinking.light_power.attack_damage": "光敏伤害",
 
   "modifier.tinkers_thinking.backstabbing": "背刺",
-  "modifier.tinkers_thinking.backstabbing.flavor": "乘人之危...",
+  "modifier.tinkers_thinking.backstabbing.flavor": "乘人之危……",
   "modifier.tinkers_thinking.backstabbing.description": "增加从后攻击目标时的伤害",
 
   "modifier.tinkers_thinking.levitation": "飘浮",
@@ -283,8 +283,8 @@
   "modifier.tinkers_thinking.broad.flavor": "滴水不漏！",
   "modifier.tinkers_thinking.broad.description": "提升格挡角度，不得超过上限（180°）",
 
-  "modifier.tconstruct.draconic.description": "这颗来自巨兽的头颅，为你的工具带来了第三个能力槽！",
+  "modifier.tconstruct.draconic.description": "这颗来自巨兽的头颅，为你的工具带来了第3个能力槽！",
 
-  "recipe.tinkers_thinking.modifier.backstabbing.level_2": "“背刺Ⅱ”的合成与前一级不同",
-  "recipe.tinkers_thinking.modifier.backstabbing.level_3": "“背刺Ⅲ”的合成与前两级不同"
+  "recipe.tinkers_thinking.modifier.backstabbing.level_2": "“背刺 II”的合成与前一级不同",
+  "recipe.tinkers_thinking.modifier.backstabbing.level_3": "“背刺 III”的合成与前两级不同"
 }
