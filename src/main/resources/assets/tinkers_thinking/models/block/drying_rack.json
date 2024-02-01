@@ -1,0 +1,24 @@
+{
+	"credit": "Made with Blockbench",
+                "render_type": "cutout_mipped",
+	"textures": {
+		"2": "tinkers_thinking:block/drying_rack",
+		"3": "tinkers_thinking:block/drying_rack_side",
+		"particle": "tinkers_thinking:block/drying_rack"
+	},
+	"elements": [
+		{
+			"from": [0, 12, 6],
+			"to": [16, 16, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 4], "texture": "#2"},
+				"east": {"uv": [0, 0, 4, 4], "texture": "#3"},
+				"south": {"uv": [0, 0, 16, 4], "texture": "#2"},
+				"west": {"uv": [0, 0, 4, 4], "texture": "#3"},
+				"up": {"uv": [0, 0, 16, 4], "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 4], "texture": "#2"}
+			}
+		}
+	]
+	}
+}

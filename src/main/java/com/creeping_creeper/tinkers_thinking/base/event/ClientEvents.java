@@ -1,0 +1,23 @@
+package com.creeping_creeper.tinkers_thinking.base.event;
+
+import com.creeping_creeper.tinkers_thinking.TinkersThinking;
+import com.creeping_creeper.tinkers_thinking.base.block.entity.ModBlockEntities;
+import com.creeping_creeper.tinkers_thinking.base.block.renderer.DryingRackBlockEntityRenderer;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+
+public class ClientEvents {@Mod.EventBusSubscriber(modid = TinkersThinking.MODID,value= Dist.CLIENT)
+public static class ClientForgeEvents{
+}
+
+    @Mod.EventBusSubscriber(modid = TinkersThinking.MODID,value = Dist.CLIENT,bus=Mod.EventBusSubscriber.Bus.MOD)
+    public static class ClientModBusEvents {
+        @SubscribeEvent
+        public static void registerRenderes(final EntityRenderersEvent.RegisterRenderers event){
+            event.registerBlockEntityRenderer(ModBlockEntities.Drying_Rack.get(),
+                    DryingRackBlockEntityRenderer::new);
+        }
+    }
+}

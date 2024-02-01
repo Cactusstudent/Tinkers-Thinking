@@ -1,0 +1,338 @@
+{
+  "itemGroup.tinkers_thinking": "匠心独运",
+
+  "item.tinkers_thinking.beef_jerky": "牛肉干",
+  "item.tinkers_thinking.pork_jerky": "猪肉干",
+  "item.tinkers_thinking.mutton_jerky": "羊肉干",
+  "item.tinkers_thinking.chicken_jerky": "鸡肉干",
+  "item.tinkers_thinking.rabbit_jerky": "兔肉干",
+  "item.tinkers_thinking.rotten_flesh_jerky": "腐肉干",
+  "item.tinkers_thinking.pufferfish_jerky": "河豚干",
+  "item.tinkers_thinking.cod_jerky": "鳕鱼干",
+  "item.tinkers_thinking.salmon_jerky": "鲑鱼干",
+  "item.tinkers_thinking.tropical_fish_jerky": "热带鱼干",
+  "item.tinkers_thinking.fried_egg": "煎蛋",
+
+  "item.tinkers_thinking.clay_crystal": "黏土水晶",
+  "item.tinkers_thinking.blood_crystal": "黏血水晶",
+  "item.tinkers_thinking.magma_crystal": "岩浆水晶",
+  "item.tinkers_thinking.quartz_crystal": "石英水晶",
+  "item.tinkers_thinking.chromatic_crystal": "异彩水晶", 
+  "item.tinkers_thinking.lightite_reinforcement": "轻悠加固板",
+
+  "item.tinkers_thinking.stone_stick": "石棍",
+  "item.tinkers_thinking.stone_torch": "石柄火把",
+  "block.tinkers_thinking.stone_torch": "石柄火把",
+  "item.tinkers_thinking.stone_soul_torch": "石柄灵魂火把",
+  "block.tinkers_thinking.stone_soul_torch": "石柄灵魂火把",
+  "block.tinkers_thinking.stone_ladder": "石梯",
+
+  "item.tinkers_thinking.silky_jewel": "裹绸珠宝",
+  "block.tinkers_thinking.silky_jewel_block": "裹绸珠宝块",
+  "item.tinkers_thinking.gilded_silky_cloth": "镀金丝绢",
+
+  "item.tinkers_thinking.earth_slime_drop": "胶状黏液液滴",
+  "item.tinkers_thinking.sky_slime_drop": "胶状碧空黏液液滴",
+  "item.tinkers_thinking.ichor_slime_drop": "胶状灵浆液滴",
+  "item.tinkers_thinking.blood_slime_drop": "胶状黏血液滴",
+  "item.tinkers_thinking.magma_slime_drop": "胶状岩浆液滴",
+  "item.tinkers_thinking.ender_slime_drop": "胶状末影黏液液滴",
+
+  "fluid.tinkers_thinking.syrup": "糖浆",
+  "item.tinkers_thinking.syrup_bucket": "糖浆桶",
+  "fluid.tinkers_thinking.molten_cocoa": "熔融可可",
+  "item.tinkers_thinking.molten_cocoa_bucket": "熔融可可桶",
+  "fluid.tinkers_thinking.molten_black_chocolate": "熔融黑巧克力",
+  "item.tinkers_thinking.molten_black_chocolate_bucket": "熔融黑巧克力桶",
+  "fluid.tinkers_thinking.molten_white_chocolate": "熔融白巧克力",
+  "item.tinkers_thinking.molten_white_chocolate_bucket": "熔融白巧克力桶",
+  "item.tinkers_thinking.white_chocolate": "白巧克力",
+  "item.tinkers_thinking.black_chocolate": "黑巧克力",
+
+  "item.tinkers_thinking.surging_wellspring": "涌流源泉",
+
+  "item.tinkers_thinking.tinkers_bronze_ingot": "工匠青铜锭",
+  "item.tinkers_thinking.tinkers_bronze_nugget": "工匠青铜粒",
+  "block.tinkers_thinking.tinkers_bronze_block": "工匠青铜块",
+  "fluid.tinkers_thinking.molten_tinkers_bronze": "熔融工匠青铜",
+  "item.tinkers_thinking.molten_tinkers_bronze_bucket": "熔融工匠青铜桶",
+
+  "item.tinkers_thinking.ardite_ingot": "阿迪特锭",
+  "item.tinkers_thinking.ardite_nugget": "阿迪特粒",
+  "block.tinkers_thinking.ardite_block": "阿迪特块",
+  "block.tinkers_thinking.ardite_ore": "下界阿迪特矿石",
+  "item.tinkers_thinking.raw_ardite": "粗阿迪特",
+  "block.tinkers_thinking.raw_ardite_block": "粗阿迪特块",
+  "fluid.tinkers_thinking.molten_ardite": "熔融阿迪特",
+  "item.tinkers_thinking.molten_ardite_bucket": "熔融阿迪特桶",
+  "block.tinkers_thinking.ardite_platform": "阿迪特平台",
+
+  "item.tinkers_thinking.lightite_compound": "轻悠化合物",
+  "item.tinkers_thinking.lightite_ingot": "轻悠锭",
+  "item.tinkers_thinking.lightite_nugget": "轻悠粒",
+  "block.tinkers_thinking.lightite_block": "轻悠块",
+  "fluid.tinkers_thinking.molten_lightite": "熔融轻悠",
+  "item.tinkers_thinking.molten_lightite_bucket": "熔融轻悠桶",
+
+  "block.tinkers_thinking.chlorophyll_ore": "叶绿素矿石",
+  "block.tinkers_thinking.deepslate_chlorophyll_ore": "深层叶绿素矿石",
+  "item.tinkers_thinking.chlorophyll_a": "叶绿素A",
+  "item.tinkers_thinking.chlorophyll_b": "叶绿素B",
+  "item.tinkers_thinking.chlorophyte_compound": "叶绿混合物",
+  "item.tinkers_thinking.chlorophyte_ingot": "叶绿锭",
+  "item.tinkers_thinking.chlorophyte_nugget": "叶绿粒",
+  "block.tinkers_thinking.chlorophyte_block": "叶绿块",
+  "fluid.tinkers_thinking.molten_chlorophyte": "熔融叶绿",
+  "item.tinkers_thinking.molten_chlorophyte_bucket": "熔融叶绿桶",
+
+  "item.tinkers_thinking.spectre_compound": "幽灵混合物",
+  "item.tinkers_thinking.spectre_ingot": "幽灵锭",
+  "item.tinkers_thinking.spectre_nugget": "幽灵粒",
+  "block.tinkers_thinking.spectre_block": "幽灵块",
+  "fluid.tinkers_thinking.molten_spectre": "熔融幽灵",
+  "item.tinkers_thinking.molten_spectre_bucket": "熔融幽灵桶",
+
+  "item.tinkers_thinking.shroomite_compound": "蘑菇矿混合物",
+  "item.tinkers_thinking.shroomite_ingot": "蘑菇矿锭",
+  "item.tinkers_thinking.shroomite_nugget": "蘑菇矿粒",
+  "block.tinkers_thinking.shroomite_block": "蘑菇矿块",
+  "fluid.tinkers_thinking.molten_shroomite": "熔融蘑菇矿",
+  "item.tinkers_thinking.molten_shroomite_bucket": "熔融蘑菇矿桶",
+
+  "item.tinkers_thinking.alumite_ingot": "耐酸铝锭",
+  "item.tinkers_thinking.alumite_nugget": "耐酸铝粒",
+  "block.tinkers_thinking.alumite_block": "耐酸铝块",
+  "fluid.tinkers_thinking.molten_alumite": "熔融耐酸铝",
+  "item.tinkers_thinking.molten_alumite_bucket": "熔融耐酸铝桶",
+
+  "item.tinkers_thinking.obsidian_bronze_ingot": "黑曜石青铜锭",
+  "item.tinkers_thinking.obsidian_bronze_nugget": "黑曜石青铜粒",
+  "block.tinkers_thinking.obsidian_bronze_block": "黑曜石青铜块",
+  "fluid.tinkers_thinking.molten_obsidian_bronze": "熔融黑曜石青铜",
+  "item.tinkers_thinking.molten_obsidian_bronze_bucket": "熔融黑曜石青铜桶",
+
+  "block.tinkers_thinking.drying_rack": "晾干架（未完成）",
+
+  "item.tinkers_thinking.amethyst_staff": "紫水晶手杖",
+  "item.tinkers_thinking.clay_staff": "超级黏土魔杖", 
+  "item.tinkers_thinking.magma_staff": "岩浆手杖", 
+  "item.tinkers_thinking.blood_staff": "黏血手杖", 
+  "item.tinkers_thinking.quartz_staff": "石英手杖",  
+
+  "item.tinkers_thinking.seared_bucket": "焦砖提桶",
+  "item.tinkers_thinking.tinkers_bronze_bucket": "工匠提桶",
+  "item.tinkers_thinking.battle_bucket": "战斗提桶",
+
+  "pattern.tinkers_thinking.narrow_blade": "窄刃",
+  "item.tinkers_thinking.narrow_blade": "窄刃",
+  "item.tinkers_thinking.narrow_blade_sand_cast": "窄刃沙子铸模",
+  "item.tinkers_thinking.narrow_blade_red_sand_cast": "窄刃红沙铸模",
+  "item.tinkers_thinking.narrow_blade_gold_cast": "窄刃金质铸模",
+
+  "item.tinkers_thinking.paxel": "镐尖斧",
+  "item.tinkers_thinking.paxel.description": "镐尖斧是一种多功能采掘工具，适用于挖掘各种方块，但对岩石和木头效果最好。\n村民肯定不喜欢这个。",
+
+  "item.tinkers_thinking.knife": "刀",
+  "item.tinkers_thinking.knife.description": "刀是一种廉价的轻量型武器，也适用于切割食材。\n也许需要请教一位农夫。",
+
+  "item.tinkers_thinking.arrow_thrower": "掷箭器",
+  "item.tinkers_thinking.arrow_thrower.description": "掷箭器是一种投掷箭矢的工具，允许在近程中造成远程伤害\n",
+
+  "material.tinkers_thinking.paper": "纸",
+  "material.tinkers_thinking.paper.flavor": "被纸划伤真的很疼",
+  "material.tinkers_thinking.paper.encyclopedia": "每级增加2个升级槽，但减少25%耐久度",
+
+  "material.tinkers_thinking.cactus": "仙人掌",
+  "material.tinkers_thinking.cactus.flavor": "这不是Cactusstudent，也不能帮你翻译模组",
+  "material.tinkers_thinking.cactus.encyclopedia": "额外随机造成0%~12%的伤害",
+  
+  "material.tinkers_thinking.prismarine": "海晶石",
+  "material.tinkers_thinking.prismarine.flavor": "愿陪你纵横七海，请伴我阅遍千秋",
+  "material.tinkers_thinking.prismarine.encyclopedia": "在雨中每级采掘速度+4；在水下则改为每级采掘速度+8",
+
+  "material.tinkers_thinking.sponge": "海绵",
+  "material.tinkers_thinking.sponge.flavor": "不适宜在高温下使用",
+  "material.tinkers_thinking.sponge.encyclopedia": "每级使目标3秒内无法近程攻击",
+
+  "material.tinkers_thinking.netherrack": "下界岩",
+  "material.tinkers_thinking.netherrack.flavor": "不灭之火",
+  "material.tinkers_thinking.netherrack.encyclopedia": "每级对不免疫火焰伤害的生物+1.5伤害",
+
+  "material.tinkers_thinking.tinkers_bronze": "工匠青铜",
+  "material.tinkers_thinking.tinkers_bronze.flavor": "别和黑曜石青铜搞混了",
+  "material.tinkers_thinking.tinkers_bronze.encyclopedia": "每级对部分可被切石机切割的方块+5采掘速度，例如石头",
+  "material.tinkers_thinking.tinkers_bronze.ranged":"每级减少15%初速度，但弹射物伤害增加30%",
+
+  "material.tinkers_thinking.ardite": "阿迪特",
+  "material.tinkers_thinking.ardite.flavor": "遗失的传说",
+  "material.tinkers_thinking.ardite.encyclopedia": "自128格往下每级每降低1格，消耗耐久度的概率减少0.417%，最高减少80%",
+
+  "material.tinkers_thinking.stewium": "钖",
+  "material.tinkers_thinking.stewium.flavor": "要喝掉它还是吃掉它？",
+  "material.tinkers_thinking.stewium.encyclopedia": "每秒有15%的概率恢复1点耐久度，并有33%的概率消耗一点黏液覆层，可使用胶状黏液液滴修复",
+
+  "material.tinkers_thinking.dusk": "幽暮",
+  "material.tinkers_thinking.dusk.flavor": "我的月光花去哪里了？",
+  "material.tinkers_thinking.dusk.encyclopedia": "每级对各种史莱姆+2伤害，并附带中毒效果",
+
+  "material.tinkers_thinking.lightite": "轻悠",
+  "material.tinkers_thinking.lightite.flavor": "轻悠悠!",
+  "material.tinkers_thinking.lightite.encyclopedia": "每级+0.25使用时速度，+5%移动速度",
+
+  "material.tinkers_thinking.black_chocolate": "黑巧克力",
+  "material.tinkers_thinking.black_chocolate.flavor": "深色橡木活板门？",
+  "material.tinkers_thinking.black_chocolate.encyclopedia": "每级在攻击时有25%概率获得6秒力量 III，消耗5点耐久度",
+
+  "material.tinkers_thinking.white_chocolate": "白巧克力",
+  "material.tinkers_thinking.white_chocolate.flavor": "白桦木活板门？",
+  "material.tinkers_thinking.white_chocolate.encyclopedia": "每级在挖掘时有25%概率获得6秒急迫 III，消耗5点耐久度",
+
+  "material.tinkers_thinking.chlorophyte": "叶绿",
+  "material.tinkers_thinking.chlorophyte.flavor": "生命源质",
+  "material.tinkers_thinking.chlorophyte.encyclopedia": "食用工具或发射弹射物后，概率消耗5点耐久度回复20%已损失生命值",
+
+  "material.tinkers_thinking.spectre": "幽灵",
+  "material.tinkers_thinking.spectre.flavor": "当然，恶魂是用猫做成的",
+  "material.tinkers_thinking.spectre.encyclopedia": "攻击使目标获得10秒隐身，每级增加20%对隐身生物的伤害",
+
+  "material.tinkers_thinking.shroomite": "蘑菇矿",
+  "material.tinkers_thinking.shroomite.flavor": "蘑菇矿石",
+  "material.tinkers_thinking.shroomite.encyclopedia": "所在位置天空光每降低一级，挖掘速度和拉弓速度增加1.5%",
+
+  "material.tinkers_thinking.alumite": "耐酸铝",
+  "material.tinkers_thinking.alumite.flavor": "",
+  "material.tinkers_thinking.alumite.encyclopedia": "",
+
+  "material.tinkers_thinking.obsidian_bronze": "黑曜石青铜",
+  "material.tinkers_thinking.obsidian_bronze.flavor": "别和工匠青铜搞混了",
+  "material.tinkers_thinking.obsidian_bronze.encyclopedia": "第一级时，有30%概率不消耗耐久度，有5%概率额外消耗1点耐久度",
+
+  "modifier.tinkers_thinking.soft": "柔软",
+  "modifier.tinkers_thinking.soft.flavor": "软弱无力",
+  "modifier.tinkers_thinking.soft.description": "耐久度减少",
+
+  "modifier.tinkers_thinking.prickly": "尖刺",
+  "modifier.tinkers_thinking.prickly.flavor": "尖锐似芒",
+  "modifier.tinkers_thinking.prickly.description": "额外造成随机伤害",
+
+  "modifier.tinkers_thinking.hellish": "炼狱",
+  "modifier.tinkers_thinking.hellish.flavor": "炼狱试炼！",
+  "modifier.tinkers_thinking.hellish.description": "对不免疫火焰伤害的生物造成额外伤害",
+  "modifier.tinkers_thinking.hellish.attack_damage": "炼狱伤害",
+
+  "modifier.tinkers_thinking.repayed": "偿还",
+  "modifier.tinkers_thinking.repayed.flavor": "升级贸易！",
+  "modifier.tinkers_thinking.repayed.description": "获得一个额外的升级槽",
+
+  "modifier.tinkers_thinking.withernic": "灵族",
+  "modifier.tinkers_thinking.withernic.flavor": "统领下界！",
+  "modifier.tinkers_thinking.withernic.description": "这颗来自远古亡灵的头颅，为你的工具带来了第2个能力槽！",
+
+  "modifier.tinkers_thinking.targeted": "针对",
+  "modifier.tinkers_thinking.targeted.flavor": "差异化对待",
+  "modifier.tinkers_thinking.targeted.description": "提升条件伤害",
+
+  "modifier.tinkers_thinking.deposition": "沉积",
+  "modifier.tinkers_thinking.deposition.flavor": "深藏不露",
+  "modifier.tinkers_thinking.deposition.description": "高度越低，耐久度消耗越少",
+  "modifier.tinkers_thinking.deposition.chance": "沉积加固",
+
+  "modifier.tinkers_thinking.cutting": "切割",
+  "modifier.tinkers_thinking.cutting.flavor": "切切切切切切切切切石机",
+  "modifier.tinkers_thinking.cutting.description": "提升对可被切石机切割的方块的采掘速度，例如石头",
+  "modifier.tinkers_thinking.cutting.mining_speed": "切割采掘速度",
+  "modifier.tinkers_thinking.impact": "碰撞",
+  "modifier.tinkers_thinking.impact.flavor": "力量……终将体现",
+  "modifier.tinkers_thinking.impact.description": "箭矢飞行速度下降，但造成的伤害提升",
+
+  "modifier.tinkers_thinking.clay": "黏土",
+  "modifier.tinkers_thinking.clay.flavor": "黏土！",
+  "modifier.tinkers_thinking.clay.description": "黏土！！",
+
+  "modifier.tinkers_thinking.overeat": "暴食",
+  "modifier.tinkers_thinking.overeat.flavor": "开胃小菜！",
+  "modifier.tinkers_thinking.overeat.description": "工具能吃掉黏液覆层和胶状黏液液滴来恢复耐久度",
+
+  "modifier.tinkers_thinking.speedy": "加速",
+  "modifier.tinkers_thinking.speedy.flavor": "加速！",
+  "modifier.tinkers_thinking.speedy.description": "手持工具时加速，包括副手",
+
+  "modifier.tinkers_thinking.overdose": "黏液杀手",
+  "modifier.tinkers_thinking.overdose.flavor": "本是同黏生，相杀何太急",
+  "modifier.tinkers_thinking.overdose.description": "对各种史莱姆造成额外伤害和中毒效果",
+  "modifier.tinkers_thinking.overdose.attack_damage": "对史莱姆伤害",
+
+  "modifier.tinkers_thinking.disarm": "止戈",
+  "modifier.tinkers_thinking.disarm.flavor": "传统功夫，点到为止",
+  "modifier.tinkers_thinking.disarm.description": "使目标暂时无法近程攻击",
+
+  "modifier.tinkers_thinking.stimulation": "激励",
+  "modifier.tinkers_thinking.stimulation.flavor": "激励！",
+  "modifier.tinkers_thinking.stimulation.description": "对目标造成力量效果",
+
+  "modifier.tinkers_thinking.inspired": "鼓舞",
+  "modifier.tinkers_thinking.inspired.flavor": "鼓舞！",
+  "modifier.tinkers_thinking.inspired.description": "对目标造成生命恢复效果",
+
+  "modifier.tinkers_thinking.light_weight": "轻捷",
+  "modifier.tinkers_thinking.light_weight.flavor": "几乎没有阻力！",
+  "modifier.tinkers_thinking.light_weight.description": "提升使用时速度",
+
+  "modifier.tinkers_thinking.symbiotic": "共生",
+  "modifier.tinkers_thinking.symbiotic.flavor": "友谊的治愈力！",
+  "modifier.tinkers_thinking.symbiotic.description": "食用工具或发射弹射物后，工具会消耗耐久度治愈你",
+
+  "modifier.tinkers_thinking.mock": "嘲弄",
+  "modifier.tinkers_thinking.mock.flavor": "懦夫才需要躲藏",
+  "modifier.tinkers_thinking.mock.description": "攻击使目标隐身，对隐身目标造成额外伤害",
+  "modifier.tconstruct.mock.attack_damage": "嘲弄伤害",
+
+  "modifier.tinkers_thinking.shady": "阴生",
+  "modifier.tinkers_thinking.shady.flavor": "阴影无处不在",
+  "modifier.tinkers_thinking.shady.description": "天空光照越低，工具的采掘速度和拉弓速度越快",
+  "modifier.tconstruct.shady.speed": "阴影速度",
+
+  "modifier.tinkers_thinking.duritae": "久脆",
+  "modifier.tinkers_thinking.duritae.flavor": "用起来不像听起来那么好",
+  "modifier.tinkers_thinking.duritae.description": "工具寿命会更长一些...多数时候是这样",
+
+  "modifier.tinkers_thinking.backstabbing": "背刺",
+  "modifier.tinkers_thinking.backstabbing.flavor": "乘人之危……",
+  "modifier.tinkers_thinking.backstabbing.description": "增加从后攻击目标时的伤害",
+
+  "modifier.tinkers_thinking.levitation": "飘浮",
+  "modifier.tinkers_thinking.levitation.flavor": "风行之物",
+  "modifier.tinkers_thinking.levitation.description": "击飞目标",
+
+  "modifier.tinkers_thinking.broad": "阔盾",
+  "modifier.tinkers_thinking.broad.flavor": "滴水不漏！",
+  "modifier.tinkers_thinking.broad.description": "提升格挡角度，不得超过上限（180°）",
+
+  "modifier.tinkers_thinking.sprinting": "冲刺",
+  "modifier.tinkers_thinking.sprinting.flavor": "冲刺！冲刺！",
+  "modifier.tinkers_thinking.sprinting.description": "向水平方向快速位移",
+
+  "effect.tinkers_thinking.overweight": "超重",
+  "effect.tinkers_thinking.weightless": "失重",
+  "item.minecraft.potion.effect.overweight_potion": "超重药水",
+  "item.minecraft.potion.effect.overweight_potion_long": "超重药水",
+  "item.minecraft.potion.effect.overweight_potion_strong": "超重药水",
+  "item.minecraft.splash_potion.effect.overweight_potion": "喷溅型超重药水",
+  "item.minecraft.splash_potion.effect.overweight_potion_long": "喷溅型超重药水",
+  "item.minecraft.splash_potion.effect.overweight_potion_strong": "喷溅型超重药水",
+  "item.minecraft.lingering_potion.effect.overweight_potion": "滞留型超重药水",
+  "item.minecraft.lingering_potion.effect.overweight_potion_long": "滞留型超重药水",
+  "item.minecraft.lingering_potion.effect.overweight_potion_strong": "滞留型超重药水",
+  "item.minecraft.potion.effect.weightless_potion": "失重药水",
+  "item.minecraft.potion.effect.weightless_potion_long": "失重药水",
+  "item.minecraft.potion.effect.weightless_potion_strong": "失重药水",
+  "item.minecraft.splash_potion.effect.weightless_potion": "喷溅型失重药水",
+  "item.minecraft.splash_potion.effect.weightless_potion_long": "喷溅型失重药水",
+  "item.minecraft.splash_potion.effect.weightless_potion_strong": "喷溅型失重药水",
+  "item.minecraft.lingering_potion.effect.weightless_potion": "滞留型失重药水",
+  "item.minecraft.lingering_potion.effect.weightless_potion_long": "滞留型失重药水",
+  "item.minecraft.lingering_potion.effect.weightless_potion_strong": "滞留型失重药水",
+
+  "recipe.tinkers_thinking.modifier.backstabbing.level_2": "“背刺 II”的合成与前一级不同",
+  "recipe.tinkers_thinking.modifier.backstabbing.level_3": "“背刺 III”的合成与前两级不同"
+}

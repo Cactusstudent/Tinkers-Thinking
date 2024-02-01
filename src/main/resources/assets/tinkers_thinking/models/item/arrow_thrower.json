@@ -1,0 +1,36 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "tconstruct:item/base/bow",
+  "textures": {
+    "grip_bottom":      "tinkers_thinking:item/tool/arrow_thrower/grip_bottom_1",
+    "grip_top":         "tinkers_thinking:item/tool/arrow_thrower/grip_top_1",
+    "limb":             "tinkers_thinking:item/tool/arrow_thrower/limb_1",
+    "broken_limb":   "tinkers_thinking:item/tool/arrow_thrower/broken_limb",
+    
+    "large_grip_bottom":      "tinkers_thinking:item/tool/arrow_thrower/large/grip_bottom_1",
+    "large_grip_top":         "tinkers_thinking:item/tool/arrow_thrower/large/grip_top_1",
+    "large_limb":             "tinkers_thinking:item/tool/arrow_thrower/large/limb_1",
+    "large_broken_limb":         "tinkers_thinking:item/tool/arrow_thrower/large/broken_limb"
+  },
+  "large": true,
+  "large_offset": [-3, 13],
+  "parts": [
+    { "name": "grip_bottom", "index": 1 },
+    { "name": "grip_top",    "index": 1 },
+    { "name": "limb",        "index": 2 ,"broken": "broken_limb" }
+  ],
+  "overrides": [
+    {
+      "predicate": { "pulling": 1 },
+      "model": "tinkers_thinking:item/arrow_thrower/pulling_1"
+    },
+    {
+      "predicate": { "pulling": 1, "pull": 0.6 },
+      "model": "tinkers_thinking:item/arrow_thrower/pulling_2"
+    },
+    {
+      "predicate": { "pulling": 1, "pull": 1.0 },
+      "model": "tinkers_thinking:item/arrow_thrower/pulling_3"
+    }
+  ]
+}

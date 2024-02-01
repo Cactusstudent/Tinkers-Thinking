@@ -1,0 +1,339 @@
+{
+  "itemGroup.tinkers_thinking": "Tinkers' Thinking",
+
+  "item.tinkers_thinking.beef_jerky": "Beef Jerky",
+  "item.tinkers_thinking.pork_jerky": "Pork Jerky",
+  "item.tinkers_thinking.mutton_jerky": "Mutton Jerky",
+  "item.tinkers_thinking.chicken_jerky": "Chicken Jerky",
+  "item.tinkers_thinking.rabbit_jerky": "Rabbit Jerky",
+  "item.tinkers_thinking.rotten_flesh_jerky": "Rotten Flesh Jerky",
+  "item.tinkers_thinking.pufferfish_jerky": "Pufferfish Jerky",
+  "item.tinkers_thinking.cod_jerky": "Cod Jerky",
+  "item.tinkers_thinking.salmon_jerky": "salmon Jerky",
+  "item.tinkers_thinking.tropical_fish_jerky": "Tropical Fish Jerky",
+  "item.tinkers_thinking.fried_egg": "Fried Egg",
+
+  "item.tinkers_thinking.clay_crystal": "Clay Crytstal",
+  "item.tinkers_thinking.blood_crystal": "Blood Crytstal",
+  "item.tinkers_thinking.magma_crystal": "Magma Crytstal", 
+  "item.tinkers_thinking.quartz_crystal": "Quartz Crystal",
+  "item.tinkers_thinking.chromatic_crystal": "Chromatic Crytstal", 
+  "item.tinkers_thinking.lightite_reinforcement": "Lightite Reinforcement",
+
+  "item.tinkers_thinking.stone_stick": "Stone Stick",
+  "item.tinkers_thinking.stone_torch": "Stone Torch",
+  "block.tinkers_thinking.stone_torch": "Stone Torch",
+  "item.tinkers_thinking.stone_soul_torch": "Stone Soul Torch",
+  "block.tinkers_thinking.stone_soul_torch": "Stone Soul Torch",
+  "block.tinkers_thinking.stone_ladder": "Stone Ladder",
+
+  "item.tinkers_thinking.silky_jewel": "Silky Jewel",
+  "block.tinkers_thinking.silky_jewel_block": "Block of Silky Jewel",
+  "item.tinkers_thinking.gilded_silky_cloth": "Gilded Silky Cloth",
+
+  "item.tinkers_thinking.earth_slime_drop": "Gelatinous Slime Drop",
+  "item.tinkers_thinking.sky_slime_drop": "Gelatinous Skyslime Drop",
+  "item.tinkers_thinking.ichor_slime_drop": "Gelatinous Ichor Drop",
+  "item.tinkers_thinking.blood_slime_drop": "Gelatinous Blood Drop",
+  "item.tinkers_thinking.magma_slime_drop": "Gelatinous Magma Drop",
+  "item.tinkers_thinking.ender_slime_drop": "Gelatinous Enderslime Drop",
+
+  "fluid.tinkers_thinking.syrup": "Syrup",
+  "item.tinkers_thinking.syrup_bucket": "Syrup Bucket",
+  "fluid.tinkers_thinking.molten_cocoa": "Molten Cocoa",
+  "item.tinkers_thinking.molten_cocoa_bucket": "Molten Cocoa Bucket",
+  "fluid.tinkers_thinking.molten_black_chocolate": "Molten Black Chocolate",
+  "item.tinkers_thinking.molten_black_chocolate_bucket": "Molten Black Chocolate Bucket",
+  "fluid.tinkers_thinking.molten_white_chocolate": "Molten White Chocolate",
+  "item.tinkers_thinking.molten_white_chocolate_bucket": "Molten White Chocolate Bucket",
+  "item.tinkers_thinking.white_chocolate": "White Chocolate",
+  "item.tinkers_thinking.black_chocolate": "Black Chocolate",
+
+  "item.tinkers_thinking.surging_wellspring": "Surging Wellspring",
+
+  "item.tinkers_thinking.tinkers_bronze_ingot": "Tinkers' Bronze Ingot",
+  "item.tinkers_thinking.tinkers_bronze_nugget":"Tinkers' Bronze Nugget",
+  "block.tinkers_thinking.tinkers_bronze_block": "Block of Tinkers' Bronze",
+  "fluid.tinkers_thinking.molten_tinkers_bronze": "Molten Tinkers' Bronze",
+  "item.tinkers_thinking.molten_tinkers_bronze_bucket": "Molten Tinkers' Bronze Bucket",
+
+  "item.tinkers_thinking.ardite_ingot": "Ardite Ingot",
+  "item.tinkers_thinking.ardite_nugget": "Ardite Nugget",
+  "block.tinkers_thinking.ardite_block": "Block of Ardite",
+  "block.tinkers_thinking.ardite_ore": "Nether Ardite Ore",
+  "item.tinkers_thinking.raw_ardite": "Raw Ardite",
+  "block.tinkers_thinking.raw_ardite_block": "Block of Raw Ardite",
+  "fluid.tinkers_thinking.molten_ardite": "Molten Ardite",
+  "item.tinkers_thinking.molten_ardite_bucket": "Molten Ardite Bucket",
+  "block.tinkers_thinking.ardite_platform": "Ardite Platform",
+
+  "item.tinkers_thinking.lightite_compound": "Lightite Compound",
+  "item.tinkers_thinking.lightite_ingot": "Lightite Ingot",
+  "item.tinkers_thinking.lightite_nugget": "Lightite Nugget",
+  "block.tinkers_thinking.lightite_block": "Block of Lightite",
+  "fluid.tinkers_thinking.molten_lightite": "Molten Lightite",
+  "item.tinkers_thinking.molten_lightite_bucket": "Molten Lightite Bucket",
+
+  "block.tinkers_thinking.chlorophyll_ore": "Chlorophyll Ore",
+  "block.tinkers_thinking.deepslate_chlorophyll_ore": "Deepslate Chlorophyll Ore",
+  "item.tinkers_thinking.chlorophyll_a": "Chlorophyll A",
+  "item.tinkers_thinking.chlorophyll_b": "Chlorophyl B",
+  "item.tinkers_thinking.chlorophyte_compound": "Chlorophyte Compound",
+  "item.tinkers_thinking.chlorophyte_ingot": "Chlorophyte Ingot",
+  "item.tinkers_thinking.chlorophyte_nugget": "Chlorophyte Nugget",
+  "block.tinkers_thinking.chlorophyte_block": "Chlorophyte Block",
+  "fluid.tinkers_thinking.molten_chlorophyte": "Molten Chlorophyte",
+  "item.tinkers_thinking.molten_chlorophyte_bucket": "Molten Chlorophyte Bucket",
+
+  "item.tinkers_thinking.spectre_compound": "Spectre Compound",
+  "item.tinkers_thinking.spectre_ingot": "Spectre Ingot",
+  "item.tinkers_thinking.spectre_nugget": "Spectre Nugget",
+  "block.tinkers_thinking.spectre_block": "Spectre Block",
+  "fluid.tinkers_thinking.molten_spectre": "Molten Spectre",
+  "item.tinkers_thinking.molten_spectre_bucket": "Molten Spectre Bucket",
+
+  "item.tinkers_thinking.shroomite_compound": "Shroomite Compound",
+  "item.tinkers_thinking.shroomite_ingot": "Shroomite Ingot",
+  "item.tinkers_thinking.shroomite_nugget": "Shroomite Nugget",
+  "block.tinkers_thinking.shroomite_block": "Shroomite Block",
+  "fluid.tinkers_thinking.molten_shroomite": "Molten Shroomite",
+  "item.tinkers_thinking.molten_shroomite_bucket": "Molten Shroomite Bucket",
+
+  "item.tinkers_thinking.alumite_ingot": "Alumite Ingot",
+  "item.tinkers_thinking.alumite_nugget": "Alumite Nugget",
+  "block.tinkers_thinking.alumite_block": "Alumite Block",
+  "fluid.tinkers_thinking.molten_alumite": "Molten Alumite",
+  "item.tinkers_thinking.molten_alumite_bucket": "Molten Alumite Bucket",
+
+  "item.tinkers_thinking.obsidian_bronze_ingot": "Obsidian Bronze Ingot",
+  "item.tinkers_thinking.obsidian_bronze_nugget": "Obsidian Bronze Nugget",
+  "block.tinkers_thinking.obsidian_bronze_block": "Obsidian Bronze Block",
+  "fluid.tinkers_thinking.molten_obsidian_bronze": "Molten Obsidian Bronze",
+  "item.tinkers_thinking.molten_obsidian_bronze_bucket": "Molten Obsidian Bronze Bucket",
+
+  "block.tinkers_thinking.drying_rack": "Drying Rack(WIP)",
+
+  "item.tinkers_thinking.amethyst_staff": "Amethyst Staff",
+  "item.tinkers_thinking.clay_staff": "Super Magic Clay staff", 
+  "item.tinkers_thinking.magma_staff": "Magma Staff", 
+  "item.tinkers_thinking.blood_staff": "Blood Staff", 
+  "item.tinkers_thinking.quartz_staff": "Quartz Staff",  
+
+  "item.tinkers_thinking.seared_bucket": "Seared Brick Pail",
+  "item.tinkers_thinking.tinkers_bronze_bucket": "Tinkers' Pail",
+  "item.tinkers_thinking.battle_bucket": "Battle Pail",
+
+  "pattern.tinkers_thinking.narrow_blade": "Narrow Blade",
+  "item.tinkers_thinking.narrow_blade": "Narrow Blade",
+  "item.tinkers_thinking.narrow_blade_sand_cast": "Narrow Blade Sand Cast",
+  "item.tinkers_thinking.narrow_blade_red_sand_cast": "Narrow Blade Red Sand Cast",
+  "item.tinkers_thinking.narrow_blade_gold_cast": "Narrow Blade Gold Cast",
+
+  "item.tinkers_thinking.paxel": "Paxel",
+  "item.tinkers_thinking.paxel.description": "Paxel is a versatile mining tool. It is suitable to even almost all kinds of blocks,but does more rocks and logs.\n The villagers must dislike this.",
+
+  "item.tinkers_thinking.knife": "Knife",
+  "item.tinkers_thinking.knife.description": "Knife is a kind of cheap lightweight weapon, is also applicable to cutting ingredients.\n May need to consult a farmer.",
+
+  "item.tinkers_thinking.arrow_thrower": "Arrow Thrower",
+  "item.tinkers_thinking.arrow_thrower.description": "Arrow Thrower is a tool that can throw arrow, it allows doing ranged damage in melee.\n",
+
+  "material.tinkers_thinking.paper": "Paper",
+  "material.tinkers_thinking.paper.flavor": "Cutted by paper is really painful",
+  "material.tinkers_thinking.paper.encyclopedia": "Grants two additional upgrade slots, but durability reduce by 25% per level",
+
+  "material.tinkers_thinking.cactus": "Cactus",
+  "material.tinkers_thinking.cactus.flavor": "This is not Cactusstudent, and cannot help you translate mods, either",
+  "material.tinkers_thinking.cactus.encyclopedia": "Do 0%~12% melee damage in random",
+
+  "material.tinkers_thinking.prismarine": "Prismarine",
+  "material.tinkers_thinking.prismarine.flavor": "The power of ocean!",
+  "material.tinkers_thinking.prismarine.encyclopedia": "Tool mines faster underwater or in the rain!",
+
+  "material.tinkers_thinking.sponge": "Sponge",
+  "material.tinkers_thinking.sponge.flavor": "Not suitable for use at high temperature",
+  "material.tinkers_thinking.sponge.encyclopedia": "Make target cannot melee for 3 seconds per level",
+
+  "material.tinkers_thinking.netherrack": "Netherrack",
+  "material.tinkers_thinking.netherrack.flavor": "Infinite fire",
+  "material.tinkers_thinking.netherrack.encyclopedia": "Damage boost 1.5 per level to the mobs cannot immune to fire",
+
+  "material.tinkers_thinking.tinkers_bronze": "Tinkers' Bronze",
+  "material.tinkers_thinking.tinkers_bronze.flavor": "Not to be confused with Obsidian Bronze",
+  "material.tinkers_thinking.tinkers_bronze.encyclopedia": "+5 mining speed  per lever when breaking some of blocks that can be cut in the stonecutter, such as stone",
+  "material.tinkers_thinking.tinkers_bronze.ranged":"Arrows have 85% velocity, but deal 130% damage",
+
+  "material.tinkers_thinking.ardite": "Ardite",
+  "material.tinkers_thinking.ardite.flavor": "A missing legend",
+  "material.tinkers_thinking.ardite.encyclopedia": "-0.417% durability cost pre block per level below 128, the maximum is 80%",
+  
+  "material.tinkers_thinking.stewium": "Stewium",
+  "material.tinkers_thinking.stewium.flavor": "Drinking or eating?",
+  "material.tinkers_thinking.stewium.encyclopedia": "Having 15% chance repairing 1 durability while having 33 % chance to cost 1 overslime per second, also can be repair by Gelatinous Slime Drop",
+
+  "material.tinkers_thinking.dusk": "Dusk",
+  "material.tinkers_thinking.dusk.flavor": "Where is my Moonflower?",
+  "material.tinkers_thinking.dusk.encyclopedia": "+2 damage per level when against slimes, and poison them",
+
+  "material.tinkers_thinking.lightite": "Lightite",
+  "material.tinkers_thinking.lightite.flavor": "Lighter than the air",
+  "material.tinkers_thinking.lightite.encyclopedia": "+0.25 using item speed and 5% common speed per level",
+
+  "material.tinkers_thinking.black_chocolate": "Black Chocolate",
+  "material.tinkers_thinking.black_chocolate.flavor": "Dark Oak Trapdoor?",
+  "material.tinkers_thinking.black_chocolate.encyclopedia": "While attacking a target, there has a 25% chance to get Strength III for 6 seconds, cost 5 durability",
+
+  "material.tinkers_thinking.white_chocolate": "White Chocolate",
+  "material.tinkers_thinking.white_chocolate.flavor": "Birch Trapdoor?",
+  "material.tinkers_thinking.white_chocolate.encyclopedia": "While mining a block, there has a 25% chance to get Haste III for 6 seconds, cost 5 durability",
+
+  "material.tinkers_thinking.chlorophyte": "Chlorophyte",
+  "material.tinkers_thinking.chlorophyte.flavor": "Life Essence",
+  "material.tinkers_thinking.chlorophyte.encyclopedia": "After eating tool or launchering arrow,heal 20% lost heart and cost 5 durability",
+ 
+  "material.tinkers_thinking.spectre": "Spectre",
+  "material.tinkers_thinking.spectre.flavor": "Of Course, Ghasts are made from cats",
+  "material.tinkers_thinking.spectre.encyclopedia": "Attack give target Invisibility for 10 seconds, increases the damage of 20% to target that has Invisibility per level",
+
+  "material.tinkers_thinking.shroomite": "Shroomite",
+  "material.tinkers_thinking.shroomite.flavor": "Mushroom Ore",
+  "material.tinkers_thinking.shroomite.encyclopedia": "While the sky light reduce 1 level,increases the mining speed and draw speed of 1.5%",
+
+  "material.tinkers_thinking.alumite": "Alumite",
+  "material.tinkers_thinking.alumite.flavor": "",
+  "material.tinkers_thinking.alumite.encyclopedia": "",
+
+  "material.tinkers_thinking.obsidian_bronze": "Obsidian Bronze",
+  "material.tinkers_thinking.obsidian_bronze.flavor": "Not to be confused with Tinkers' Bronze",
+  "material.tinkers_thinking.obsidian_bronze.encyclopedia": "In the first level,has 30% chance to reduce 1 durability cost,while has 5% chance to add 1 durability cost",
+
+  "modifier.tinkers_thinking.soft": "Soft",
+  "modifier.tinkers_thinking.soft.flavor": "Too Soft to use",
+  "modifier.tinkers_thinking.soft.description": "Durability reduce",
+  
+  "modifier.tinkers_thinking.prickly": "Prickly",
+  "modifier.tinkers_thinking.prickly.flavor": "Pricklily prickly",
+  "modifier.tinkers_thinking.prickly.description": "Do some another melee damage in random",
+
+  "modifier.tinkers_thinking.hellish": "Hellish",
+  "modifier.tinkers_thinking.hellish.flavor": "Hellish test!",
+  "modifier.tinkers_thinking.hellish.description": "Damage boost to the mobs cannot immune to fire",
+  "modifier.tinkers_thinking.hellish.attack_damage": "Hellish Damage",
+
+  "modifier.tinkers_thinking.repayed": "Repayed",
+  "modifier.tinkers_thinking.repayed.flavor": "Pay for upgrade",
+  "modifier.tinkers_thinking.repayed.description": "Repay one of this tool's upgrade slots!",
+
+  "modifier.tinkers_thinking.withernic": "Withernic",
+  "modifier.tinkers_thinking.withernic.flavor": "Conquered the Nether!",
+  "modifier.tinkers_thinking.withernic.description": "The head of the ancient undead allows your tool a second ability slot!",
+
+  "modifier.tinkers_thinking.targeted": "Targeted",
+  "modifier.tinkers_thinking.targeted.flavor": "Targeted Attack",
+  "modifier.tinkers_thinking.targeted.description": "Boost conditional damage",
+
+  "modifier.tinkers_thinking.deposition": "Deposition",
+  "modifier.tinkers_thinking.deposition.flavor": "Hiden in the depths",
+  "modifier.tinkers_thinking.deposition.description": "The lower height is, the less the durability is cost",
+  "modifier.tinkers_thinking.deposition.chance": "Deposition Reinforced",
+
+  "modifier.tinkers_thinking.cutting": "Cutting",
+  "modifier.tinkers_thinking.cutting.flavor": "Stonecucucucucucucucucutter",
+  "modifier.tinkers_thinking.cutting.description": "Your tool breaks some of blocks that can be cut in the stonecutter, such as stone, faster!",
+  "modifier.tinkers_thinking.cutting.mining_speed": "Cutting Mining Speed",
+  "modifier.tinkers_thinking.impact": "Impact",
+  "modifier.tinkers_thinking.impact.flavor": "The strength will come out in the end",
+  "modifier.tinkers_thinking.impact.description": "Arrows fly slower, but do the more damage",
+
+  "modifier.tinkers_thinking.clay": "Clay",
+  "modifier.tinkers_thinking.clay.flavor": "Clay!",
+  "modifier.tinkers_thinking.clay.description": "Clay!!",
+
+  "modifier.tinkers_thinking.overeat": "Overeat",
+  "modifier.tinkers_thinking.overeat.flavor": "Appetizer!",
+  "modifier.tinkers_thinking.overeat.description": "Tool can eat Overslime and Gelatinous Slime Drop to repair itself",
+
+  "modifier.tinkers_thinking.speedy": "Speed Up",
+  "modifier.tinkers_thinking.speedy.flavor": "Speed Up!",
+  "modifier.tinkers_thinking.speedy.description": "Speed up while tool is in mainhand or offhand",
+
+  "modifier.tinkers_thinking.overdose": "Overdose",
+  "modifier.tinkers_thinking.overdose.flavor": "Osmotic pressure!",
+  "modifier.tinkers_thinking.overdose.description": "Tool does bonus damage against slimes, and poison them",
+  "modifier.tinkers_thinking.overdose.attack_damage": "Overdose Damage",
+
+  "modifier.tinkers_thinking.disarm": "Disarm",
+  "modifier.tinkers_thinking.disarm.flavor": "Traditional kungfu, enough is enough",
+  "modifier.tinkers_thinking.disarm.description": "Make target cannot melee for a while",
+
+  "modifier.tinkers_thinking.stimulation": "Stimulation",
+  "modifier.tinkers_thinking.stimulation.flavor": "Stimulation!",
+  "modifier.tinkers_thinking.stimulation.description": "Target will get strength",
+
+  "modifier.tinkers_thinking.inspired": "Inspired",
+  "modifier.tinkers_thinking.inspired.flavor": "Inspired!",
+  "modifier.tinkers_thinking.inspired.description": "Target will get regeneration",
+
+  "modifier.tinkers_thinking.light_weight": "Lightly Speed",
+  "modifier.tinkers_thinking.light_weight.flavor": "Alomst no resistance!",
+  "modifier.tinkers_thinking.light_weight.description": "Boost use item speed",
+
+  "modifier.tinkers_thinking.symbiotic": "Symbiotic",
+  "modifier.tinkers_thinking.symbiotic.flavor": "The Healing Power of Friendship!",
+  "modifier.tinkers_thinking.symbiotic.description": "After eating tool or launchering arrow,tool can use durability to heal you",
+  "modifier.tinkers_thinking.symbiotic.chance": "Symbiotic Chance",
+
+  "modifier.tinkers_thinking.mock": "Mock",
+  "modifier.tinkers_thinking.mock.flavor": "A coward need to hide",
+  "modifier.tinkers_thinking.mock.description": "Attack give target Invisibility, increases the damage to target that has Invisibility",
+  "modifier.tconstruct.tracking.mock_damage": "Mock Damage",
+
+  "modifier.tinkers_thinking.shady": "Shady",
+  "modifier.tinkers_thinking.shady.flavor":"Shade is everywhere",
+  "modifier.tinkers_thinking.shady.description":"The daker sky light in here is,the faster mining speed and draw speed is",
+  "modifier.tconstruct.shady.speed": "Shady Speed",
+
+  "modifier.tinkers_thinking.duritae": "Duritae",
+  "modifier.tinkers_thinking.duritae.flavor": "Doesn't taste as good as it sounds.",
+  "modifier.tinkers_thinking.duritae.description": "Your tool lasts longer ...most of the time.",
+
+  "modifier.tinkers_thinking.backstabbing": "Backstabbing",
+  "modifier.tinkers_thinking.backstabbing.flavor": "Make use of the precarious situation...",
+  "modifier.tinkers_thinking.backstabbing.description": "Amplifies damage when striking a target from behind",
+
+  "modifier.tinkers_thinking.levitation": "Levitation",
+  "modifier.tinkers_thinking.levitation.flavor": "The thing that walked on the wind",
+  "modifier.tinkers_thinking.levitation.description": "Blow above target",
+
+  "modifier.tinkers_thinking.broad": "Broad",
+  "modifier.tinkers_thinking.broad.flavor": "Tell a story without missing a single circumstance!",
+  "modifier.tinkers_thinking.broad.description": "Boost block angle, cannot above maximum (180°).",
+
+  "modifier.tinkers_thinking.sprinting": "Sprinting",
+  "modifier.tinkers_thinking.sprinting.flavor": "Sprinting! Sprinting!",
+  "modifier.tinkers_thinking.sprinting.description": "",
+
+  "effect.tinkers_thinking.overweight": "Overweight",
+  "effect.tinkers_thinking.weightless": "Weightless",
+  "item.minecraft.potion.effect.overweight_potion": "Potion of Overweight",
+  "item.minecraft.potion.effect.overweight_potion_long": "Potion of Overweight",
+  "item.minecraft.potion.effect.overweight_potion_strong": "Potion of Overweight",
+  "item.minecraft.splash_potion.effect.overweight_potion": "Splash Potion of Overweight",
+  "item.minecraft.splash_potion.effect.overweight_potion_long": "Splash Potion of Overweight",
+  "item.minecraft.splash_potion.effect.overweight_potion_strong": "Splash Potion of Overweight",
+  "item.minecraft.lingering_potion.effect.overweight_potion": "Lingering Potion of Overweight",
+  "item.minecraft.lingering_potion.effect.overweight_potion_long": "Lingering Potion of Overweight",
+  "item.minecraft.lingering_potion.effect.overweight_potion_strong": "Lingering Potion of Overweight",
+  "item.minecraft.potion.effect.weightless_potion": "Potion of Weightless",
+  "item.minecraft.potion.effect.weightless_potion_long": "Potion of Weightless",
+  "item.minecraft.potion.effect.weightless_potion_strong": "Potion of Weightless",
+  "item.minecraft.splash_potion.effect.weightless_potion": "Splash Potion of Weightless",
+  "item.minecraft.splash_potion.effect.weightless_potion_long": "Splash Potion of Weightless",
+  "item.minecraft.splash_potion.effect.weightless_potion_strong": "Splash Potion of Weightless",
+  "item.minecraft.lingering_potion.effect.weightless_potion": "Lingering Potion of Weightless",
+  "item.minecraft.lingering_potion.effect.weightless_potion_long": "Lingering Potion of Weightless",
+  "item.minecraft.lingering_potion.effect.weightless_potion_strong": "Lingering Potion of Weightless",
+
+  "recipe.tinkers_thinking.modifier.backstabbing.level_2": "Backstabbing II requires a different recipe for the first level",
+  "recipe.tinkers_thinking.modifier.backstabbing.level_3": "Backstabbing III requires a different recipe for the first level"
+}

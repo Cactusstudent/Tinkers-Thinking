@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#tinkers_thinking:chlorophyll_ore_spawn",
+  "features": "tinkers_thinking:chlorophyll_ore_placed",
+  "step": "underground_ores"
+}
