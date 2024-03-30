@@ -1,13 +1,12 @@
 package com.creeping_creeper.tinkers_thinking;
 
-import com.creeping_creeper.tinkers_thinking.base.block.entity.ModBlockEntities;
-import com.creeping_creeper.tinkers_thinking.base.networking.ModMessages;
+import com.creeping_creeper.tinkers_thinking.common.networking.ModMessages;
 import com.creeping_creeper.tinkers_thinking.common.recipes.ModBrewingRecipe;
 import com.creeping_creeper.tinkers_thinking.common.recipes.ModRecipes;
-import com.creeping_creeper.tinkers_thinking.common.things.ModBlocks;
-import com.creeping_creeper.tinkers_thinking.common.things.ModEffects;
-import com.creeping_creeper.tinkers_thinking.common.things.ModItems;
-import com.creeping_creeper.tinkers_thinking.common.things.ModPotions;
+import com.creeping_creeper.tinkers_thinking.common.things.*;
+import com.creeping_creeper.tinkers_thinking.common.things.block.entity.ModBlockEntities;
+import com.creeping_creeper.tinkers_thinking.common.things.fluid.ModFluidTypes;
+import com.creeping_creeper.tinkers_thinking.common.tinkering.modifer.ModModifiers;
 import com.creeping_creeper.tinkers_thinking.common.world.ModConfiguredFeatures;
 import com.creeping_creeper.tinkers_thinking.common.world.ModPlacedFeatures;
 import com.mojang.logging.LogUtils;
@@ -38,12 +37,15 @@ public class TinkersThinking
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.registers(modEventBus);
         ModBlocks.registers(modEventBus);
+        ModFluids.registers(modEventBus);
+        ModFluidTypes.registers(modEventBus);
         ModEffects.registers(modEventBus);
         ModPotions.registers(modEventBus);
         ModConfiguredFeatures.registers(modEventBus);
         ModPlacedFeatures.registers(modEventBus);
         ModBlockEntities.registers(modEventBus);
         ModRecipes.registers(modEventBus);
+        ModModifiers.regeisters(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
     }

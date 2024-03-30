@@ -1,6 +1,7 @@
 {
     "parent": "forge:item/bucket_drip",
-    "loader": "forge:bucket",
-    "fluid": "tinkers_thinking:molten_black_chocolate"
+    "flip_gas": false,
+    "fluid": "tinkers_thinking:molten_black_chocolate",
+    "loader": "tconstruct:fluid_container"
 }
 

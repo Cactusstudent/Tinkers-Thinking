@@ -1,4 +1,4 @@
-package com.creeping_creeper.tinkers_thinking.base.block.entity;
+package com.creeping_creeper.tinkers_thinking.common.things.block.entity;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.items.IItemHandlerModifiable;

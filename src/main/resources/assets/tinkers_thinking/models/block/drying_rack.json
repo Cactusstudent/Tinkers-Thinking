@@ -6,6 +6,7 @@
 		"3": "tinkers_thinking:block/drying_rack_side",
 		"particle": "tinkers_thinking:block/drying_rack"
 	},
+  "retextured": [ "2", "3" ],
 	"elements": [
 		{
 			"from": [0, 12, 6],

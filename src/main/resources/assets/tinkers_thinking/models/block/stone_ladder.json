@@ -1,6 +1,5 @@
 {
     "ambientocclusion": false,
- "render_type": "cutout",
     "textures": {
         "particle": "tinkers_thinking:block/stone_ladder",
         "texture": "tinkers_thinking:block/stone_ladder"

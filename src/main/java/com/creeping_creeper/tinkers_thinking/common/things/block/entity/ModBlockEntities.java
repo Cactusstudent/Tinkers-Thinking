@@ -1,4 +1,4 @@
-package com.creeping_creeper.tinkers_thinking.base.block.entity;
+package com.creeping_creeper.tinkers_thinking.common.things.block.entity;
 
 import com.creeping_creeper.tinkers_thinking.TinkersThinking;
 import com.creeping_creeper.tinkers_thinking.common.things.ModBlocks;

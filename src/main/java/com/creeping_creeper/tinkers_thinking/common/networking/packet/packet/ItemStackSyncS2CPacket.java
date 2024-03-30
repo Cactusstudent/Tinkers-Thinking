@@ -1,5 +1,5 @@
-package com.creeping_creeper.tinkers_thinking.base.networking.packet.packet;
-import com.creeping_creeper.tinkers_thinking.base.block.entity.DryingRackBlockEntity;
+package com.creeping_creeper.tinkers_thinking.common.networking.packet.packet;
+import com.creeping_creeper.tinkers_thinking.common.things.block.entity.DryingRackBlockEntity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
@@ -41,7 +41,7 @@ public class ItemStackSyncS2CPacket {
     public boolean handle(Supplier<NetworkEvent.Context> supplier){
         NetworkEvent.Context context = supplier.get();
         context.enqueueWork(()->{
-            if(Minecraft.getInstance().level.getBlockEntity(pos) instanceof DryingRackBlockEntity blockEntity){
+            if (Minecraft.getInstance().level != null && Minecraft.getInstance().level.getBlockEntity(pos) instanceof DryingRackBlockEntity blockEntity) {
                 blockEntity.setHandler(this.itemStackHandler);
             }
         });

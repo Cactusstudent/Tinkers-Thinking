@@ -1,8 +1,8 @@
-package com.creeping_creeper.tinkers_thinking.base.event;
+package com.creeping_creeper.tinkers_thinking.common.event;
 
 import com.creeping_creeper.tinkers_thinking.TinkersThinking;
-import com.creeping_creeper.tinkers_thinking.base.block.entity.ModBlockEntities;
-import com.creeping_creeper.tinkers_thinking.base.block.renderer.DryingRackBlockEntityRenderer;
+import com.creeping_creeper.tinkers_thinking.common.things.block.entity.ModBlockEntities;
+import com.creeping_creeper.tinkers_thinking.common.things.block.renderer.DryingRackBlockEntityRenderer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

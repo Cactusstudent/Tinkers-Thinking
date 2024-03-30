@@ -1,6 +1,6 @@
-package com.creeping_creeper.tinkers_thinking.base.networking;
+package com.creeping_creeper.tinkers_thinking.common.networking;
 import com.creeping_creeper.tinkers_thinking.TinkersThinking;
-import com.creeping_creeper.tinkers_thinking.base.networking.packet.packet.ItemStackSyncS2CPacket;
+import com.creeping_creeper.tinkers_thinking.common.networking.packet.packet.ItemStackSyncS2CPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkDirection;

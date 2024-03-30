@@ -1,9 +1,9 @@
-package com.creeping_creeper.tinkers_thinking.base.block.entity;
+package com.creeping_creeper.tinkers_thinking.common.things.block.entity;
 
-import com.creeping_creeper.tinkers_thinking.base.block.DryingRackBlock;
-import com.creeping_creeper.tinkers_thinking.base.networking.ModMessages;
-import com.creeping_creeper.tinkers_thinking.base.networking.packet.packet.ItemStackSyncS2CPacket;
+import com.creeping_creeper.tinkers_thinking.common.networking.ModMessages;
+import com.creeping_creeper.tinkers_thinking.common.networking.packet.packet.ItemStackSyncS2CPacket;
 import com.creeping_creeper.tinkers_thinking.common.recipes.DryingRackRecipes;
+import com.creeping_creeper.tinkers_thinking.common.things.block.DryingRackBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -26,17 +26,9 @@ import java.util.Map;
 import java.util.Optional;
 
 public class DryingRackBlockEntity extends BlockEntity {
-    private final ItemStackHandler itemStackHandler = new ItemStackHandler(2) {
-        // 当槽位的内容改变时候，设置改变
-        @Override
-        protected void onContentsChanged(int slot) {
-            onLoad();
-            setChanged();
-            if(!level.isClientSide){
-                ModMessages.sendToClients(new ItemStackSyncS2CPacket(this,worldPosition));
-            }
-        }
 
+    public  final ItemStackHandler itemStackHandler = new ItemStackHandler(2) {
+        // 当槽位的内容改变时候，设置改变
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
             return switch (slot) {
@@ -46,6 +38,7 @@ public class DryingRackBlockEntity extends BlockEntity {
             };
         }
     };
+
     // 设置itemstacks
     private final Map<Direction, LazyOptional<WrappedHandler>> directionWrappedHandlerMap =
                 Map.of(Direction.DOWN, LazyOptional.of(() -> new WrappedHandler(itemStackHandler, (i) -> i == 1,
@@ -64,7 +57,7 @@ public class DryingRackBlockEntity extends BlockEntity {
     protected final ContainerData data;
     // 合成进度追踪
     private int progress = 0;
-    private int maxProgress = 78;
+    private int maxProgress = 2998;
     private static boolean canInsertItemToOutputSlot(SimpleContainer inventory) {
         return  inventory.getItem(1).isEmpty();
     }
@@ -108,7 +101,7 @@ public class DryingRackBlockEntity extends BlockEntity {
                 return lazyItemHandler.cast();
             }
             if (directionWrappedHandlerMap.containsKey(side)) {
-                if (this.itemStackHandler.getStackInSlot(0).isEmpty()&&this.itemStackHandler.getStackInSlot(1).isEmpty()) {
+                if (itemStackHandler.getStackInSlot(0).isEmpty()&& itemStackHandler.getStackInSlot(1).isEmpty()) {
                     Direction LocalDir = this.getBlockState().getValue(DryingRackBlock.FACING);
                     if (side == Direction.UP || side == Direction.DOWN) {
                         return directionWrappedHandlerMap.get(side).cast();
@@ -144,11 +137,11 @@ public class DryingRackBlockEntity extends BlockEntity {
         nbt.put("inventory",itemStackHandler.serializeNBT());
         nbt.putInt("drying_rack.progress",this.progress);
         super.saveAdditional(nbt);
-    }
 
+    }
     // 读取实体的数据
     @Override
-    public void load(CompoundTag nbt) {
+    public void load(@NotNull CompoundTag nbt) {
         super.load(nbt);
         itemStackHandler.deserializeNBT(nbt.getCompound("inventory"));
         this.progress = nbt.getInt("drying_rack.progress");
@@ -169,9 +162,7 @@ public class DryingRackBlockEntity extends BlockEntity {
     public static void tick(Level level, BlockPos blockPos, BlockState state, DryingRackBlockEntity entity) {
         if (level.isClientSide){
             return;
-        }
-        //  仅仅在服务器端运行
-        // 判断是否能够合成
+        }else   ModMessages.sendToClients(new ItemStackSyncS2CPacket(entity.itemStackHandler, blockPos));
         if(hasRecipe(entity)){
             // 进度增加
             entity.progress ++ ;
@@ -196,7 +187,7 @@ public class DryingRackBlockEntity extends BlockEntity {
         Level level = entity.level;
         SimpleContainer inventory = new SimpleContainer(entity.itemStackHandler.getSlots());
         for(int i=0;i < entity.itemStackHandler.getSlots() ; i++){
-            inventory.setItem(i,entity.itemStackHandler.getStackInSlot(i));
+            inventory.setItem(i, entity.itemStackHandler.getStackInSlot(i));
         }
         // 获得当前的recipe
         Optional<DryingRackRecipes> recipe = Optional.empty();
@@ -215,10 +206,10 @@ public class DryingRackBlockEntity extends BlockEntity {
     private static boolean hasRecipe(DryingRackBlockEntity entity) {
         Level level = entity.level;
         SimpleContainer inventory = new SimpleContainer(entity.itemStackHandler.getSlots());
-        for(int i=0;i<entity.itemStackHandler.getSlots();i++){
-            inventory.setItem(i,entity.itemStackHandler.getStackInSlot(i));
+        for(int i = 0; i< entity.itemStackHandler.getSlots(); i++){
+            inventory.setItem(i, entity.itemStackHandler.getStackInSlot(i));
         }
-        Optional<DryingRackRecipes> recipe = null;
+        Optional<DryingRackRecipes> recipe = Optional.empty();
         if (level != null) {
             recipe = level.getRecipeManager().getRecipeFor(DryingRackRecipes.Type
                     .INSTANCE,inventory,level);

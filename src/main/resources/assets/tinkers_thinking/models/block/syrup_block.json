@@ -1,4 +1,4 @@
 {
-  "textures": { "particle": "tconstruct:block/fluid/stew/still" }
+  "textures": { "particle": "tconstruct:fluid/food/stew/still" }
 }
 

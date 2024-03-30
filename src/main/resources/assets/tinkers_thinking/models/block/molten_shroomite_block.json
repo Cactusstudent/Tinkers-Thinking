@@ -1,4 +1,4 @@
 {
-  "textures": { "particle": "tconstruct:block/fluid/molten/still" }
+  "textures": { "particle": "tconstruct:fluid/molten/still" }
 }
 
