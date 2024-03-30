@@ -1,0 +1,29 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "tag": "forge:wither_bones"
+    },
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "tag": "forge:wither_bones"
+    },
+    {
+      "item": "minecraft:wither_rose"
+    },
+    {
+      "item": "minecraft:wither_rose"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "allow_crystal": true,
+  "result": {
+    "name": "tinkers_thinking:withernic",
+    "level": 1
+  },
+  "max_level": 1
+}

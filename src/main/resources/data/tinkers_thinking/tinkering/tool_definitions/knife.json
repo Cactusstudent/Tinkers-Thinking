@@ -1,0 +1,52 @@
+{
+  "actions": [
+    "sword_dig"
+  ],
+  "attack": {
+    "type": "tconstruct:sweep",
+    "range": 1.0
+  },
+  "harvest": {
+    "logic": {
+      "type": "tconstruct:effective_tag",
+      "effective": "tinkers_thinking:mineable/knife"
+    }
+  },
+  "parts": [
+    {
+      "item": "tinkers_thinking:narrow_blade"
+    },
+    {
+      "item": "tconstruct:tool_handle"
+    },
+   {
+      "item": "tinkers_thinking:narrow_blade"
+    }
+
+  ],
+  "slots": {
+    "abilities": 1,
+    "upgrades": 3
+  },
+  "stats": {
+    "base": {
+      "tconstruct:attack_damage": 3.5,
+      "tconstruct:attack_speed": 1.8
+    },
+    "multipliers": {
+      "tconstruct:attack_damage": 0.8,
+      "tconstruct:durability": 0.8,
+      "tconstruct:mining_speed": 1.2
+    }
+  },
+  "traits": [
+    {
+      "level": 1,
+      "name": "tconstruct:silky_shears"
+    },
+    {
+      "name": "tconstruct:antiaquatic",
+      "level": 1
+    }
+  ]
+}

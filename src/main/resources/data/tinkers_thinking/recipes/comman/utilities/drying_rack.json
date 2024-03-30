@@ -1,0 +1,23 @@
+{
+  "type": "mantle:crafting_shaped_retextured",
+  "key": {
+    "p": {
+      "item": "tconstruct:pattern"
+    },
+    "w": {
+      "tag": "tconstruct:planklike"
+    }
+  },
+  "match_all": true,
+  "pattern": [
+    "   ",
+    "wpw",
+    "   "
+  ],
+  "result": {
+    "item": "tinkers_thinking:drying_rack"
+  },
+  "texture": {
+    "tag": "tconstruct:planklike"
+  }
+}

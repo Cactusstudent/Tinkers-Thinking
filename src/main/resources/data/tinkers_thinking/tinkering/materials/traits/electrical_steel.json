@@ -1,0 +1,16 @@
+{
+  "perStat": {
+    "tconstruct:ranged": [
+      {
+        "name": "tinkers_thinking:repulsive",
+        "level": 1
+      }
+    ],
+    "tconstruct:melee_harvest": [
+      {
+        "name": "tinkers_thinking:repulsive",
+        "level": 1
+      }
+    ]
+  }
+}

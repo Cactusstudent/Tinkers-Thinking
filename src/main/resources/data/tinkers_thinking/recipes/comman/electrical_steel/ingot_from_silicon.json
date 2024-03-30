@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": { "tag": "forge:silicon" },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "forge:molten_iron",
+    "amount": 90
+  },
+  "result": "tinkers_thinking:electrical_steel_ingot",
+  "cooling_time": 60
+}

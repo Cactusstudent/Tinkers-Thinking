@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "base": {
+    }
+  },
+  "slots": {
+    "upgrades": 0
+  },
+  "traits": [
+    {
+      "name": "tconstruct:bucketing",
+      "level": 1
+    },
+   {
+      "name": "tconstruct:tank",
+      "level": 3
+    }
+  ],
+  "harvest": {
+    "aoe": {
+      "type": "tconstruct:circle",
+      "diameter": 1,
+      "3D": false
+    }
+  },
+  "modules": {
+    "tconstruct:tool_interaction": {
+      "type": "tconstruct:dual_option_interaction"
+    }
+  }
+}

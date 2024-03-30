@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:swappable_modifier",
+  "inputs": [
+    {
+      "tag": "forge:ingots/tinkers_bronze"
+    },
+    {
+      "tag": "forge:ingots/tinkers_bronze"
+    },
+    {
+      "tag": "forge:ingots/tinkers_bronze"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/embellishment/metal"
+  },
+  "allow_crystal": false,
+  "result": {
+    "name": "tconstruct:embellishment",
+    "value": "tinkers_thinking:tinkers_bronze"
+  }
+}
