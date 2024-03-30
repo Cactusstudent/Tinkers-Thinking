@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-                "render_type": "cutout_mipped",
+	"render_type": "cutout_mipped",
 	"textures": {
 		"2": "tinkers_thinking:block/drying_rack",
 		"3": "tinkers_thinking:block/drying_rack_side",
@@ -21,5 +21,5 @@
 			}
 		}
 	]
-	}
 }
+
