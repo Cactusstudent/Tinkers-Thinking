@@ -22,7 +22,7 @@ public class PricklyModifier extends Modifier implements MeleeDamageModifierHook
     public float getMeleeDamage(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float baseDamage, float damage) {
         LivingEntity target = context.getLivingTarget();
         if (target != null && target.isAlive() && !context.isExtraAttack() && context.isFullyCharged() ) {
-            float bonus = (float) (RANDOM.nextFloat()*0.15*modifier.getLevel());
+            float bonus = (float) (RANDOM.nextFloat()*0.12*modifier.getLevel());
             damage *=  1.0f+bonus;
         }
         return damage;

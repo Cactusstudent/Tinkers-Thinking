@@ -10,6 +10,7 @@
     "#forge:ingots/spectre",
     "#forge:ingots/shroomite",
     "#forge:ingots/obsidian_bronze",
-    "#forge:ingots/electrical_steel"
+    "#forge:ingots/electrical_steel",
+    "#forge:ingots/echo_bronze"
   ]
 }

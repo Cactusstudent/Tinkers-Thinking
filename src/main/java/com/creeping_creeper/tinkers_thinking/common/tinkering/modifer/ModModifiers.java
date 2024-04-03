@@ -13,11 +13,14 @@ public class ModModifiers {
     public static final StaticModifier<Modifier> Inspired = MODIFIERS.register("inspired", InspiredModifier::new);
     public static final StaticModifier<Modifier> Mock = MODIFIERS.register("mock", MockModifier::new);
     public static final StaticModifier<Modifier> Shady = MODIFIERS.register("shady", ShadyModifier::new);
-    public static final StaticModifier<Modifier> Overeat = MODIFIERS.register("overeat",OvereatModifier::new);
     public static final StaticModifier<Modifier> Repulsive = MODIFIERS.register("repulsive",RepulsiveModifier::new);
     public static final StaticModifier<Modifier> Prickly = MODIFIERS.register("prickly",PricklyModifier::new);
     public static final StaticModifier<Modifier> Sprinting = MODIFIERS.register("sprinting",SprintingModifier::new);
     public static final StaticModifier<Modifier> Duritae = MODIFIERS.register("duritae",SprintingModifier::new);
+    public static final StaticModifier<Modifier> Overeat = MODIFIERS.register("overeat",OvereatModifier::new);
+    public static final StaticModifier<Modifier> Overbearing = MODIFIERS.register("overbearing",OverbearingModifier::new);
+    public static final StaticModifier<Modifier> SculkCatalyse = MODIFIERS.register("sculk_catalyse",SculkCatalyseModifier::new);
+    public static final StaticModifier<Modifier> SculkBoost = MODIFIERS.register("sculk_boost",SculkBoostModifier::new);
     public static void regeisters(IEventBus eventBus) {
         MODIFIERS.register(eventBus);}
 }

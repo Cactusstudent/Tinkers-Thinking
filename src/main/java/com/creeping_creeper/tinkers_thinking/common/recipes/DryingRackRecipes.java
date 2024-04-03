@@ -108,9 +108,7 @@ public class DryingRackRecipes implements Recipe<SimpleContainer> {
         @Override
         public @Nullable DryingRackRecipes fromNetwork(@NotNull ResourceLocation pRecipeId, FriendlyByteBuf pBuffer) {
             NonNullList<Ingredient> inputs = NonNullList.withSize(pBuffer.readInt(),Ingredient.EMPTY);
-            for (int i=0;i < inputs.size();i++){
-                inputs.set(i,Ingredient.fromNetwork(pBuffer));
-            }
+            inputs.replaceAll(ignored -> Ingredient.fromNetwork(pBuffer));
             ItemStack output = pBuffer.readItem();
             return new DryingRackRecipes(pRecipeId,output,inputs);
         }

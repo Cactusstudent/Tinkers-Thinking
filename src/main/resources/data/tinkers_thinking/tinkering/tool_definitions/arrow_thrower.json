@@ -16,7 +16,7 @@
     "multipliers": {
       "tconstruct:draw_speed": 10.00,
       "tconstruct:durability": 1.25,
-      "tconstruct:projectile_damage": 0.50 
+      "tconstruct:projectile_damage": 2.50
   
     }
   },

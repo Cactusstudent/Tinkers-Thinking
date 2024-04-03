@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "tinkers_thinking:item/ore/ardite_nugget"
+        "layer0": "tinkers_thinking:item/ardite/ardite_nugget"
     }
 }

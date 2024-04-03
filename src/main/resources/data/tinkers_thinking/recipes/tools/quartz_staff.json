@@ -1,22 +1,8 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "AWA",
-    " I ",
-    " W "
-  ],
-  "key": {
-    "A": {
-      "tag": "forge:gems/quartz"
-    },
-    "W": {
-      "tag": "forge:bones"
-    },
-    "I": {
-      "tag": "forge:ingots/gold"
-    }
-  },
-  "result": {
-    "item": "tinkers_thinking:quartz_staff"
-  }
+  "type": "tconstruct:tool_building",
+  "extra_requirements": [
+  { "tag": "forge:gems/quartz" },
+  { "tag": "forge:gems/quartz" }
+],
+  "result": "tinkers_thinking:quartz_staff"
 }

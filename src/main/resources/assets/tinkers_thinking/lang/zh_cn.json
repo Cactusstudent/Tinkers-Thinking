@@ -14,7 +14,6 @@
   "item.tinkers_thinking.fried_egg": "煎蛋",
 
   "item.tinkers_thinking.clay_crystal": "黏土水晶",
-  "item.tinkers_thinking.blood_crystal": "黏血水晶",
   "item.tinkers_thinking.magma_crystal": "岩浆水晶",
   "item.tinkers_thinking.quartz_crystal": "石英水晶",
   "item.tinkers_thinking.chromatic_crystal": "异彩水晶", 
@@ -34,7 +33,6 @@
   "item.tinkers_thinking.earth_slime_drop": "胶状黏液液滴",
   "item.tinkers_thinking.sky_slime_drop": "胶状碧空黏液液滴",
   "item.tinkers_thinking.ichor_slime_drop": "胶状灵浆液滴",
-  "item.tinkers_thinking.blood_slime_drop": "胶状黏血液滴",
   "item.tinkers_thinking.magma_slime_drop": "胶状岩浆液滴",
   "item.tinkers_thinking.ender_slime_drop": "胶状末影黏液液滴",
 
@@ -68,6 +66,7 @@
   "block.tinkers_thinking.ardite_platform": "阿迪特平台",
 
   "block.tinkers_thinking.drying_rack": "晾干架（未完成）",
+  "jei.tconstruct.drying_rack": "晾干架（未完成）",
 
   "item.tinkers_thinking.lightite_compound": "轻悠化合物",
   "item.tinkers_thinking.lightite_ingot": "轻悠锭",
@@ -112,6 +111,14 @@
   "block.tinkers_thinking.electrical_steel_block": "电工钢块",
   "fluid_type.tinkers_thinking.molten_electrical_steel": "熔融电工钢",
   "item.tinkers_thinking.molten_electrical_steel_bucket": "熔融电工钢桶",
+
+  "item.tinkers_thinking.echo_bronze_ingot": "回响青铜锭",
+  "item.tinkers_thinking.echo_bronze_nugget": "回响青铜粒",
+  "block.tinkers_thinking.echo_bronze_block": "回响青铜块",
+  "fluid_type.tinkers_thinking.molten_echo_bronze": "熔融回响青铜",
+  "item.tinkers_thinking.molten_echo_bronze_bucket": "熔融回响青铜桶",
+  "fluid_type.tinkers_thinking.molten_echo": "熔融回响",
+  "item.tinkers_thinking.molten_echo_bucket": "熔融回响桶",
 
   "item.tinkers_thinking.clay_staff": "超级黏土魔杖", 
   "item.tinkers_thinking.magma_staff": "岩浆手杖", 
@@ -198,12 +205,16 @@
   "material.tinkers_thinking.shroomite.encyclopedia": "所在位置天空光每降低一级，挖掘速度和初速度增加1.5%",
 
   "material.tinkers_thinking.obsidian_bronze": "黑曜石青铜",
-  "material.tinkers_thinking.obsidian_bronze.flavor": "别和工匠青铜搞混了",
+  "material.tinkers_thinking.obsidian_bronze.flavor": "别和回响青铜搞混了",
   "material.tinkers_thinking.obsidian_bronze.encyclopedia": "第一级时，有30%概率不消耗耐久度，有5%概率额外消耗1点耐久度",
 
   "material.tinkers_thinking.electrical_steel": "电工钢",
   "material.tinkers_thinking.electrical_steel.flavor": "将错就错真的好吗？",
   "material.tinkers_thinking.electrical_steel.encyclopedia": "",
+
+  "material.tinkers_thinking.echo_bronze": "回响青铜",
+  "material.tinkers_thinking.echo_bronze.flavor": "别和工匠青铜搞混了",
+  "material.tinkers_thinking.echo_bronze.encyclopedia": "",
 
   "modifier.tinkers_thinking.soft": "柔软",
   "modifier.tinkers_thinking.soft.flavor": "软弱无力",
@@ -299,6 +310,14 @@
   "modifier.tinkers_thinking.repulsive.flavor": "排除异己",
   "modifier.tinkers_thinking.repulsive.description": "",
 
+  "modifier.tinkers_thinking.sculk_catalyse": "幽匿催生",
+  "modifier.tinkers_thinking.sculk_catalyse.flavor": "",
+  "modifier.tinkers_thinking.sculk_catalyse.description": "",
+
+  "modifier.tinkers_thinking.sculk_boost": "幽匿激发",
+  "modifier.tinkers_thinking.sculk_boost.flavor": "",
+  "modifier.tinkers_thinking.sculk_boost.description": "",
+
   "modifier.tinkers_thinking.backstabbing": "背刺",
   "modifier.tinkers_thinking.backstabbing.flavor": "乘人之危……",
   "modifier.tinkers_thinking.backstabbing.description": "增加从后攻击目标时的伤害",
@@ -313,12 +332,25 @@
 
   "effect.tinkers_thinking.overweight": "超重",
   "effect.tinkers_thinking.weightless": "失重",
+  "effect.tinkers_thinking.sculk_power": "幽匿能量",
   "item.minecraft.potion.effect.overweight_potion": "超重药水",
+  "item.minecraft.potion.effect.overweight_potion_strong": "超重药水",
+  "item.minecraft.potion.effect.overweight_potion_long": "超重药水",
   "item.minecraft.splash_potion.effect.overweight_potion": "喷溅型超重药水",
+  "item.minecraft.splash_potion.effect.overweight_potion_strong": "喷溅型超重药水",
+  "item.minecraft.splash_potion.effect.overweight_potion_long": "喷溅型超重药水",
   "item.minecraft.lingering_potion.effect.overweight_potion": "滞留型超重药水",
+  "item.minecraft.lingering_potion.effect.overweight_potion_strong": "滞留型超重药水",
+  "item.minecraft.lingering_potion.effect.overweight_potion_long": "滞留型超重药水",
   "item.minecraft.potion.effect.weightless_potion": "失重药水",
+  "item.minecraft.potion.effect.weightless_potion_strong": "失重药水",
+  "item.minecraft.potion.effect.weightless_potion_long": "失重药水",
   "item.minecraft.splash_potion.effect.weightless_potion": "喷溅型失重药水",
+  "item.minecraft.splash_potion.effect.weightless_potion_strong": "喷溅型失重药水",
+  "item.minecraft.splash_potion.effect.weightless_potion_long": "喷溅型失重药水",
   "item.minecraft.lingering_potion.effect.weightless_potion": "滞留型失重药水",
+  "item.minecraft.lingering_potion.effect.weightless_potion_strong": "滞留型失重药水",
+  "item.minecraft.lingering_potion.effect.weightless_potion_long": "滞留型失重药水",
 
   "recipe.tinkers_thinking.modifier.backstabbing.level_2": "“背刺 II”的合成与前一级不同",
   "recipe.tinkers_thinking.modifier.backstabbing.level_3": "“背刺 III”的合成与前两级不同"

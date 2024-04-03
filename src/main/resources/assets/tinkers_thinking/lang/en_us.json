@@ -14,7 +14,6 @@
   "item.tinkers_thinking.fried_egg": "Fried Egg",
 
   "item.tinkers_thinking.clay_crystal": "Clay Crytstal",
-  "item.tinkers_thinking.blood_crystal": "Blood Crytstal",
   "item.tinkers_thinking.magma_crystal": "Magma Crytstal", 
   "item.tinkers_thinking.quartz_crystal": "Quartz Crystal",
   "item.tinkers_thinking.chromatic_crystal": "Chromatic Crytstal", 
@@ -34,7 +33,6 @@
   "item.tinkers_thinking.earth_slime_drop": "Gelatinous Slime Drop",
   "item.tinkers_thinking.sky_slime_drop": "Gelatinous Skyslime Drop",
   "item.tinkers_thinking.ichor_slime_drop": "Gelatinous Ichor Drop",
-  "item.tinkers_thinking.blood_slime_drop": "Gelatinous Blood Drop",
   "item.tinkers_thinking.magma_slime_drop": "Gelatinous Magma Drop",
   "item.tinkers_thinking.ender_slime_drop": "Gelatinous Enderslime Drop",
 
@@ -68,6 +66,7 @@
   "block.tinkers_thinking.ardite_platform": "Ardite Platform",
 
   "block.tinkers_thinking.drying_rack": "Drying Rack(WIP)",
+  "jei.tconstruct.drying_rack": "Drying Rack",
 
   "item.tinkers_thinking.lightite_compound": "Lightite Compound",
   "item.tinkers_thinking.lightite_ingot": "Lightite Ingot",
@@ -113,7 +112,16 @@
   "fluid_type.tinkers_thinking.molten_electrical_steel": "Molten Electrical Steel",
   "item.tinkers_thinking.molten_electrical_steel_bucket": "Molten Electrical Steel Bucket",
 
-  "item.tinkers_thinking.clay_staff": "Super Magic Clay staff", 
+
+  "item.tinkers_thinking.echo_bronze_ingot": "Echo Bronze Ingot",
+  "item.tinkers_thinking.echo_bronze_nugget": "Echo Bronze Nugget",
+  "block.tinkers_thinking.echo_bronze_block": "Echo Bronze Block",
+  "fluid_type.tinkers_thinking.molten_echo_bronze": "Molten Echo Bronze",
+  "item.tinkers_thinking.molten_echo_bronze_bucket": "Molten Echo Bronze Bucket",
+  "fluid_type.tinkers_thinking.molten_echo": "Molten Echo",
+  "item.tinkers_thinking.molten_echo_bucket": "Molten Echo Bucket",
+
+  "item.tinkers_thinking.clay_staff": "Super Magic Clay staff",
   "item.tinkers_thinking.magma_staff": "Magma Staff", 
   "item.tinkers_thinking.quartz_staff": "Quartz Staff",  
 
@@ -198,12 +206,16 @@
   "material.tinkers_thinking.shroomite.encyclopedia": "While the sky light reduce 1 level,increases the mining speed and velocity of 1.5%",
 
   "material.tinkers_thinking.obsidian_bronze": "Obsidian Bronze",
-  "material.tinkers_thinking.obsidian_bronze.flavor": "Not to be confused with Tinkers' Bronze",
+  "material.tinkers_thinking.obsidian_bronze.flavor": "Not to be confused with Echo Bronze",
   "material.tinkers_thinking.obsidian_bronze.encyclopedia": "In the first level,has 30% chance to reduce 1 durability cost,while has 5% chance to add 1 durability cost",
 
   "material.tinkers_thinking.electrical_steel": "Electrical Steel",
   "material.tinkers_thinking.electrical_steel.flavor": "",
   "material.tinkers_thinking.electrical_steel.encyclopedia": "",
+
+  "material.tinkers_thinking.echo_bronze": "Echo Bronze",
+  "material.tinkers_thinking.echo_bronze.flavor": "Not to be confused with Tinkers' Bronze",
+  "material.tinkers_thinking.echo_bronze.encyclopedia": "",
 
   "modifier.tinkers_thinking.soft": "Soft",
   "modifier.tinkers_thinking.soft.flavor": "Too Soft to use",
@@ -299,6 +311,14 @@
   "modifier.tinkers_thinking.repulsive.flavor": "",
   "modifier.tinkers_thinking.repulsive.description": "",
 
+  "modifier.tinkers_thinking.sculk_catalyse": "Sculk Catalyse",
+  "modifier.tinkers_thinking.sculk_catalyse.flavor": "",
+  "modifier.tinkers_thinking.sculk_catalyse.description": "",
+
+  "modifier.tinkers_thinking.sculk_boost": "Sculk Boost",
+  "modifier.tinkers_thinking.sculk_boost.flavor": "",
+  "modifier.tinkers_thinking.sculk_boost.description": "",
+
   "modifier.tinkers_thinking.backstabbing": "Backstabbing",
   "modifier.tinkers_thinking.backstabbing.flavor": "Make use of the precarious situation...",
   "modifier.tinkers_thinking.backstabbing.description": "Amplifies damage when striking a target from behind",
@@ -317,12 +337,25 @@
 
   "effect.tinkers_thinking.overweight": "Overweight",
   "effect.tinkers_thinking.weightless": "Weightless",
+  "effect.tinkers_thinking.sculk_power": "Sculk Power",
   "item.minecraft.potion.effect.overweight_potion": "Potion of Overweight",
+  "item.minecraft.potion.effect.overweight_potion_strong": "Potion of Overweight",
+  "item.minecraft.potion.effect.overweight_potion_long": "Potion of Overweight",
   "item.minecraft.splash_potion.effect.overweight_potion": "Splash Potion of Overweight",
+  "item.minecraft.splash_potion.effect.overweight_potion_strong": "Splash Potion of Overweight",
+  "item.minecraft.splash_potion.effect.overweight_potion_long": "Splash Potion of Overweight",
   "item.minecraft.lingering_potion.effect.overweight_potion": "Lingering Potion of Overweight",
+  "item.minecraft.lingering_potion.effect.overweight_potion_strong": "Lingering Potion of Overweight",
+  "item.minecraft.lingering_potion.effect.overweight_potion_long": "Lingering Potion of Overweight",
   "item.minecraft.potion.effect.weightless_potion": "Potion of Weightless",
+  "item.minecraft.potion.effect.weightless_potion_strong": "Potion of Weightless",
+  "item.minecraft.potion.effect.weightless_potion_long": "Potion of Weightless",
   "item.minecraft.splash_potion.effect.weightless_potion": "Splash Potion of Weightless",
+  "item.minecraft.splash_potion.effect.weightless_potion_strong": "Splash Potion of Weightless",
+  "item.minecraft.splash_potion.effect.weightless_potion_long": "Splash Potion of Weightless",
   "item.minecraft.lingering_potion.effect.weightless_potion": "Lingering Potion of Weightless",
+  "item.minecraft.lingering_potion.effect.weightless_potion_strong": "Lingering Potion of Weightless",
+  "item.minecraft.lingering_potion.effect.weightless_potion_long": "Lingering Potion of Weightless",
 
   "recipe.tinkers_thinking.modifier.backstabbing.level_2": "Backstabbing II requires a different recipe for the first level",
   "recipe.tinkers_thinking.modifier.backstabbing.level_3": "Backstabbing III requires a different recipe for the first level"

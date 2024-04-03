@@ -1,20 +1,21 @@
 package com.creeping_creeper.tinkers_thinking;
 
 import com.creeping_creeper.tinkers_thinking.common.networking.ModMessages;
-import com.creeping_creeper.tinkers_thinking.common.recipes.ModBrewingRecipe;
 import com.creeping_creeper.tinkers_thinking.common.recipes.ModRecipes;
-import com.creeping_creeper.tinkers_thinking.common.things.*;
+import com.creeping_creeper.tinkers_thinking.common.things.ModBlocks;
+import com.creeping_creeper.tinkers_thinking.common.things.ModEffects;
+import com.creeping_creeper.tinkers_thinking.common.things.ModFluids;
+import com.creeping_creeper.tinkers_thinking.common.things.ModItems;
 import com.creeping_creeper.tinkers_thinking.common.things.block.entity.ModBlockEntities;
 import com.creeping_creeper.tinkers_thinking.common.things.fluid.ModFluidTypes;
+import com.creeping_creeper.tinkers_thinking.common.things.item.ModPotions;
 import com.creeping_creeper.tinkers_thinking.common.tinkering.modifer.ModModifiers;
+import com.creeping_creeper.tinkers_thinking.common.tinkering.modifer.SculkCatalyseModifier;
 import com.creeping_creeper.tinkers_thinking.common.world.ModConfiguredFeatures;
 import com.creeping_creeper.tinkers_thinking.common.world.ModPlacedFeatures;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.Potions;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -51,15 +52,8 @@ public class TinkersThinking
     }
     public void commonSetup(final FMLCommonSetupEvent event) {
         ModMessages.register();
-        BrewingRecipeRegistry.addRecipe(new ModBrewingRecipe(Potions.AWKWARD,ModItems.clay_crystal.get(),ModPotions.weightless_potion.get()));
-        BrewingRecipeRegistry.addRecipe(new ModBrewingRecipe(ModPotions.weightless_potion.get(),Items.REDSTONE,ModPotions.weightless_potion_long.get()));
-        BrewingRecipeRegistry.addRecipe(new ModBrewingRecipe(ModPotions.weightless_potion.get(),Items.GLOWSTONE_DUST,ModPotions.weightless_potion_strong.get()));
-
-        BrewingRecipeRegistry.addRecipe(new ModBrewingRecipe(ModPotions.weightless_potion.get(),Items.FERMENTED_SPIDER_EYE,ModPotions.overweight_potion.get()));
-        BrewingRecipeRegistry.addRecipe(new ModBrewingRecipe(ModPotions.weightless_potion_long.get(),Items.FERMENTED_SPIDER_EYE,ModPotions.overweight_potion_long.get()));
-        BrewingRecipeRegistry.addRecipe(new ModBrewingRecipe(ModPotions.weightless_potion_strong.get(),Items.FERMENTED_SPIDER_EYE,ModPotions.overweight_potion_strong.get()));
-        BrewingRecipeRegistry.addRecipe(new ModBrewingRecipe(ModPotions.overweight_potion.get(),Items.REDSTONE,ModPotions.overweight_potion_long.get()));
-        BrewingRecipeRegistry.addRecipe(new ModBrewingRecipe(ModPotions.overweight_potion.get(),Items.GLOWSTONE_DUST,ModPotions.overweight_potion_strong.get()));
+        MinecraftForge.EVENT_BUS.register(new SculkCatalyseModifier());
+        ModPotions.setup();
     }
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents

@@ -8,6 +8,7 @@
     "#forge:nuggets/spectre",
     "#forge:nuggets/shroomite",
     "#forge:nuggets/obsidian_bronze",
-    "#forge:nuggets/electrical_steel"
+    "#forge:nuggets/electrical_steel",
+    "#forge:nuggets/echo_bronze"
   ]
 }

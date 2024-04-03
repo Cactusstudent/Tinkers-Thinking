@@ -20,7 +20,7 @@ public class ModFluids {
 
     public static final ForgeFlowingFluid.Properties molten_ardite = new ForgeFlowingFluid.Properties(
             ModFluidTypes.molten_ardite, source_molten_ardite,flowing_molten_ardite).slopeFindDistance(2).levelDecreasePerBlock(2)
-            .block(ModBlocks.molten_ardite_block).bucket(ModItems.molten_ardite_bucket);// 设置 流体的属性， 寻找坡度距离，每个方块水位下降。
+            .block(ModBlocks.molten_ardite_block).bucket(ModItems.molten_ardite_bucket);
     public static final RegistryObject<FlowingFluid> source_molten_tinkers_bronze = FLUIDS.register("molten_tinkers_bronze",
             ()->new ForgeFlowingFluid.Source(ModFluids.molten_tinkers_bronze));
     public static final RegistryObject<FlowingFluid> flowing_molten_tinkers_bronze = FLUIDS.register("molten_tinkers_bronze_flowing",
@@ -109,6 +109,22 @@ public class ModFluids {
     public static final ForgeFlowingFluid.Properties molten_electrical_steel = new ForgeFlowingFluid.Properties(
             ModFluidTypes.molten_electrical_steel, source_molten_electrical_steel,flowing_molten_electrical_steel).slopeFindDistance(2).levelDecreasePerBlock(2)
             .block(ModBlocks.molten_electrical_steel_block).bucket(ModItems.molten_electrical_steel_bucket);
+    public static final RegistryObject<FlowingFluid> source_molten_echo_bronze = FLUIDS.register("molten_echo_bronze",
+            ()->new ForgeFlowingFluid.Source(ModFluids.molten_echo_bronze));
+    public static final RegistryObject<FlowingFluid> flowing_molten_echo_bronze = FLUIDS.register("molten_echo_bronze_flowing",
+            ()->new ForgeFlowingFluid.Flowing(ModFluids.molten_echo_bronze));
+
+    public static final ForgeFlowingFluid.Properties molten_echo_bronze = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.molten_echo_bronze, source_molten_echo_bronze,flowing_molten_echo_bronze).slopeFindDistance(2).levelDecreasePerBlock(2)
+            .block(ModBlocks.molten_echo_bronze_block).bucket(ModItems.molten_echo_bronze_bucket);
+    public static final RegistryObject<FlowingFluid> source_molten_echo = FLUIDS.register("molten_echo",
+            ()->new ForgeFlowingFluid.Source(ModFluids.molten_echo));
+    public static final RegistryObject<FlowingFluid> flowing_molten_echo = FLUIDS.register("molten_echo_flowing",
+            ()->new ForgeFlowingFluid.Flowing(ModFluids.molten_echo));
+
+    public static final ForgeFlowingFluid.Properties molten_echo = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.molten_echo, source_molten_echo,flowing_molten_echo).slopeFindDistance(2).levelDecreasePerBlock(2)
+            .block(ModBlocks.molten_echo_block).bucket(ModItems.molten_echo_bucket);
     public static void registers(IEventBus eventBus)  {
         FLUIDS.register(eventBus);
     }

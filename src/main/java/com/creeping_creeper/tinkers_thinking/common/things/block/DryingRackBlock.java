@@ -4,6 +4,7 @@ import com.creeping_creeper.tinkers_thinking.common.things.block.entity.DryingRa
 import com.creeping_creeper.tinkers_thinking.common.things.block.entity.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -34,43 +35,39 @@ public class DryingRackBlock extends BaseEntityBlock {
     public RenderShape getRenderShape(BlockState p_49232_) {
         return RenderShape.MODEL;
     }
-    // 当方块被移除时候调用的方法
     @Override
     public void onRemove(BlockState state, Level level, BlockPos blockPos, BlockState newState, boolean isMoving) {
-        // 判断新的方块是不是和旧的方块是同一个方块
         if(state.getBlock() != newState.getBlock()){
-            // 获得方块的entity
             BlockEntity block = level.getBlockEntity(blockPos);
-            // 如果该entity 是
             if(block instanceof DryingRackBlockEntity){
-//                entity.drops();
-                // 调用实体的掉落方法。
                 ((DryingRackBlockEntity) block).drops();
             }
 
         }
         super.onRemove(state, level, blockPos, newState, isMoving);
     }
-
-    // 方块被右键使用时候
     @Override
     public @NotNull InteractionResult use(@NotNull BlockState state, Level level,
                                           @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand,
                                           @NotNull BlockHitResult res) {
-        // 判断在服务器
         if (!level.isClientSide()&& hand == InteractionHand.MAIN_HAND){
             BlockEntity entity = level.getBlockEntity(pos);
-            // 尝试打开GUI可以能会报错，传入参数是player，entity，pos
             if (entity instanceof DryingRackBlockEntity){
                 if (((DryingRackBlockEntity) entity).itemStackHandler.getStackInSlot(0).isEmpty()&&((DryingRackBlockEntity) entity).itemStackHandler.getStackInSlot(1).isEmpty()) {
-                    if (!player.getItemInHand(hand).isEmpty()) {
-                        ItemStack itemStack = player.getItemInHand(hand);
-                        ((DryingRackBlockEntity) entity).itemStackHandler.setStackInSlot(0, new ItemStack(itemStack.getItem(), 1));
+                    if (!player.getItemInHand(InteractionHand.MAIN_HAND).isEmpty()) {
+                        ItemStack itemStack = player.getItemInHand(InteractionHand.MAIN_HAND);
+                        CompoundTag tag = itemStack.getTag();
+                        ItemStack itemStack2 = new ItemStack(itemStack.getItem(),1);
+                        itemStack2.setTag(tag);
+                        ((DryingRackBlockEntity) entity).itemStackHandler.setStackInSlot(0, itemStack2);
                         itemStack.shrink(1);
                     }
-                    if (player.getItemInHand(hand).isEmpty() && !player.getItemInHand(InteractionHand.OFF_HAND).isEmpty()) {
+                    if (player.getItemInHand(InteractionHand.MAIN_HAND).isEmpty() && !player.getItemInHand(InteractionHand.OFF_HAND).isEmpty()) {
                         ItemStack itemStack = player.getItemInHand(InteractionHand.OFF_HAND);
-                        ((DryingRackBlockEntity) entity).itemStackHandler.setStackInSlot(0, new ItemStack(itemStack.getItem(), 1));
+                        CompoundTag tag = itemStack.getTag();
+                        ItemStack itemStack2 = new ItemStack(itemStack.getItem(),1);
+                        itemStack2.setTag(tag);
+                        ((DryingRackBlockEntity) entity).itemStackHandler.setStackInSlot(0, itemStack2);
                         itemStack.shrink(1);
                     }
                     return InteractionResult.SUCCESS;

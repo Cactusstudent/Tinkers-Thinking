@@ -1,12 +1,17 @@
 {
+  "parts": [
+    { "item": "tconstruct:tough_handle" },
+    { "item": "tconstruct:tough_handle" },
+    { "item": "tconstruct:large_plate" }
+  ],
   "stats": {
     "base": {
       "tconstruct:durability": 125.0,
       "tconstruct:block_amount": 17.5,
       "tconstruct:use_item_speed": 0.4,
-      "tconstruct:attack_damage": 0.75,
+      "tconstruct:attack_damage": 1.5,
       "tconstruct:attack_speed": 1.8
-   }
+    }
   },
   "slots": {
     "upgrades": 3,
@@ -14,10 +19,6 @@
   },
   "traits": [
     {
-      "name": "tconstruct:sharpness",
-      "level": 1
-    },
-   {
       "name": "tinkers_thinking:targeted",
       "level": 2
     }

@@ -3,12 +3,10 @@
     "base": {
       "tconstruct:durability": 625.0,
       "tconstruct:block_amount": 15.0,
-      "tconstruct:use_item_speed": 0.4,
-      "tconstruct:attack_damage": 5,
-      "tconstruct:attack_speed": 1.5
+      "tconstruct:use_item_speed": 0.8
     },
     "multipliers": {
-      "tconstruct:projectile_damage": 1.35
+      "tconstruct:projectile_damage": 1.10
     }
   },
   "slots": {
@@ -19,10 +17,6 @@
     {
       "name": "tconstruct:overslime_friend",
       "level": 1
-    },
-    {
-      "name": "tconstruct:fiery",
-      "level": 2
     }
   ],
   "harvest": {

@@ -3,7 +3,7 @@
   "condition":  {
       "type": "forge:mod_loaded",
       "modid": "farmersdelight"
-    }
+    },
   "level_display": "tconstruct:default",
   "modules": [
     {

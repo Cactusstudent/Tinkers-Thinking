@@ -53,7 +53,9 @@ public class MockModifier extends Modifier implements ConditionalStatModifierHoo
     public void afterMeleeHit(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float damageDealt) {
         if (!context.isExtraAttack() && context.isFullyCharged()) {
             LivingEntity target = context.getLivingTarget();
-            target.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY,200,2,true,true));
+            if (target != null) {
+                target.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY,200,2,true,true));
+            }
         }
     }
     @Override
@@ -61,9 +63,9 @@ public class MockModifier extends Modifier implements ConditionalStatModifierHoo
         if (target != null  && projectile instanceof AbstractArrow arrow) {
             target.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 200, 2, true, true));
          }
-        if (target.isAlive()&&target.hasEffect(MobEffects.INVISIBILITY) && projectile instanceof AbstractArrow arrow) {
-                arrow.setBaseDamage(arrow.getBaseDamage() * ((float) (modifier.getLevel() * 0.2) + 1));
-         }
+        if (target != null && target.isAlive() && target.hasEffect(MobEffects.INVISIBILITY) && projectile instanceof AbstractArrow arrow) {
+            arrow.setBaseDamage(arrow.getBaseDamage() * ((float) (modifier.getLevel() * 0.2) + 1));
+        }
         return false;
     }
     @Override
