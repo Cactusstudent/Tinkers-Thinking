@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "minecraft:dark_prismarine"
   },
-  "value": 2,
-  "needed": 2,
+  "value": 1,
+  "needed": 1,
   "material": "tinkers_thinking:prismarine"
 }

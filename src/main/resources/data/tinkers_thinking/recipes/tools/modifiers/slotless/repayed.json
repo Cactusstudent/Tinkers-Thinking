@@ -8,9 +8,9 @@
   "tools": {
     "tag": "tconstruct:modifiable"
   },
+  "level": 1,
   "allow_crystal": true,
   "result": {
     "name": "tinkers_thinking:repayed"
-  },
-  "max_level": 1
+  }
 }

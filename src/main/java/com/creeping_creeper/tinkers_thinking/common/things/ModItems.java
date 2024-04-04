@@ -11,6 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.library.tools.item.ModifiableItem;
 import slimeknights.tconstruct.library.tools.item.ModifiableLauncherItem;
+import slimeknights.tconstruct.library.tools.item.ModifiableStaffItem;
 import slimeknights.tconstruct.library.tools.part.ToolPartItem;
 import slimeknights.tconstruct.tools.item.ModifiableBowItem;
 import slimeknights.tconstruct.tools.stats.HeadMaterialStats;
@@ -29,15 +30,15 @@ public class ModItems {
 
     //Tools&ToolParts
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TinkersThinking.MODID);
-    public static final RegistryObject<Item>  paxel = ITEMS.register( "paxel", () -> new ModifiableItem(Stack1Item, ToolDefinitions.PAXEL));
-    public static final RegistryObject<Item>  knife = ITEMS.register( "knife", () -> new ModifiableItem(Stack1Item, ToolDefinitions.KNIFE));
+    public static final RegistryObject<ModifiableItem>  paxel = ITEMS.register( "paxel", () -> new ModifiableItem(Stack1Item, ToolDefinitions.PAXEL));
+    public static final RegistryObject<ModifiableItem>  knife = ITEMS.register( "knife", () -> new ModifiableItem(Stack1Item, ToolDefinitions.KNIFE));
     public static final RegistryObject<ModifiableLauncherItem> arrow_thrower = ITEMS.register("arrow_thrower", () -> new ModifiableBowItem(Stack1Item,  ToolDefinitions.ARROW_THROWER));
-    public static final RegistryObject<ModifiableItem> magma_staff = ITEMS.register("magma_staff", () -> new ModifiableItem(Stack1Item, ToolDefinitions.MAGMA_STAFF));
-    public static final RegistryObject<ModifiableItem> clay_staff = ITEMS.register("clay_staff", () -> new ModifiableItem(Stack1Item, ToolDefinitions.CLAY_STAFF));
-    public static final RegistryObject<ModifiableItem> quartz_staff = ITEMS.register("quartz_staff", () -> new ModifiableItem(Stack1Item, ToolDefinitions.QUARTZ_STAFF));
-    public static final RegistryObject<ModifiableItem> seared_bucket = ITEMS.register("seared_bucket", () -> new ModifiableItem(Stack1Item, ToolDefinitions.SEARED_BUCKET));
-    public static final RegistryObject<ModifiableItem> tinkers_bronze_bucket = ITEMS.register("tinkers_bronze_bucket", () -> new ModifiableItem(Stack1Item, ToolDefinitions.TINKERS_BRONZE_BUCKET));
-    public static final RegistryObject<ModifiableItem> battle_bucket = ITEMS.register("battle_bucket", () -> new ModifiableItem(Stack1Item.fireResistant(), ToolDefinitions.BATTLE_BUCKET));
+    public static final RegistryObject<ModifiableItem> magma_staff = ITEMS.register("magma_staff", () -> new ModifiableStaffItem(Stack1Item, ToolDefinitions.MAGMA_STAFF));
+    public static final RegistryObject<ModifiableItem> clay_staff = ITEMS.register("clay_staff", () -> new ModifiableStaffItem(Stack1Item, ToolDefinitions.CLAY_STAFF));
+    public static final RegistryObject<ModifiableItem> quartz_staff = ITEMS.register("quartz_staff", () -> new ModifiableStaffItem(Stack1Item, ToolDefinitions.QUARTZ_STAFF));
+    public static final RegistryObject<ModifiableItem> seared_bucket = ITEMS.register("seared_bucket", () -> new ModifiableStaffItem(Stack1Item, ToolDefinitions.SEARED_BUCKET));
+    public static final RegistryObject<ModifiableItem> tinkers_bronze_bucket = ITEMS.register("tinkers_bronze_bucket", () -> new ModifiableStaffItem(Stack1Item, ToolDefinitions.TINKERS_BRONZE_BUCKET));
+    public static final RegistryObject<ModifiableItem> battle_bucket = ITEMS.register("battle_bucket", () -> new ModifiableStaffItem(Stack1Item.fireResistant(), ToolDefinitions.BATTLE_BUCKET));
     public static final RegistryObject<ToolPartItem> narrow_blade = ITEMS.register("narrow_blade", () -> new ToolPartItem(CommonItem, HeadMaterialStats.ID));
     //Common Items
     public static final RegistryObject<Item> raw_ardite = ITEMS.register("raw_ardite",() -> new Item(CommonItem.fireResistant()));

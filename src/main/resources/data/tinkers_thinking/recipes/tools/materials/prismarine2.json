@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "minecraft:prismarine_shard"
   },
-  "value": 0.5,
-  "needed": 2,
+  "value": 1,
+  "needed": 4,
   "material": "tinkers_thinking:prismarine"
 }

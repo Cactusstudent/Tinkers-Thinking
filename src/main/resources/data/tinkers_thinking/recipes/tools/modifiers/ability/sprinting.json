@@ -28,12 +28,12 @@
       }
     ]
   },
+  "level": 1,
   "slots": {
     "abilities": 1
   },
   "allow_crystal": true,
   "result": {
     "name": "tinkers_thinking.sprinting"
-  },
-  "max_level": 1
+  }
 }

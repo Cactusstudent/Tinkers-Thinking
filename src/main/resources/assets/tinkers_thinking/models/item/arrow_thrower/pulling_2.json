@@ -5,15 +5,8 @@
     "grip_bottom": "tinkers_thinking:item/tool/arrow_thrower/grip_bottom_2",
     "grip_top":    "tinkers_thinking:item/tool/arrow_thrower/grip_top_2",
     "limb":        "tinkers_thinking:item/tool/arrow_thrower/limb_2",
-    "arrow":       "tinkers_thinking:item/tool/arrow_thrower/arrow_2",
-
-    "large_grip_bottom": "tinkers_thinking:item/tool/arrow_thrower/large/grip_bottom_2",
-    "large_grip_top":    "tinkers_thinking:item/tool/arrow_thrower/large/grip_top_2",
-    "large_limb":        "tinkers_thinking:item/tool/arrow_thrower/large/limb_2",
-    "large_arrow":       "tinkers_thinking:item/tool/arrow_thrower/large/arrow_2"
+    "arrow":       "tinkers_thinking:item/tool/arrow_thrower/arrow_2"
   },
-  "large": true,
-  "large_offset": [-3, 13],
  "parts": [
     { "name": "grip_bottom", "index": 1 },
     { "name": "grip_top",    "index": 2 },
