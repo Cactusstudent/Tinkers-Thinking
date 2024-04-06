@@ -65,7 +65,7 @@
   "item.tinkers_thinking.molten_ardite_bucket": "Molten Ardite Bucket",
   "block.tinkers_thinking.ardite_platform": "Ardite Platform",
 
-  "block.tinkers_thinking.drying_rack": "Drying Rack(WIP)",
+  "block.tinkers_thinking.drying_rack": "Drying Rack",
   "jei.tconstruct.drying_rack": "Drying Rack",
 
   "item.tinkers_thinking.lightite_compound": "Lightite Compound",
@@ -150,7 +150,7 @@
 
   "material.tinkers_thinking.cactus": "Cactus",
   "material.tinkers_thinking.cactus.flavor": "This is not Cactusstudent, and cannot help you translate mods, either",
-  "material.tinkers_thinking.cactus.encyclopedia": "Do 0%~12% melee damage in random",
+  "material.tinkers_thinking.cactus.encyclopedia": "Add 0%~12% melee damage in random",
 
   "material.tinkers_thinking.prismarine": "Prismarine",
   "material.tinkers_thinking.prismarine.flavor": "The power of ocean!",
@@ -162,24 +162,24 @@
 
   "material.tinkers_thinking.netherrack": "Netherrack",
   "material.tinkers_thinking.netherrack.flavor": "Infinite fire",
-  "material.tinkers_thinking.netherrack.encyclopedia": "Damage boost 1.5 per level to the mobs cannot immune to fire",
+  "material.tinkers_thinking.netherrack.encyclopedia": "Melee Damage boost 1.5 per level to the mobs cannot immune to fire",
 
   "material.tinkers_thinking.tinkers_bronze": "Tinkers' Bronze",
   "material.tinkers_thinking.tinkers_bronze.flavor": "Not to be confused with Obsidian Bronze",
   "material.tinkers_thinking.tinkers_bronze.encyclopedia": "+5 mining speed  per lever when breaking some of blocks that can be cut in the stonecutter, such as stone",
-  "material.tinkers_thinking.tinkers_bronze.ranged":"Arrows have 85% velocity, but deal 130% damage",
+  "material.tinkers_thinking.tinkers_bronze.ranged":"Arrows have 85% velocity, but do 130% projectile power",
 
   "material.tinkers_thinking.ardite": "Ardite",
   "material.tinkers_thinking.ardite.flavor": "A missing legend",
-  "material.tinkers_thinking.ardite.encyclopedia": "-0.417% durability cost pre block per level below 128, the maximum is 80%",
+  "material.tinkers_thinking.ardite.encyclopedia": "-0.417% durability damage pre block per level below 128, the maximum is 80%",
   
   "material.tinkers_thinking.stewium": "Stewium",
   "material.tinkers_thinking.stewium.flavor": "Drinking or eating?",
-  "material.tinkers_thinking.stewium.encyclopedia": "Having 15% chance repairing 1 durability while having 33 % chance to cost 1 overslime per second, also can be repair by Gelatinous Slime Drop",
+  "material.tinkers_thinking.stewium.encyclopedia": "Having 15% chance repairing 1 durability while having 33 % chance to reduce 1 overslime per second, also can be repair by Gelatinous Slime Drop",
 
   "material.tinkers_thinking.dusk": "Dusk",
   "material.tinkers_thinking.dusk.flavor": "Where is my Moonflower?",
-  "material.tinkers_thinking.dusk.encyclopedia": "+2 damage per level when against slimes, and poison them",
+  "material.tinkers_thinking.dusk.encyclopedia": "+2 melee damage per level when against slimes, and poison them",
 
   "material.tinkers_thinking.lightite": "Lightite",
   "material.tinkers_thinking.lightite.flavor": "Lighter than the air",
@@ -187,19 +187,19 @@
 
   "material.tinkers_thinking.black_chocolate": "Black Chocolate",
   "material.tinkers_thinking.black_chocolate.flavor": "Dark Oak Trapdoor?",
-  "material.tinkers_thinking.black_chocolate.encyclopedia": "While attacking a target, there has a 25% chance to get Strength III for 6 seconds, cost 5 durability",
+  "material.tinkers_thinking.black_chocolate.encyclopedia": "While attacking a target, there has a 25% chance to get Strength III for 6 seconds, damage 5 durability",
 
   "material.tinkers_thinking.white_chocolate": "White Chocolate",
   "material.tinkers_thinking.white_chocolate.flavor": "Birch Trapdoor?",
-  "material.tinkers_thinking.white_chocolate.encyclopedia": "While mining a block, there has a 25% chance to get Haste III for 6 seconds, cost 5 durability",
+  "material.tinkers_thinking.white_chocolate.encyclopedia": "While mining a block, there has a 25% chance to get Haste III for 6 seconds, damage 5 durability",
 
   "material.tinkers_thinking.chlorophyte": "Chlorophyte",
   "material.tinkers_thinking.chlorophyte.flavor": "Life Essence",
-  "material.tinkers_thinking.chlorophyte.encyclopedia": "After eating tool or launchering arrow,heal 20% lost heart and cost 5 durability",
+  "material.tinkers_thinking.chlorophyte.encyclopedia": "After eating tool or launchering arrow,heal 20% lost heart and damage 5 durability",
  
   "material.tinkers_thinking.spectre": "Spectre",
   "material.tinkers_thinking.spectre.flavor": "Of Course, Ghasts are made from cats",
-  "material.tinkers_thinking.spectre.encyclopedia": "Attack give target Invisibility for 10 seconds, increases the damage of 20% to target that has Invisibility per level",
+  "material.tinkers_thinking.spectre.encyclopedia": "Attack give target Invisibility for 10 seconds, increases the melee damage and projectile damage of 20% to target that has Invisibility per level",
 
   "material.tinkers_thinking.shroomite": "Shroomite",
   "material.tinkers_thinking.shroomite.flavor": "Mushroom Ore",
@@ -207,15 +207,17 @@
 
   "material.tinkers_thinking.obsidian_bronze": "Obsidian Bronze",
   "material.tinkers_thinking.obsidian_bronze.flavor": "Not to be confused with Echo Bronze",
-  "material.tinkers_thinking.obsidian_bronze.encyclopedia": "In the first level,has 30% chance to reduce 1 durability cost,while has 5% chance to add 1 durability cost",
+  "material.tinkers_thinking.obsidian_bronze.encyclopedia": "In the first level,has 30% chance to reduce 1 durability damage,while has 5% chance to add 1 durability damage",
 
   "material.tinkers_thinking.electrical_steel": "Electrical Steel",
-  "material.tinkers_thinking.electrical_steel.flavor": "",
-  "material.tinkers_thinking.electrical_steel.encyclopedia": "",
+  "material.tinkers_thinking.electrical_steel.flavor": "Is it really okay to just make mistakes mistakes?",
+  "material.tinkers_thinking.electrical_steel.encyclopedia": "After melee hit,makes livings nearby  go flying further,no effect on other players",
+  "material.tinkers_thinking.electrical_steel.ranged":"After projectile hit,makes livings nearby  go flying further,no effect on other players",
 
   "material.tinkers_thinking.echo_bronze": "Echo Bronze",
   "material.tinkers_thinking.echo_bronze.flavor": "Not to be confused with Tinkers' Bronze",
-  "material.tinkers_thinking.echo_bronze.encyclopedia": "",
+  "material.tinkers_thinking.echo_bronze.encyclopedia": "While having Sculk Power,boost mining speed and melee speed of 20%",
+  "material.tinkers_thinking.echo_bronze.ranged":"While having Sculk Power,boost draw speed and velocity of 20%",
 
   "modifier.tinkers_thinking.soft": "Soft",
   "modifier.tinkers_thinking.soft.flavor": "Too Soft to use",
@@ -240,20 +242,20 @@
 
   "modifier.tinkers_thinking.targeted": "Targeted",
   "modifier.tinkers_thinking.targeted.flavor": "Targeted Attack",
-  "modifier.tinkers_thinking.targeted.description": "Boost conditional damage",
+  "modifier.tinkers_thinking.targeted.description": "Boost conditional melee damage",
 
   "modifier.tinkers_thinking.deposition": "Deposition",
   "modifier.tinkers_thinking.deposition.flavor": "Hiden in the depths",
-  "modifier.tinkers_thinking.deposition.description": "The lower height is, the less the durability is cost",
+  "modifier.tinkers_thinking.deposition.description": "The lower height is, the less the durability is damage",
   "modifier.tconstruct.deposition.chance": "Deposition Reinforced",
 
   "modifier.tinkers_thinking.cutting": "Cutting",
   "modifier.tinkers_thinking.cutting.flavor": "Stonecucucucucucucucucutter",
-  "modifier.tinkers_thinking.cutting.description": "Your tool breaks some of blocks that can be cut in the stonecutter, such as stone, faster!",
+  "modifier.tinkers_thinking.cutting.description": "Tool breaks some of blocks that can be cut in the stonecutter, such as stone,faster",
   "modifier.tinkers_thinking.cutting.mining_speed": "Cutting Mining Speed",
   "modifier.tinkers_thinking.impact": "Impact",
   "modifier.tinkers_thinking.impact.flavor": "The strength will come out in the end",
-  "modifier.tinkers_thinking.impact.description": "Arrows fly slower, but do the more damage",
+  "modifier.tinkers_thinking.impact.description": "Arrows fly slower, but do the more projectile damage",
 
   "modifier.tinkers_thinking.clay": "Clay",
   "modifier.tinkers_thinking.clay.flavor": "Clay!",
@@ -263,13 +265,9 @@
   "modifier.tinkers_thinking.overeat.flavor": "Appetizer!",
   "modifier.tinkers_thinking.overeat.description": "Tool can eat Overslime and Gelatinous Slime Drop to repair itself",
 
-  "modifier.tinkers_thinking.speedy": "Speed Up",
-  "modifier.tinkers_thinking.speedy.flavor": "Speed Up!",
-  "modifier.tinkers_thinking.speedy.description": "Speed up while tool is in mainhand or offhand",
-
   "modifier.tinkers_thinking.overdose": "Overdose",
   "modifier.tinkers_thinking.overdose.flavor": "Osmotic pressure!",
-  "modifier.tinkers_thinking.overdose.description": "Tool does bonus damage against slimes, and poison them",
+  "modifier.tinkers_thinking.overdose.description": "Tool does bonus melee damage against slimes, and poison them",
   "modifier.tinkers_thinking.overdose.attack_damage": "Overdose Damage",
 
   "modifier.tinkers_thinking.disarm": "Disarm",
@@ -294,7 +292,7 @@
 
   "modifier.tinkers_thinking.mock": "Mock",
   "modifier.tinkers_thinking.mock.flavor": "A coward need to hide",
-  "modifier.tinkers_thinking.mock.description": "Attack give target Invisibility, increases the damage to target that has Invisibility",
+  "modifier.tinkers_thinking.mock.description": "Attack give target Invisibility, increases the melee damage and projectile damage to target that has Invisibility",
   "modifier.tconstruct.mock.attack_damage": "Mock Damage",
 
   "modifier.tinkers_thinking.shady": "Shady",
@@ -308,24 +306,20 @@
   "modifier.tinkers_thinking.duritae.description": "Your tool lasts longer ...most of the time.",
 
   "modifier.tinkers_thinking.repulsive": "Repulsive",
-  "modifier.tinkers_thinking.repulsive.flavor": "",
-  "modifier.tinkers_thinking.repulsive.description": "",
+  "modifier.tinkers_thinking.repulsive.flavor": "Exclude dissidents",
+  "modifier.tinkers_thinking.repulsive.description": "After hit,makes livings nearby go flying further,no effect on other players",
 
   "modifier.tinkers_thinking.sculk_catalyse": "Sculk Catalyse",
-  "modifier.tinkers_thinking.sculk_catalyse.flavor": "",
-  "modifier.tinkers_thinking.sculk_catalyse.description": "",
+  "modifier.tinkers_thinking.sculk_catalyse.flavor": "It spreads!",
+  "modifier.tinkers_thinking.sculk_catalyse.description": "Transform Experience value into Sculk Power;While having Sculk Power,tool takes no damage from normal usage",
 
   "modifier.tinkers_thinking.sculk_boost": "Sculk Boost",
-  "modifier.tinkers_thinking.sculk_boost.flavor": "",
-  "modifier.tinkers_thinking.sculk_boost.description": "",
+  "modifier.tinkers_thinking.sculk_boost.flavor": "A good grounding ensures success in what one does",
+  "modifier.tinkers_thinking.sculk_boost.description": "While having Sculk Power,boost mining speed,melee speed,draw speed and velocity",
 
   "modifier.tinkers_thinking.backstabbing": "Backstabbing",
   "modifier.tinkers_thinking.backstabbing.flavor": "Make use of the precarious situation...",
   "modifier.tinkers_thinking.backstabbing.description": "Amplifies damage when striking a target from behind",
-
-  "modifier.tinkers_thinking.levitation": "Levitation",
-  "modifier.tinkers_thinking.levitation.flavor": "The thing that walked on the wind",
-  "modifier.tinkers_thinking.levitation.description": "Blow above target",
 
   "modifier.tinkers_thinking.broad": "Broad",
   "modifier.tinkers_thinking.broad.flavor": "Tell a story without missing a single circumstance!",
@@ -333,7 +327,7 @@
 
   "modifier.tinkers_thinking.sprinting": "Sprinting",
   "modifier.tinkers_thinking.sprinting.flavor": "Sprinting! Sprinting!",
-  "modifier.tinkers_thinking.sprinting.description": "",
+  "modifier.tinkers_thinking.sprinting.description": "Sprinting fast in horizontal direction,with no gravity temporarily",
 
   "effect.tinkers_thinking.overweight": "Overweight",
   "effect.tinkers_thinking.weightless": "Weightless",

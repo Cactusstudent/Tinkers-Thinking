@@ -23,11 +23,9 @@ public class ModItems {
             return new ItemStack(ModItems.chromatic_crystal.get());
         }
     };
-    private static final Item.Properties CommonItem = new Item.Properties().tab(Tinkers_Thinking_Tab);
-
+     private static final Item.Properties CommonItem = new Item.Properties().tab(Tinkers_Thinking_Tab);
     private static final Item.Properties Stack1Item = new Item.Properties().stacksTo(1).tab(Tinkers_Thinking_Tab);
     private static Item register() {return new Item(CommonItem);}
-
     //Tools&ToolParts
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TinkersThinking.MODID);
     public static final RegistryObject<ModifiableItem>  paxel = ITEMS.register( "paxel", () -> new ModifiableItem(Stack1Item, ToolDefinitions.PAXEL));
@@ -41,9 +39,9 @@ public class ModItems {
     public static final RegistryObject<ModifiableItem> battle_bucket = ITEMS.register("battle_bucket", () -> new ModifiableStaffItem(Stack1Item.fireResistant(), ToolDefinitions.BATTLE_BUCKET));
     public static final RegistryObject<ToolPartItem> narrow_blade = ITEMS.register("narrow_blade", () -> new ToolPartItem(CommonItem, HeadMaterialStats.ID));
     //Common Items
-    public static final RegistryObject<Item> raw_ardite = ITEMS.register("raw_ardite",() -> new Item(CommonItem.fireResistant()));
-    public static final RegistryObject<Item> ardite_ingot = ITEMS.register("ardite_ingot", () -> new Item(CommonItem.fireResistant()));
-    public static final RegistryObject<Item> ardite_nugget = ITEMS.register("ardite_nugget", () -> new Item(CommonItem.fireResistant()));
+    public static final RegistryObject<Item> raw_ardite = ITEMS.register("raw_ardite",() -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
+    public static final RegistryObject<Item> ardite_ingot = ITEMS.register("ardite_ingot", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
+    public static final RegistryObject<Item> ardite_nugget = ITEMS.register("ardite_nugget", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
     public static final RegistryObject<Item>  magma_crystal= ITEMS.register("magma_crystal", ModItems::register);
     public static final RegistryObject<Item>  quartz_crystal= ITEMS.register("quartz_crystal", ModItems::register);
     public static final RegistryObject<Item>  clay_crystal= ITEMS.register("clay_crystal", ModItems::register);
@@ -82,28 +80,28 @@ public class ModItems {
     public static final RegistryObject<Item>  narrow_blade_red_sand_cast= ITEMS.register("narrow_blade_red_sand_cast", ModItems::register);
     public static final RegistryObject<Item>  narrow_blade_gold_cast= ITEMS.register("narrow_blade_gold_cast", ModItems::register);
     //Foods
-    public static final RegistryObject<Item>  Beef_Jerky= ITEMS.register("beef_jerky", () -> new Item(CommonItem.food(ModFoods.Beef_Jerky)));
-    public static final RegistryObject<Item>  Pork_Jerky= ITEMS.register("pork_jerky", () -> new Item(CommonItem.food(ModFoods.Beef_Jerky)));
-    public static final RegistryObject<Item>  Mutton_Jerky= ITEMS.register("mutton_jerky", () -> new Item(CommonItem.food(ModFoods.Mutton_Jerky)));
-    public static final RegistryObject<Item>  Rabbit_Jerky= ITEMS.register("rabbit_jerky", () -> new Item(CommonItem.food(ModFoods.Rabbit_Jerky)));
-    public static final RegistryObject<Item>  Chicken_Jerky= ITEMS.register("chicken_jerky", () -> new Item(CommonItem.food(ModFoods.Rabbit_Jerky)));
-    public static final RegistryObject<Item>  Cod_Jerky= ITEMS.register("cod_jerky", () -> new Item(CommonItem.food(ModFoods.Rabbit_Jerky)));
-    public static final RegistryObject<Item>  Salmon_Jerky= ITEMS.register("salmon_jerky", () -> new Item(CommonItem.food(ModFoods.Mutton_Jerky)));
-    public static final RegistryObject<Item>  Tropical_Fish_Jerky= ITEMS.register("tropical_fish_jerky", () -> new Item(CommonItem.food(ModFoods.Fish_Jerky)));
-    public static final RegistryObject<Item>  Pufferfish_Jerky= ITEMS.register("pufferfish_jerky", () -> new Item(CommonItem.food(ModFoods.Fish_Jerky)));
-    public static final RegistryObject<Item>  Rotten_Flesh_Jerky= ITEMS.register("rotten_flesh_jerky", () -> new Item(CommonItem.food(ModFoods.Rotten_Flesh_Jerky)));
-    public static final RegistryObject<Item>  Fried_Egg= ITEMS.register("fried_egg", () -> new Item(CommonItem.food(ModFoods.Fried_Egg)));
-    public static final RegistryObject<Item>  Earth_Slime_Drop= ITEMS.register("earth_slime_drop", () -> new Item(CommonItem.food(ModFoods.Earth_Slime_Drop)));
-    public static final RegistryObject<Item>  Sky_Slime_Drop= ITEMS.register("sky_slime_drop", () -> new Item(CommonItem.food(ModFoods.Sky_Slime_Drop)));
-    public static final RegistryObject<Item>  Magma_Slime_Drop= ITEMS.register("magma_slime_drop", () -> new Item(CommonItem.food(ModFoods.Magma_Slime_Drop)));
-    public static final RegistryObject<Item>  Ichor_Slime_Drop= ITEMS.register("ichor_slime_drop", () -> new Item(CommonItem.food(ModFoods.Ichor_Slime_Drop)));
-    public static final RegistryObject<Item>  Ender_Slime_Drop= ITEMS.register("ender_slime_drop", () -> new Item(CommonItem.food(ModFoods.Ender_Slime_Drop)));
-    public static final RegistryObject<Item>  Black_Chocolate= ITEMS.register("black_chocolate", () -> new Item(CommonItem.food(ModFoods.Black_Chocolate)));
-    public static final RegistryObject<Item>  White_Chocolate= ITEMS.register("white_chocolate", () -> new Item(CommonItem.food(ModFoods.White_Chocolate)));
+    public static final RegistryObject<Item>  Beef_Jerky= ITEMS.register("beef_jerky", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Beef_Jerky)));
+    public static final RegistryObject<Item>  Pork_Jerky= ITEMS.register("pork_jerky", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Beef_Jerky)));
+    public static final RegistryObject<Item>  Mutton_Jerky= ITEMS.register("mutton_jerky", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Mutton_Jerky)));
+    public static final RegistryObject<Item>  Rabbit_Jerky= ITEMS.register("rabbit_jerky", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Rabbit_Jerky)));
+    public static final RegistryObject<Item>  Chicken_Jerky= ITEMS.register("chicken_jerky", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Rabbit_Jerky)));
+    public static final RegistryObject<Item>  Cod_Jerky= ITEMS.register("cod_jerky", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Rabbit_Jerky)));
+    public static final RegistryObject<Item>  Salmon_Jerky= ITEMS.register("salmon_jerky", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Mutton_Jerky)));
+    public static final RegistryObject<Item>  Tropical_Fish_Jerky= ITEMS.register("tropical_fish_jerky", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Fish_Jerky)));
+    public static final RegistryObject<Item>  Pufferfish_Jerky= ITEMS.register("pufferfish_jerky", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Fish_Jerky)));
+    public static final RegistryObject<Item>  Rotten_Flesh_Jerky= ITEMS.register("rotten_flesh_jerky", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Rotten_Flesh_Jerky)));
+    public static final RegistryObject<Item>  Fried_Egg= ITEMS.register("fried_egg", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Fried_Egg)));
+    public static final RegistryObject<Item>  Earth_Slime_Drop= ITEMS.register("earth_slime_drop", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Earth_Slime_Drop)));
+    public static final RegistryObject<Item>  Sky_Slime_Drop= ITEMS.register("sky_slime_drop", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Sky_Slime_Drop)));
+    public static final RegistryObject<Item>  Magma_Slime_Drop= ITEMS.register("magma_slime_drop", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Magma_Slime_Drop)));
+    public static final RegistryObject<Item>  Ichor_Slime_Drop= ITEMS.register("ichor_slime_drop", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Ichor_Slime_Drop)));
+    public static final RegistryObject<Item>  Ender_Slime_Drop= ITEMS.register("ender_slime_drop", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Ender_Slime_Drop)));
+    public static final RegistryObject<Item>  Black_Chocolate= ITEMS.register("black_chocolate", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.Black_Chocolate)));
+    public static final RegistryObject<Item>  White_Chocolate= ITEMS.register("white_chocolate", () -> new Item(new Item.Properties().tab(Tinkers_Thinking_Tab).food(ModFoods.White_Chocolate)));
     //BlockItems
-    public static final RegistryObject<Item>  ardite_block = ITEMS.register("ardite_block", () -> new BlockItem(ModBlocks.ardite_block.get(), CommonItem.fireResistant()));
-    public static final RegistryObject<Item>  ardite_ore = ITEMS.register("ardite_ore", () -> new BlockItem(ModBlocks.ardite_ore.get(), CommonItem.fireResistant()));
-    public static final RegistryObject<Item>  raw_ardite_block = ITEMS.register("raw_ardite_block", () -> new BlockItem(ModBlocks.raw_ardite_block.get(), CommonItem.fireResistant()));
+    public static final RegistryObject<Item>  ardite_block = ITEMS.register("ardite_block", () -> new BlockItem(ModBlocks.ardite_block.get(), new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
+    public static final RegistryObject<Item>  ardite_ore = ITEMS.register("ardite_ore", () -> new BlockItem(ModBlocks.ardite_ore.get(), new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
+    public static final RegistryObject<Item>  raw_ardite_block = ITEMS.register("raw_ardite_block", () -> new BlockItem(ModBlocks.raw_ardite_block.get(), new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
     public static final RegistryObject<Item>  tinkers_bronze_block = ITEMS.register("tinkers_bronze_block", () -> new BlockItem(ModBlocks.tinkers_bronze_block.get(), CommonItem));
     public static final RegistryObject<Item>  obsidian_bronze_block = ITEMS.register("obsidian_bronze_block", () -> new BlockItem(ModBlocks.obsidian_bronze_block.get(), CommonItem));
     public static final RegistryObject<Item>  lightite_block = ITEMS.register("lightite_block", () -> new BlockItem(ModBlocks.lightite_block.get(), CommonItem));
@@ -115,7 +113,7 @@ public class ModItems {
     public static final RegistryObject<Item>  shroomite_block = ITEMS.register("shroomite_block", () -> new BlockItem(ModBlocks.shroomite_block.get(), CommonItem));
     public static final RegistryObject<Item>  electrical_steel_block = ITEMS.register("electrical_steel_block", () -> new BlockItem(ModBlocks.electrical_steel_block.get(), CommonItem));
     public static final RegistryObject<Item>  echo_bronze_block = ITEMS.register("echo_bronze_block", () -> new BlockItem(ModBlocks.echo_bronze_block.get(), CommonItem));
-    public static final RegistryObject<Item>  ardite_platform = ITEMS.register("ardite_platform", () -> new BlockItem(ModBlocks.ardite_platform.get(),CommonItem.fireResistant()));
+    public static final RegistryObject<Item>  ardite_platform = ITEMS.register("ardite_platform", () -> new BlockItem(ModBlocks.ardite_platform.get(), new Item.Properties().tab(Tinkers_Thinking_Tab).fireResistant()));
     public static final RegistryObject<Item>  stone_ladder = ITEMS.register("stone_ladder", () -> new BlockItem(ModBlocks.stone_ladder.get(), CommonItem));
     public static final RegistryObject<Item>  stone_torch = ITEMS.register("stone_torch", () -> new StandingAndWallBlockItem(ModBlocks.stone_torch.get(), ModBlocks.wall_stone_torch.get(), CommonItem));
     public static final RegistryObject<Item>  stone_soul_torch = ITEMS.register("stone_soul_torch", () -> new StandingAndWallBlockItem(ModBlocks.stone_soul_torch.get(), ModBlocks.wall_stone_soul_torch.get(), CommonItem));

@@ -24,7 +24,5 @@
     "upgrades": 1
   },
   "allow_crystal": true,
-  "result": {
-    "name": "tinkers_thinking:broad"
-  }
+  "result": "tinkers_thinking:broad"
 }

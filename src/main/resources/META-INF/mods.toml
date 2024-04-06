@@ -24,3 +24,10 @@ mandatory=true
 versionRange="[40.1.40,)"
 ordering="NONE"
 side="BOTH"
+
+[[dependencies.tinkers_thinking]]
+modId="tconstruct"
+mandatory=true
+versionRange="[3.8.0.15,)"
+ordering="NONE"
+side="BOTH"

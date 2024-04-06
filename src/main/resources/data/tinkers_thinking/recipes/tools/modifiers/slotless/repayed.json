@@ -10,7 +10,5 @@
   },
   "level": 1,
   "allow_crystal": true,
-  "result": {
-    "name": "tinkers_thinking:repayed"
-  }
+  "result":  "tinkers_thinking:repayed"
 }

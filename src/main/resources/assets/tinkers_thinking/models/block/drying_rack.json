@@ -1,12 +1,10 @@
 {
-	"credit": "Made with Blockbench",
 	"render_type": "cutout_mipped",
 	"textures": {
 		"2": "tinkers_thinking:block/drying_rack",
 		"3": "tinkers_thinking:block/drying_rack_side",
 		"particle": "tinkers_thinking:block/drying_rack"
 	},
-  "retextured": [ "2", "3" ],
 	"elements": [
 		{
 			"from": [0, 12, 6],
@@ -20,6 +18,26 @@
 				"down": {"uv": [0, 0, 16, 4], "texture": "#2"}
 			}
 		}
-	]
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, -1, -1],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"ground": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
 }
-

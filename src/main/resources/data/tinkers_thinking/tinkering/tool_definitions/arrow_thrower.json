@@ -10,11 +10,10 @@
       "tconstruct:velocity": 0.40,
       "tconstruct:durability": 125,
       "tconstruct:attack_damage": 2.25,
-      "tconstruct:attack_speed": 1.20,
       "tconstruct:use_item_speed": 0.60
     },
     "multipliers": {
-      "tconstruct:draw_speed": 10.00,
+      "tconstruct:draw_speed": 8.00,
       "tconstruct:durability": 1.15,
       "tconstruct:projectile_damage": 1.25
     }

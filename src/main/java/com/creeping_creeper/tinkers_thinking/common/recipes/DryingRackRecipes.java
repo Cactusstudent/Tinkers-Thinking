@@ -18,11 +18,13 @@ public class DryingRackRecipes implements Recipe<SimpleContainer> {
     private final ResourceLocation id;
     private final ItemStack output;
     private final NonNullList<Ingredient> recipeItems;
+    private static String category = "misc";
     public DryingRackRecipes(ResourceLocation id, ItemStack output,
-                                    NonNullList<Ingredient> recipeItems){
+                             NonNullList<Ingredient> recipeItems, String category){
         this.id = id;
         this.output = output;
         this.recipeItems = recipeItems;
+        DryingRackRecipes.category = category;
     }
     // 为了能够通过管理器获得配方，match必须返回true
     // 此方法用于管理容器是否输入有效。
@@ -42,7 +44,13 @@ public class DryingRackRecipes implements Recipe<SimpleContainer> {
         return recipeItems;
     }
 
-    // 构建配方
+    @Override
+    public @NotNull String getGroup() {
+        return category ;
+    }
+    public boolean isSpecial() {
+        return true;
+    }
     // 返回了合成表的结果output
     @Override
     public @NotNull ItemStack assemble(@NotNull SimpleContainer pContainer) {
@@ -95,14 +103,13 @@ public class DryingRackRecipes implements Recipe<SimpleContainer> {
         @Override
         public @NotNull DryingRackRecipes fromJson(@NotNull ResourceLocation pRecipeId, @NotNull JsonObject pSerializedRecipe) {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe,"output"));
-
             JsonArray ingredients = GsonHelper.getAsJsonArray(pSerializedRecipe,"ingredient");
             NonNullList<Ingredient> inputs = NonNullList.withSize(1,Ingredient.EMPTY);
-
+            String category ="misc";
             for(int i =0;i<inputs.size();i++){
                 inputs.set(i,Ingredient.fromJson(ingredients.get(i)));
             }
-            return new DryingRackRecipes(pRecipeId,output,inputs);
+            return new DryingRackRecipes(pRecipeId,output,inputs, category);
         }
         // 从服务器中发送的数据中解码recipe，配方标识符不需要解码。
         @Override
@@ -110,7 +117,8 @@ public class DryingRackRecipes implements Recipe<SimpleContainer> {
             NonNullList<Ingredient> inputs = NonNullList.withSize(pBuffer.readInt(),Ingredient.EMPTY);
             inputs.replaceAll(ignored -> Ingredient.fromNetwork(pBuffer));
             ItemStack output = pBuffer.readItem();
-            return new DryingRackRecipes(pRecipeId,output,inputs);
+            String category ="misc";
+            return new DryingRackRecipes(pRecipeId,output,inputs, category);
         }
 
         @Override

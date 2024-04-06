@@ -3,7 +3,7 @@
   "values": [
     "tinkers_thinking:tinkers_bronze_block",
     "tinkers_thinking:ardite_block",
-    "#forge:ores/ardite",
+    "tinkers_thinking:ardite_ore",
     "tinkers_thinking:silky_jewel_block",
     "tinkers_thinking:raw_ardite_block",
     "tinkers_thinking:lightite_block",

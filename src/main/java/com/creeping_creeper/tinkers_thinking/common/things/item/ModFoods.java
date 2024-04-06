@@ -18,8 +18,8 @@ public class ModFoods {
             .effect(() ->new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 0), 0.8F)
             .effect(() ->new MobEffectInstance(MobEffects.JUMP, 700, 1), 1.0F).build();
     public static final FoodProperties Ichor_Slime_Drop = new FoodProperties.Builder().alwaysEat().fast().nutrition(6).saturationMod(1.0F)
-            .effect(() ->new MobEffectInstance(MobEffects.WITHER, 40, 0), 0.8F)
-            .effect(() ->new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 800, 1), 1.0F).build();
+            .effect(() ->new MobEffectInstance(MobEffects.WITHER, 100, 0), 0.8F)
+            .effect(() ->new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 700, 1), 1.0F).build();
     public static final FoodProperties Magma_Slime_Drop = new FoodProperties.Builder().alwaysEat().fast().nutrition(3).saturationMod(1.0F)
             .effect(() ->new MobEffectInstance(MobEffects.WATER_BREATHING, 100, 0), 0.8F)
             .effect(() ->new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 700, 1), 1.0F).build();

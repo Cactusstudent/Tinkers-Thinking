@@ -29,14 +29,7 @@
   "slots": {
     "abilities": 1
   },
-  "requirements": {
-    "name": "tinkers_thinking:backstabbing",
-    "level": 2,
-    "error": "recipe.tinkers_thinking.modifier.backstabbing.level_2"
-  },
+  "level": 2,
   "allow_crystal": true,
-  "result": {
-    "name": "tinkers_thinking:backstabbing"
-  },
-  "max_level": 2
+  "result": "tinkers_thinking:backstabbing"
 }

@@ -1,23 +1,17 @@
 {
-  "type": "mantle:crafting_shaped_retextured",
-  "key": {
-    "p": {
-      "item": "tconstruct:pattern"
-    },
-    "w": {
-      "tag": "tconstruct:planklike"
-    }
-  },
-  "match_all": true,
+  "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    "wpw",
+    "###",
     "   "
   ],
-  "result": {
-    "item": "tinkers_thinking:drying_rack"
+  "key": {
+    "#": {
+      "tag": "minecraft:wooden_slabs"
+    }
   },
-  "texture": {
-    "tag": "tconstruct:planklike"
+  "result": {
+    "item": "tinkers_thinking:drying_rack",
+    "count": 1
   }
 }

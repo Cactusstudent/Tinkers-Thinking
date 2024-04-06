@@ -30,8 +30,6 @@
     "abilities": 1
   },
   "allow_crystal": true,
-  "result": {
-    "name": "tinkers_thinking:backstabbing"
-  },
-  "max_level": 1
+  "name": "tinkers_thinking:backstabbing",
+  "level": 1
 }

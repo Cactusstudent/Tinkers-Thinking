@@ -32,11 +32,11 @@ import javax.annotation.Nullable;
 
 public class DryingRackBlock extends BaseEntityBlock {
     @Override
-    public RenderShape getRenderShape(BlockState p_49232_) {
+    public @NotNull RenderShape getRenderShape(BlockState p_49232_) {
         return RenderShape.MODEL;
     }
     @Override
-    public void onRemove(BlockState state, Level level, BlockPos blockPos, BlockState newState, boolean isMoving) {
+    public void onRemove(BlockState state, @NotNull Level level, @NotNull BlockPos blockPos, BlockState newState, boolean isMoving) {
         if(state.getBlock() != newState.getBlock()){
             BlockEntity block = level.getBlockEntity(blockPos);
             if(block instanceof DryingRackBlockEntity){
@@ -50,7 +50,7 @@ public class DryingRackBlock extends BaseEntityBlock {
     public @NotNull InteractionResult use(@NotNull BlockState state, Level level,
                                           @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand,
                                           @NotNull BlockHitResult res) {
-        if (!level.isClientSide()&& hand == InteractionHand.MAIN_HAND){
+        if (!level.isClientSide()){
             BlockEntity entity = level.getBlockEntity(pos);
             if (entity instanceof DryingRackBlockEntity){
                 if (((DryingRackBlockEntity) entity).itemStackHandler.getStackInSlot(0).isEmpty()&&((DryingRackBlockEntity) entity).itemStackHandler.getStackInSlot(1).isEmpty()) {
@@ -61,28 +61,31 @@ public class DryingRackBlock extends BaseEntityBlock {
                         itemStack2.setTag(tag);
                         ((DryingRackBlockEntity) entity).itemStackHandler.setStackInSlot(0, itemStack2);
                         itemStack.shrink(1);
-                    }
-                    if (player.getItemInHand(InteractionHand.MAIN_HAND).isEmpty() && !player.getItemInHand(InteractionHand.OFF_HAND).isEmpty()) {
+                        return InteractionResult.SUCCESS;
+                    } else if (!player.getItemInHand(InteractionHand.OFF_HAND).isEmpty()) {
                         ItemStack itemStack = player.getItemInHand(InteractionHand.OFF_HAND);
                         CompoundTag tag = itemStack.getTag();
                         ItemStack itemStack2 = new ItemStack(itemStack.getItem(),1);
                         itemStack2.setTag(tag);
                         ((DryingRackBlockEntity) entity).itemStackHandler.setStackInSlot(0, itemStack2);
                         itemStack.shrink(1);
+                        return InteractionResult.SUCCESS;
                     }
-                    return InteractionResult.SUCCESS;
+                    return InteractionResult.CONSUME;
                 } else if (!((DryingRackBlockEntity) entity).itemStackHandler.getStackInSlot(0).isEmpty()) {
                     ItemHandlerHelper.giveItemToPlayer(player, ((DryingRackBlockEntity) entity).itemStackHandler.getStackInSlot(0), player.getInventory().selected);
                     ((DryingRackBlockEntity) entity).itemStackHandler.extractItem(0, 1, false);
                     level.playSound(null, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1.0F, 1.0F);
+                    return InteractionResult.SUCCESS;
                 } else  {
                     ItemHandlerHelper.giveItemToPlayer(player, ((DryingRackBlockEntity) entity).itemStackHandler.getStackInSlot(1), player.getInventory().selected);
                     ((DryingRackBlockEntity) entity).itemStackHandler.extractItem(1, 1, false);
                     level.playSound(null, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1.0F, 1.0F);
-                }return InteractionResult.SUCCESS;
+                    return InteractionResult.SUCCESS;
+                }
             }
         }
-        return InteractionResult.PASS;
+        return InteractionResult.CONSUME;
     }
     @Nullable
     @Override

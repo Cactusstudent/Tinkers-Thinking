@@ -65,8 +65,8 @@
   "item.tinkers_thinking.molten_ardite_bucket": "熔融阿迪特桶",
   "block.tinkers_thinking.ardite_platform": "阿迪特平台",
 
-  "block.tinkers_thinking.drying_rack": "晾干架（未完成）",
-  "jei.tconstruct.drying_rack": "晾干架（未完成）",
+  "block.tinkers_thinking.drying_rack": "晾干架",
+  "jei.tconstruct.drying_rack": "晾干架",
 
   "item.tinkers_thinking.lightite_compound": "轻悠化合物",
   "item.tinkers_thinking.lightite_ingot": "轻悠锭",
@@ -210,11 +210,13 @@
 
   "material.tinkers_thinking.electrical_steel": "电工钢",
   "material.tinkers_thinking.electrical_steel.flavor": "将错就错真的好吗？",
-  "material.tinkers_thinking.electrical_steel.encyclopedia": "",
+  "material.tinkers_thinking.electrical_steel.encyclopedia": "近战攻击命中后击飞自身附近的所有生物，对其他玩家无效",
+  "material.tinkers_thinking.electrical_steel.ranged":"弹射物命中后击飞自身附近的所有生物，对其他玩家无效 ",
 
   "material.tinkers_thinking.echo_bronze": "回响青铜",
   "material.tinkers_thinking.echo_bronze.flavor": "别和工匠青铜搞混了",
-  "material.tinkers_thinking.echo_bronze.encyclopedia": "",
+  "material.tinkers_thinking.echo_bronze.encyclopedia": "拥有幽匿能量效果时提升20%挖掘速度和近战速度",
+  "material.tinkers_thinking.echo_bronze.ranged":"拥有幽匿能量效果时提升20%拉弓速度和初速度",
 
   "modifier.tinkers_thinking.soft": "柔软",
   "modifier.tinkers_thinking.soft.flavor": "软弱无力",
@@ -262,10 +264,6 @@
   "modifier.tinkers_thinking.overeat.flavor": "开胃小菜！",
   "modifier.tinkers_thinking.overeat.description": "工具能吃掉黏液覆层和胶状黏液液滴来恢复耐久度",
 
-  "modifier.tinkers_thinking.speedy": "加速",
-  "modifier.tinkers_thinking.speedy.flavor": "加速！",
-  "modifier.tinkers_thinking.speedy.description": "手持工具时加速，包括副手",
-
   "modifier.tinkers_thinking.overdose": "黏液杀手",
   "modifier.tinkers_thinking.overdose.flavor": "本是同黏生，相杀何太急",
   "modifier.tinkers_thinking.overdose.description": "对各种史莱姆造成额外伤害和中毒效果",
@@ -308,15 +306,15 @@
 
   "modifier.tinkers_thinking.repulsive": "排斥",
   "modifier.tinkers_thinking.repulsive.flavor": "排除异己",
-  "modifier.tinkers_thinking.repulsive.description": "",
+  "modifier.tinkers_thinking.repulsive.description": "攻击命中后击飞自身附近的所有生物，对玩家无效",
 
   "modifier.tinkers_thinking.sculk_catalyse": "幽匿催生",
-  "modifier.tinkers_thinking.sculk_catalyse.flavor": "",
-  "modifier.tinkers_thinking.sculk_catalyse.description": "",
+  "modifier.tinkers_thinking.sculk_catalyse.flavor": "它蔓延了！",
+  "modifier.tinkers_thinking.sculk_catalyse.description": "将获得的经验转化为幽匿能量效果，拥有幽匿能量效果时暂时抵消大部分耐久消耗",
 
   "modifier.tinkers_thinking.sculk_boost": "幽匿激发",
-  "modifier.tinkers_thinking.sculk_boost.flavor": "",
-  "modifier.tinkers_thinking.sculk_boost.description": "",
+  "modifier.tinkers_thinking.sculk_boost.flavor": "厚积薄发",
+  "modifier.tinkers_thinking.sculk_boost.description": "拥有幽匿能量效果时提升挖掘速度、近战速度、拉弓速度和初速度",
 
   "modifier.tinkers_thinking.backstabbing": "背刺",
   "modifier.tinkers_thinking.backstabbing.flavor": "乘人之危……",

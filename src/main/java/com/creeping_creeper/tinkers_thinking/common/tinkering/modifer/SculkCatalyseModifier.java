@@ -4,9 +4,9 @@ import com.creeping_creeper.tinkers_thinking.common.things.ModEffects;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.level.Level;
 import net.minecraftforge.event.entity.player.PlayerXpEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.TinkerHooks;
@@ -25,8 +25,7 @@ public class SculkCatalyseModifier extends NoLevelsModifier implements ToolDamag
         var orb = event.getOrb().getValue();
         var player = event.getEntity();
             if (player != null&&getModifierLevel(player.getItemInHand(InteractionHand.MAIN_HAND), ModModifiers.SculkCatalyse.get().getId()) + getModifierLevel(player.getItemInHand(InteractionHand.OFF_HAND), ModModifiers.SculkCatalyse.get().getId()) > 0) {
-                Level world = player.getLevel();
-                int time = orb * 80;
+                int time = orb * 60;
                 if (player.hasEffect(ModEffects.sculk_power.get())) {
                    time = time + Objects.requireNonNull(player.getEffect(ModEffects.sculk_power.get())).getDuration() ;
                 }
@@ -35,7 +34,7 @@ public class SculkCatalyseModifier extends NoLevelsModifier implements ToolDamag
             }
     }
     @Override
-    protected void registerHooks(ModifierHookMap.Builder hookBuilder) {
+    protected void registerHooks(ModifierHookMap.@NotNull Builder hookBuilder) {
         super.registerHooks(hookBuilder);
         hookBuilder.addHook(this, TinkerHooks.TOOL_DAMAGE);
     }
@@ -44,7 +43,7 @@ public class SculkCatalyseModifier extends NoLevelsModifier implements ToolDamag
         return 200;
     }
     @Override
-    public int onDamageTool(IToolStackView tool, ModifierEntry modifier, int amount, @Nullable LivingEntity holder) {
+    public int onDamageTool(@NotNull IToolStackView tool, @NotNull ModifierEntry modifier, int amount, @Nullable LivingEntity holder) {
         if (holder!= null&&holder.hasEffect(ModEffects.sculk_power.get())){
             amount = 0;
         }

@@ -13,6 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 import slimeknights.tconstruct.shared.block.PlatformBlock;
 
 import static net.minecraft.world.level.block.SoundType.DEEPSLATE;
+import static net.minecraft.world.level.block.SoundType.METAL;
 import static net.minecraft.world.level.block.SoundType.STONE;
 import static net.minecraft.world.level.block.SoundType.WOOD;
 import static net.minecraft.world.level.block.SoundType.WOOL;
@@ -20,40 +21,39 @@ import static net.minecraft.world.level.block.SoundType.*;
 import static net.minecraft.world.level.material.MaterialColor.*;
 public class ModBlocks {
     private static final BlockBehaviour.Properties CommonLiquid = BlockBehaviour.Properties.copy(Blocks.LAVA);
-    private static final BlockBehaviour.Properties MetalBlock = BlockBehaviour.Properties.of(Material.METAL);
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TinkersThinking.MODID);
 
     public static final RegistryObject<Block> ardite_block = BLOCKS.register("ardite_block",
-            () -> new Block(MetalBlock.strength(30f).explosionResistance(1200).requiresCorrectToolForDrops().sound(ANCIENT_DEBRIS).color(COLOR_ORANGE)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(30f).explosionResistance(1200).requiresCorrectToolForDrops().sound(ANCIENT_DEBRIS).color(COLOR_ORANGE)));
     public static final RegistryObject<Block> raw_ardite_block = BLOCKS.register("raw_ardite_block",
-            () -> new Block(MetalBlock.strength(30f).explosionResistance(1200).requiresCorrectToolForDrops().sound(ANCIENT_DEBRIS).color(COLOR_ORANGE)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(30f).explosionResistance(1200).requiresCorrectToolForDrops().sound(ANCIENT_DEBRIS).color(COLOR_ORANGE)));
     public static final RegistryObject<Block> ardite_ore = BLOCKS.register("ardite_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(30f).explosionResistance(1200).requiresCorrectToolForDrops().sound(ANCIENT_DEBRIS).color(COLOR_ORANGE)));
     public static final RegistryObject<Block> tinkers_bronze_block = BLOCKS.register("tinkers_bronze_block",
-            () -> new Block(MetalBlock.strength(10f).explosionResistance(600).color(COLOR_YELLOW)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(10f).explosionResistance(600).requiresCorrectToolForDrops().sound(COPPER).color(COLOR_YELLOW)));
     public static final RegistryObject<Block> obsidian_bronze_block = BLOCKS.register("obsidian_bronze_block",
-            () -> new Block(MetalBlock.strength(15f).explosionResistance(1200).color(COLOR_YELLOW)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(15f).explosionResistance(1200).requiresCorrectToolForDrops().sound(COPPER).color(COLOR_YELLOW)));
     public static final RegistryObject<Block> lightite_block = BLOCKS.register("lightite_block",
-            () -> new Block(MetalBlock.strength(8f).explosionResistance(400).sound(WOOL).color(COLOR_GRAY)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(8f).explosionResistance(400).requiresCorrectToolForDrops().sound(METAL).sound(WOOL).color(COLOR_GRAY)));
     public static final RegistryObject<Block> silky_jewel_block = BLOCKS.register("silky_jewel_block",
-            () -> new Block(MetalBlock.strength(10f).explosionResistance(600).color(COLOR_YELLOW)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(10f).explosionResistance(600).requiresCorrectToolForDrops().sound(METAL).color(COLOR_YELLOW)));
     public static final RegistryObject<Block> chlorophyll_ore = BLOCKS.register("chlorophyll_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).strength(6f).explosionResistance(400).requiresCorrectToolForDrops().sound(STONE).color(COLOR_GREEN)));
     public static final RegistryObject<Block> deepslate_chlorophyll_ore = BLOCKS.register("deepslate_chlorophyll_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).strength(9f).explosionResistance(400).requiresCorrectToolForDrops().sound(DEEPSLATE).color(COLOR_GREEN)));
     public static final RegistryObject<Block> chlorophyte_block = BLOCKS.register("chlorophyte_block",
-            () -> new Block(MetalBlock.strength(10f).explosionResistance(400).color(COLOR_GREEN)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(10f).explosionResistance(400).requiresCorrectToolForDrops().sound(METAL).color(COLOR_GREEN)));
     public static final RegistryObject<Block> spectre_block = BLOCKS.register("spectre_block",
-            () -> new Block(MetalBlock.strength(8f).explosionResistance(400).color(COLOR_LIGHT_BLUE)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(8f).explosionResistance(400).requiresCorrectToolForDrops().sound(METAL).color(COLOR_LIGHT_BLUE)));
     public static final RegistryObject<Block> shroomite_block = BLOCKS.register("shroomite_block",
-            () -> new Block(MetalBlock.strength(9f).explosionResistance(400).color(COLOR_BLUE)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(9f).explosionResistance(400).requiresCorrectToolForDrops().sound(METAL).color(COLOR_BLUE)));
     public static final RegistryObject<Block> electrical_steel_block = BLOCKS.register("electrical_steel_block",
-            () -> new Block(MetalBlock.strength(10f).explosionResistance(600).color(COLOR_GRAY)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(10f).explosionResistance(600).requiresCorrectToolForDrops().sound(METAL).color(COLOR_GRAY)));
     public static final RegistryObject<Block> echo_bronze_block = BLOCKS.register("echo_bronze_block",
-            () -> new Block(MetalBlock.strength(6f).explosionResistance(400).lightLevel((p_50886_) -> {
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).explosionResistance(400).sound(METAL).lightLevel((p_50886_) -> {
                 return 3;}).sound(SCULK).color(COLOR_BLACK)));
     public static final RegistryObject<Block> ardite_platform = BLOCKS.register("ardite_platform",
-            () -> new PlatformBlock(MetalBlock.strength(30f).explosionResistance(1200).sound(ANCIENT_DEBRIS).color(COLOR_ORANGE)));
+            () -> new PlatformBlock(BlockBehaviour.Properties.of(Material.METAL).strength(30f).explosionResistance(1200).sound(ANCIENT_DEBRIS).color(COLOR_ORANGE)));
     public static final RegistryObject<Block> stone_ladder = BLOCKS.register("stone_ladder",
             () -> new LadderBlock(BlockBehaviour.Properties.copy(Blocks.LADDER).sound(STONE).strength(0.8f)));
     public static final RegistryObject<Block> stone_torch = BLOCKS.register("stone_torch",
