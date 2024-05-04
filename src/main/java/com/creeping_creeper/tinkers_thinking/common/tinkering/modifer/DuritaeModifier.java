@@ -1,6 +1,7 @@
 package com.creeping_creeper.tinkers_thinking.common.tinkering.modifer;
 
 import net.minecraft.world.entity.LivingEntity;
+import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.ModifierHooks;
@@ -16,11 +17,11 @@ public class DuritaeModifier extends Modifier implements ToolDamageModifierHook{
         return 1875; // after , before
     }
     @Override
-    protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
+    protected void registerHooks(ModuleHookMap.@NotNull Builder hookBuilder) {
         super.registerHooks(hookBuilder);
         hookBuilder.addHook(this, ModifierHooks.TOOL_DAMAGE);
     }
-    public int onDamageTool(IToolStackView tool, ModifierEntry modifier, int amount, @Nullable LivingEntity holder)  {
+    public int onDamageTool(@NotNull IToolStackView tool, @NotNull ModifierEntry modifier, int amount, @Nullable LivingEntity holder)  {
         if (holder != null){
                float chance1 = (float) Math.pow(0.70,modifier.getLevel());
                float chance2 =  (float) Math.pow(0.95,modifier.getLevel());

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:composable",
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tconstruct:tank",
+      "capacity": 8000,
+      "scale_capacity": true
+    }
+  ],
+  "tooltip_display": "always"
+}
