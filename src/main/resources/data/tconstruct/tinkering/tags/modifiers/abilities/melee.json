@@ -1,8 +1,5 @@
 {
   "values": [
-   {
-      "id": "tinkers_thinking:backstabbing",
-      "required": false
-    }
+"tinkers_thinking:backstabbing"
   ]
 }

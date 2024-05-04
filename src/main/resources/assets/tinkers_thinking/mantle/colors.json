@@ -2,12 +2,14 @@
   "modifier.tinkers_thinking": 
   {
     "prickly":       "#639631",
+    "spiky":       "#639631",
     "hellish":       "#562121",
     "withernic":     "#562121",
     "repayed":       "#FFCA18",
     "targeted":      "#D0D0D0",
     "cutting":       "#f9cf72",
     "impact":        "#f9cf72",
+    "countermeasures":        "#f9cf72",
     "deposition":    "#cd4400",
     "overeat":       "#d28155",
     "overdose":      "#4118cf",
@@ -23,8 +25,12 @@
     "sprinting":     "#EF6F05",
     "duritae":       "#a28b48",
     "repulsive":     "#b4b499",
+    "falling_attack":     "#ff7f27",
     "sculk_catalyse":"#009295",
-    "sculk_boost":   "#009295"
+    "sculk_boost":   "#009295",
+    "sculk_levitate":"#bde1b7",
+    "sculk_gravity":"#f7df92",
+    "sculk_teleport":"#d4bfc8"
   },
   "material.tinkers_thinking": 
   {
@@ -44,6 +50,9 @@
     "shroomite":     "#008cf4",
     "obsidian_bronze":"#a28b48",
     "electrical_steel":"#b4b499",
-    "echo_bronze":   "#009295"
+    "iecho_bronze":   "#009295",
+    "verdant_frogcroaking":"#bde1b7",
+    "ochre_frogcroaking":"#f7df92",
+    "pearlescent_frogcroaking":"#d4bfc8"
   }
 }

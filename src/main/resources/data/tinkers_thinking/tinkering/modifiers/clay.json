@@ -3,9 +3,6 @@
   "level_display": "tconstruct:no_levels",
   "modules": [
     {
-      "type": "tconstruct:incremental"
-    },
-    {
       "type": "tconstruct:attribute",
       "attribute": "forge:reach_distance",
       "each_level": -99.0,

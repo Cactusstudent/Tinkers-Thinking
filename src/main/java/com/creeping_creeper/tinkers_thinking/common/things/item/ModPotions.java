@@ -17,6 +17,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import slimeknights.tconstruct.tools.TinkerModifiers;
 
 public class ModPotions {
     public static final DeferredRegister<Potion> POTIONS = DeferredRegister.create(ForgeRegistries.POTIONS, TinkersThinking.MODID);
@@ -26,6 +27,8 @@ public class ModPotions {
     public static final RegistryObject<Potion> weightless_potion = POTIONS.register("weightless_potion", () -> new Potion(new MobEffectInstance(ModEffects.weightless.get(), 1200, 0)));
     public static final RegistryObject<Potion> weightless_potion_strong = POTIONS.register("weightless_potion_strong", () -> new Potion(new MobEffectInstance(ModEffects.weightless.get(), 400, 1)));
     public static final RegistryObject<Potion> weightless_potion_long = POTIONS.register("weightless_potion_long", () -> new Potion(new MobEffectInstance(ModEffects.weightless.get(), 2400, 0)));
+    public static final RegistryObject<Potion> enderference_potion = POTIONS.register("enderference_potion", () -> new Potion(new MobEffectInstance(TinkerModifiers.enderferenceEffect.get(), 3600, 0)));
+    public static final RegistryObject<Potion> enderference_potion_long = POTIONS.register("enderference_potion_long", () -> new Potion(new MobEffectInstance(TinkerModifiers.enderferenceEffect.get(), 9600, 0)));
     public static void setup() {
         potionBrewing(PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.AWKWARD),ModPotions.overweight_potion.get(), ModItems.clay_crystal.get());
         potionBrewing(PotionUtils.setPotion(new ItemStack(Items.POTION), ModPotions.overweight_potion.get()),ModPotions.overweight_potion_strong.get(), Items.GLOWSTONE_DUST);
@@ -35,6 +38,8 @@ public class ModPotions {
         potionBrewing(PotionUtils.setPotion(new ItemStack(Items.POTION), ModPotions.overweight_potion_long.get()),ModPotions.weightless_potion_long.get(), Items.FERMENTED_SPIDER_EYE);
         potionBrewing(PotionUtils.setPotion(new ItemStack(Items.POTION), ModPotions.weightless_potion.get()),ModPotions.weightless_potion_strong.get(), Items.GLOWSTONE_DUST);
         potionBrewing(PotionUtils.setPotion(new ItemStack(Items.POTION), ModPotions.weightless_potion.get()),ModPotions.weightless_potion_long.get(), Items.REDSTONE);
+        potionBrewing(PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.AWKWARD),ModPotions.enderference_potion.get(), Items.CHORUS_FRUIT);
+        potionBrewing(PotionUtils.setPotion(new ItemStack(Items.POTION), ModPotions.enderference_potion.get()),ModPotions.enderference_potion_long.get(), Items.REDSTONE);
     }
     private static void potionBrewing(ItemStack inputPot, Potion pot, Item item) {
         BrewingRecipeRegistry.addRecipe(new ModBrewingRecipe(inputPot, Ingredient.of(item), PotionUtils.setPotion(new ItemStack(Items.POTION), pot)));

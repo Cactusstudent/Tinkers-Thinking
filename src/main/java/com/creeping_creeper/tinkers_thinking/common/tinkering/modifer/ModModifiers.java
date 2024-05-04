@@ -5,7 +5,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.util.ModifierDeferredRegister;
 import slimeknights.tconstruct.library.modifiers.util.StaticModifier;
-public class ModModifiers {
+import slimeknights.tconstruct.library.module.ModuleHookMap;
+
+public abstract class ModModifiers {
     public static final ModifierDeferredRegister MODIFIERS = ModifierDeferredRegister.create(TinkersThinking.MODID);
     public static final StaticModifier<Modifier> Deposition = MODIFIERS.register("deposition",DepositionModifier ::new);
     public static final StaticModifier<Modifier> Symbiotic = MODIFIERS.register("symbiotic", SymbioticModifier::new);
@@ -19,8 +21,19 @@ public class ModModifiers {
     public static final StaticModifier<Modifier> Duritae = MODIFIERS.register("duritae",SprintingModifier::new);
     public static final StaticModifier<Modifier> Overeat = MODIFIERS.register("overeat",OvereatModifier::new);
     public static final StaticModifier<Modifier> Overbearing = MODIFIERS.register("overbearing",OverbearingModifier::new);
+    public static final StaticModifier<Modifier> Disarm = MODIFIERS.register("disarm",DisarmModifier::new);
     public static final StaticModifier<Modifier> SculkCatalyse = MODIFIERS.register("sculk_catalyse",SculkCatalyseModifier::new);
     public static final StaticModifier<Modifier> SculkBoost = MODIFIERS.register("sculk_boost",SculkBoostModifier::new);
+    public static final StaticModifier<Modifier> SculkLevitate = MODIFIERS.register("sculk_levitate",SculkLevitateModifier::new);
+    public static final StaticModifier<Modifier> GravityTeleport = MODIFIERS.register("sculk_gravity",SculkGravityModifier::new);
+    public static final StaticModifier<Modifier> SculkTeleport = MODIFIERS.register("sculk_teleport",SculkTeleportModifier::new);
+    public static final StaticModifier<Modifier> FallingAttack = MODIFIERS.register("falling_attack",FallingAttackModifier::new);
+    public static final StaticModifier<Modifier> Density = MODIFIERS.register("density",DensityModifier::new);
+    public static final StaticModifier<Modifier> Spiky = MODIFIERS.register("spiky",SpikyModifier::new);
+
+
     public static void regeisters(IEventBus eventBus) {
         MODIFIERS.register(eventBus);}
+
+    protected abstract void registerHooks(ModuleHookMap.Builder hookBuilder);
 }

@@ -6,8 +6,8 @@
   "cast_consumed": true,
   "fluid": {
     "fluid": "minecraft:water",
-    "amount": 11037
+    "amount": 1000
   },
   "result": "tinkers_thinking:clay_crystal",
-  "cooling_time": 11037
+  "cooling_time": 1000
 }

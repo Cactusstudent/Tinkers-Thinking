@@ -27,15 +27,15 @@ public void render(DryingRackBlockEntity pBlockEntity, float pPartialTick, PoseS
         ItemRenderer renderer = Minecraft.getInstance().getItemRenderer();
         ItemStack itemStack = pBlockEntity.getRenderStack();
         pPoseStack.pushPose();
-        pPoseStack.translate(0.5f,0.25f,0.345f);
-        pPoseStack.scale(2f, 2f, 2f);
+        pPoseStack.translate(0.5f,0.5f,0.345f);
+        pPoseStack.scale(1f, 1f, 1f);
         switch (pBlockEntity.getBlockState().getValue(DryingRackBlock.FACING)){
         case NORTH -> pPoseStack.mulPose(Vector3f.YP.rotationDegrees(0));
         case EAST -> pPoseStack.mulPose(Vector3f.YP.rotationDegrees(90));
         case SOUTH -> pPoseStack.mulPose(Vector3f.YP.rotationDegrees(180));
         case WEST -> pPoseStack.mulPose(Vector3f.YP.rotationDegrees(270));
         }
-        renderer.renderStatic(itemStack, ItemTransforms.TransformType.GROUND,
+        renderer.renderStatic(itemStack, ItemTransforms.TransformType.FIXED,
         getLightLevel(Objects.requireNonNull(pBlockEntity.getLevel()),pBlockEntity.getBlockPos()),
         OverlayTexture.NO_OVERLAY,pPoseStack,pBufferSource,1);
         pPoseStack.popPose();

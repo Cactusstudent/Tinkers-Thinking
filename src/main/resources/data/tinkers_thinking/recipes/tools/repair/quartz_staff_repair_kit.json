@@ -1,7 +1,0 @@
-{
-  "type": "tconstruct:specialized_repair_kit",
-  "tool": {
-    "item": "tinkers_thinking:quartz_staff"
-  },
-  "repair_material": "tconstruct:bone"
-}

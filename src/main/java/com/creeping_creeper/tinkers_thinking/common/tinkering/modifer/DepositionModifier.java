@@ -11,14 +11,15 @@ import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.common.TinkerTags;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
-import slimeknights.tconstruct.library.modifiers.TinkerHooks;
+import slimeknights.tconstruct.library.modifiers.ModifierHooks;
 import slimeknights.tconstruct.library.modifiers.hook.behavior.ToolDamageModifierHook;
 import slimeknights.tconstruct.library.modifiers.hook.display.TooltipModifierHook;
-import slimeknights.tconstruct.library.modifiers.util.ModifierHookMap;
+import slimeknights.tconstruct.library.module.ModuleHookMap;
 import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
 
 import javax.annotation.Nullable;
 import java.util.List;
+import java.util.Objects;
 
 public class DepositionModifier extends Modifier implements ToolDamageModifierHook, TooltipModifierHook {
     @Override
@@ -27,17 +28,16 @@ public class DepositionModifier extends Modifier implements ToolDamageModifierHo
     }
     private static final Component prefix = TConstruct.makeTranslation("modifier", "deposition.chance");
     @Override
-    protected void registerHooks(ModifierHookMap.Builder hookBuilder) {
+    protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
         super.registerHooks(hookBuilder);
-        hookBuilder.addHook(this, TinkerHooks.TOOL_DAMAGE,TinkerHooks.TOOLTIP);
+        hookBuilder.addHook(this, ModifierHooks.TOOL_DAMAGE,ModifierHooks.TOOLTIP);
     }
     public int onDamageTool(IToolStackView tool, ModifierEntry modifier, int amount, @Nullable LivingEntity holder)  {
         if (holder != null){
-            Level world = holder.getCommandSenderWorld();
-            double maxy = (world.getMaxBuildHeight() - world.getMinBuildHeight()) ;
-            double y = holder.getY() - world.getMinBuildHeight();
-            if (y > 0) {
-                double chance =  Math.min((maxy - y)/maxy * modifier.getLevel() * 0.40,0.80); // up to  80% a chance at max
+            float y = (float) (holder.getY());
+            if (y < 72) {
+                //use 72 instead of 64 because we are good
+                float chance = (float) Math.min((72 - y)/136 * modifier.getLevel() * 0.40,0.80); // up to  80% a chance at max
                 int maxDamage = amount;
                 // for each damage we will take, if the random number is below chance, reduce
                 for (int i = 0; i < maxDamage; i++) {
@@ -50,15 +50,13 @@ public class DepositionModifier extends Modifier implements ToolDamageModifierHo
         return amount;
     }
     public void addTooltip(IToolStackView tool, @NotNull ModifierEntry modifier, @Nullable Player player, List<Component> tooltip, TooltipKey tooltipKey, TooltipFlag tooltipFlag) {  if (tool.hasTag(TinkerTags.Items.RANGED) || tool.hasTag(TinkerTags.Items.MELEE)) {
-            Level world = null;
-            if (player != null) {
-                world = player.getCommandSenderWorld();
-            }
+            Level world = Objects.requireNonNull(player).getCommandSenderWorld();
             float chance = 0;
-            if (world != null) {
-                chance = (float) Math.min(((world.getMaxBuildHeight()  - player.getY()  )/ (world.getMaxBuildHeight() - world.getMinBuildHeight()) *modifier.getLevel() *0.40),0.80);
-            }
-            TooltipModifierHook.addPercentBoost(this,prefix,chance, tooltip);
+        float y = (float) (player.getY() - world.getMinBuildHeight());
+             if (y < 72) {
+               chance = (float) Math.min((72 - y)/136 * modifier.getLevel() * 0.40,0.80);
+             }
+        TooltipModifierHook.addPercentBoost(this,prefix,chance,tooltip);
         }
     }
 

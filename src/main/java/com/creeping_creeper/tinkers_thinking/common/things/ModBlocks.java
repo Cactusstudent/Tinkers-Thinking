@@ -2,6 +2,7 @@ package com.creeping_creeper.tinkers_thinking.common.things;
 
 import com.creeping_creeper.tinkers_thinking.TinkersThinking;
 import com.creeping_creeper.tinkers_thinking.common.things.block.DryingRackBlock;
+import com.creeping_creeper.tinkers_thinking.common.things.block.HeavyCoreBlock;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -53,7 +54,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).explosionResistance(400).sound(METAL).lightLevel((p_50886_) -> {
                 return 3;}).sound(SCULK).color(COLOR_BLACK)));
     public static final RegistryObject<Block> ardite_platform = BLOCKS.register("ardite_platform",
-            () -> new PlatformBlock(BlockBehaviour.Properties.of(Material.METAL).strength(30f).explosionResistance(1200).sound(ANCIENT_DEBRIS).color(COLOR_ORANGE)));
+            () -> new PlatformBlock(BlockBehaviour.Properties.of(Material.METAL).strength(30f).explosionResistance(1200).requiresCorrectToolForDrops().sound(ANCIENT_DEBRIS).color(COLOR_ORANGE)));
+    public static final RegistryObject<Block> heavy_core = BLOCKS.register("heavy_core",
+            () -> new HeavyCoreBlock(BlockBehaviour.Properties.of(Material.METAL).strength(10f).explosionResistance(1200).sound(ANCIENT_DEBRIS).color(COLOR_GRAY)));
     public static final RegistryObject<Block> stone_ladder = BLOCKS.register("stone_ladder",
             () -> new LadderBlock(BlockBehaviour.Properties.copy(Blocks.LADDER).sound(STONE).strength(0.8f)));
     public static final RegistryObject<Block> stone_torch = BLOCKS.register("stone_torch",

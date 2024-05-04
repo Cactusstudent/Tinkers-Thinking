@@ -11,6 +11,18 @@
         "name": "tinkers_thinking:lightly_speed",
         "level": 1
       }
+    ],
+    "tconstruct:armor": [
+      {
+        "name": "tconstruct:speedy",
+        "level": 1
+      }
+    ],
+    "tconstruct:plating_shield": [
+      {
+        "level": 1,
+        "name": "tinkers_thinking:lightly_speed"
+      }
     ]
   }
 }

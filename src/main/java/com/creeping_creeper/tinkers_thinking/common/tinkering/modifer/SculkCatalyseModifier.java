@@ -3,16 +3,17 @@ package com.creeping_creeper.tinkers_thinking.common.tinkering.modifer;
 import com.creeping_creeper.tinkers_thinking.common.things.ModEffects;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraftforge.event.entity.player.PlayerXpEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
-import slimeknights.tconstruct.library.modifiers.TinkerHooks;
+import slimeknights.tconstruct.library.modifiers.ModifierHooks;
 import slimeknights.tconstruct.library.modifiers.hook.behavior.ToolDamageModifierHook;
 import slimeknights.tconstruct.library.modifiers.impl.NoLevelsModifier;
-import slimeknights.tconstruct.library.modifiers.util.ModifierHookMap;
+import slimeknights.tconstruct.library.module.ModuleHookMap;
 import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
 
 import java.util.Objects;
@@ -24,7 +25,14 @@ public class SculkCatalyseModifier extends NoLevelsModifier implements ToolDamag
     public void onPlayerPickupXp(PlayerXpEvent.PickupXp event) {
         var orb = event.getOrb().getValue();
         var player = event.getEntity();
-            if (player != null&&getModifierLevel(player.getItemInHand(InteractionHand.MAIN_HAND), ModModifiers.SculkCatalyse.get().getId()) + getModifierLevel(player.getItemInHand(InteractionHand.OFF_HAND), ModModifiers.SculkCatalyse.get().getId()) > 0) {
+        boolean sculk = getModifierLevel(player.getItemInHand(InteractionHand.MAIN_HAND), ModModifiers.SculkCatalyse.get().getId()) +
+                getModifierLevel(player.getItemInHand(InteractionHand.OFF_HAND), ModModifiers.SculkCatalyse.get().getId()) +
+                getModifierLevel(player.getItemBySlot(EquipmentSlot.HEAD), ModModifiers.SculkCatalyse.get().getId())+
+                getModifierLevel(player.getItemBySlot(EquipmentSlot.CHEST), ModModifiers.SculkCatalyse.get().getId())+
+                getModifierLevel(player.getItemBySlot(EquipmentSlot.LEGS), ModModifiers.SculkCatalyse.get().getId())+
+                getModifierLevel(player.getItemBySlot(EquipmentSlot.FEET), ModModifiers.SculkCatalyse.get().getId())
+                > 0;
+            if (sculk) {
                 int time = orb * 60;
                 if (player.hasEffect(ModEffects.sculk_power.get())) {
                    time = time + Objects.requireNonNull(player.getEffect(ModEffects.sculk_power.get())).getDuration() ;
@@ -34,9 +42,9 @@ public class SculkCatalyseModifier extends NoLevelsModifier implements ToolDamag
             }
     }
     @Override
-    protected void registerHooks(ModifierHookMap.@NotNull Builder hookBuilder) {
+    protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
         super.registerHooks(hookBuilder);
-        hookBuilder.addHook(this, TinkerHooks.TOOL_DAMAGE);
+        hookBuilder.addHook(this, ModifierHooks.TOOL_DAMAGE);
     }
     @Override
     public int getPriority() {

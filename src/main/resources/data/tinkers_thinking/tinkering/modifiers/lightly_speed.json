@@ -8,6 +8,12 @@
       "operation": "add",
       "stat": "tconstruct:use_item_speed"
     },
+   {
+      "type": "tconstruct:stat_boost",
+      "flat": 0.05,
+      "operation": "add",
+      "stat": "tconstruct:velocity"
+    },
     {
       "type": "tconstruct:attribute",
       "attribute": "minecraft:generic.movement_speed",

@@ -1,8 +1,5 @@
 {
   "values": [
-   {
-      "id": "tinkers_thinking:sprinting",
-      "required": false
-    }
+   "tinkers_thinking:sprinting"
   ]
 }

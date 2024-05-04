@@ -1,8 +1,8 @@
 {
   "type": "tconstruct:tool_building",
   "extra_requirements": [
-  { "tag": "forge:gems/quartz" },
-  { "tag": "forge:gems/quartz" }
+  { "item": "tinkers_thinking:quartz_crystal" },
+  { "item": "tinkers_thinking:quartz_crystal" }
 ],
   "result": "tinkers_thinking:quartz_staff"
 }

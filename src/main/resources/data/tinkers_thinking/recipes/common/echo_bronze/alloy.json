@@ -2,7 +2,7 @@
   "type": "tconstruct:alloy",
   "inputs": [
     { "tag": "forge:molten_copper",   "amount":   180 },
-    { "tag": "forge:molten_echo", "amount":  100 }
+    { "tag": "forge:molten_echo", "amount":  200 }
   ],
   "result": {
     "fluid": "tinkers_thinking:molten_echo_bronze",

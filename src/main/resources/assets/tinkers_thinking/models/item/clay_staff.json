@@ -3,12 +3,14 @@
   "parent": "tconstruct:item/base/staff",
   "textures": {
     "tool":         "tinkers_thinking:item/tool/clay_staff/staff",
-    "broken":       "tinkers_thinking:item/tool/clay_staff/staff_broken",
-    "large_tool":   "tinkers_thinking:item/tool/clay_staff/staff_large",
-    "large_broken": "tinkers_thinking:item/tool/clay_staff/staff_large_broken"
-  },
+    "large_tool":   "tinkers_thinking:item/tool/clay_staff/staff_large"
+   },
   "large": true,
   "first_modifiers": [ "tconstruct:dyed", "tconstruct:embellishment" ],
+  "modifier_roots": {
+    "small": [ "tconstruct:item/tool/staff/modifiers/" ],
+    "large": [ "tconstruct:item/tool/staff/large_modifiers/" ]
+},
   "overrides": [
     {
     "predicate": { "tconstruct:charging": 1 },
@@ -53,6 +55,10 @@
 {
 "predicate": { "tconstruct:charging": 2, "tconstruct:charge": 1.0 },
 "model": "tconstruct:item/slimestaff/earth/blocking_5"
-}
+},
+{
+  "predicate": { "tconstruct:broken": 1 },
+  "model": "tinkers_thinking:item/broken/clay_staff"
+  }
 ]
 }

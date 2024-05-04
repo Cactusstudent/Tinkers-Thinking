@@ -2,9 +2,6 @@
   "type": "tconstruct:composable",
   "level_display": "tconstruct:default",
   "modules": [
-   {
-      "type": "tconstruct:incremental"
-    },
     {
       "type": "tconstruct:stat_boost",
       "flat": -0.25,

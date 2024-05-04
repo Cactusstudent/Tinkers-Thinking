@@ -1,6 +1,7 @@
 {
   "replace": false,
   "parts": [
+    { "path": "tinkers_thinking:item/tool/parts/narrow_blade",        "statType": "tconstruct:head" },
     { "path": "tinkers_thinking:item/tool/paxel/axe",        "statType": "tconstruct:head" },
     { "path": "tinkers_thinking:item/tool/paxel/broken_axe", "statType": "tconstruct:head" },
     { "path": "tinkers_thinking:item/tool/paxel/head",      "statType": "tconstruct:head" },
@@ -19,6 +20,15 @@
     { "path": "tinkers_thinking:item/tool/arrow_thrower/broken_limb",      "statType": "tconstruct:limb" },
     { "path": "tinkers_thinking:item/tool/arrow_thrower/grip_bottom_1",      "statType": "tconstruct:grip" },
     { "path": "tinkers_thinking:item/tool/arrow_thrower/grip_bottom_2",      "statType": "tconstruct:grip" },
-    { "path": "tinkers_thinking:item/tool/arrow_thrower/grip_bottom_3",      "statType": "tconstruct:grip" }
+    { "path": "tinkers_thinking:item/tool/arrow_thrower/grip_bottom_3",      "statType": "tconstruct:grip" },
+    { "path": "tinkers_thinking:item/tool/quartz_staff/grip",      "statType": "tconstruct:head" },
+    { "path": "tinkers_thinking:item/tool/quartz_staff/low",      "statType": "tconstruct:handle" },
+    { "path": "tinkers_thinking:item/tool/quartz_staff/high",      "statType": "tconstruct:handle" },
+    { "path": "tinkers_thinking:item/tool/quartz_staff/large/grip",      "statType": "tconstruct:head" },
+    { "path": "tinkers_thinking:item/tool/quartz_staff/large/low",      "statType": "tconstruct:handle" },
+    { "path": "tinkers_thinking:item/tool/quartz_staff/large/high",      "statType": "tconstruct:handle" },
+    { "path": "tinkers_thinking:item/tool/mace/plate",      "statType": "tconstruct:head" },
+    { "path": "tinkers_thinking:item/tool/mace/handle",      "statType": "tconstruct:handle" },
+    { "path": "tinkers_thinking:item/tool/mace/broken_handle",      "statType": "tconstruct:handle" }
   ]
 }

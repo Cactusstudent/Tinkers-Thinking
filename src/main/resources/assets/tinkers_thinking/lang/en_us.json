@@ -26,6 +26,8 @@
   "block.tinkers_thinking.stone_soul_torch": "Stone Soul Torch",
   "block.tinkers_thinking.stone_ladder": "Stone Ladder",
 
+  "block.tinkers_thinking.heavy_core": "Heavy Core",
+
   "item.tinkers_thinking.silky_jewel": "Silky Jewel",
   "block.tinkers_thinking.silky_jewel_block": "Block of Silky Jewel",
   "item.tinkers_thinking.gilded_silky_cloth": "Gilded Silky Cloth",
@@ -112,7 +114,6 @@
   "fluid_type.tinkers_thinking.molten_electrical_steel": "Molten Electrical Steel",
   "item.tinkers_thinking.molten_electrical_steel_bucket": "Molten Electrical Steel Bucket",
 
-
   "item.tinkers_thinking.echo_bronze_ingot": "Echo Bronze Ingot",
   "item.tinkers_thinking.echo_bronze_nugget": "Echo Bronze Nugget",
   "block.tinkers_thinking.echo_bronze_block": "Echo Bronze Block",
@@ -120,6 +121,10 @@
   "item.tinkers_thinking.molten_echo_bronze_bucket": "Molten Echo Bronze Bucket",
   "fluid_type.tinkers_thinking.molten_echo": "Molten Echo",
   "item.tinkers_thinking.molten_echo_bucket": "Molten Echo Bucket",
+
+  "item.tinkers_thinking.verdant_frogcroaking": "Verdant Frogcroaking",
+  "item.tinkers_thinking.ochre_frogcroaking": "Ochre Frogcroaking",
+  "item.tinkers_thinking.pearlescent_frogcroaking": "Pearlescent Frogcroaking",
 
   "item.tinkers_thinking.clay_staff": "Super Magic Clay staff",
   "item.tinkers_thinking.magma_staff": "Magma Staff", 
@@ -141,6 +146,9 @@
   "item.tinkers_thinking.knife": "Knife",
   "item.tinkers_thinking.knife.description": "Knife is a kind of cheap lightweight weapon, is also applicable to cutting ingredients.\n May need to consult a farmer.",
 
+  "item.tinkers_thinking.mace": "Mace",
+  "item.tinkers_thinking.mace.description": "Mace is a melee weapon that deals more damage the farther a player falls before hitting an entity with it, with successful hits completely negating the user's fall damage.\n Look up!",
+
   "item.tinkers_thinking.arrow_thrower": "Arrow Thrower",
   "item.tinkers_thinking.arrow_thrower.description": "Arrow Thrower is a tool that can throw arrow, it allows doing ranged damage in melee.\n",
 
@@ -158,7 +166,7 @@
 
   "material.tinkers_thinking.sponge": "Sponge",
   "material.tinkers_thinking.sponge.flavor": "Not suitable for use at high temperature",
-  "material.tinkers_thinking.sponge.encyclopedia": "Make target cannot melee for 3 seconds per level",
+  "material.tinkers_thinking.sponge.encyclopedia": "Make target cannot melee for 8 seconds,target will be immune to modifier in 18 seconds,immune time will reduce in a higher level",
 
   "material.tinkers_thinking.netherrack": "Netherrack",
   "material.tinkers_thinking.netherrack.flavor": "Infinite fire",
@@ -219,6 +227,18 @@
   "material.tinkers_thinking.echo_bronze.encyclopedia": "While having Sculk Power,boost mining speed and melee speed of 20%",
   "material.tinkers_thinking.echo_bronze.ranged":"While having Sculk Power,boost draw speed and velocity of 20%",
 
+  "material.tinkers_thinking.verdant_frogcroaking": "Verdant Frogcroaking",
+  "material.tinkers_thinking.verdant_frogcroaking.flavor": "Wind Sculk",
+  "material.tinkers_thinking.verdant_frogcroaking.encyclopedia": "While having Sculk Power,make target keep levitating for 6 seconds,target will be immune to modifier in 18 seconds,immune time will reduce in a higher level",
+
+  "material.tinkers_thinking.ochre_frogcroaking": "Ochre Frogcroaking",
+  "material.tinkers_thinking.ochre_frogcroaking.flavor": "Earth Sculk",
+  "material.tinkers_thinking.ochre_frogcroaking.ranged": "While having Sculk Power,make target cannot jump and fly for 6 seconds,target will be immune to modifier in 18 seconds,immune time will reduce in a higher level",
+
+  "material.tinkers_thinking.pearlescent_frogcroaking": "Pearlescent Frogcroaking",
+  "material.tinkers_thinking.pearlescent_frogcroaking.flavor": "Ender Sculk",
+  "material.tinkers_thinking.pearlescent_frogcroaking.encyclopedia": "While having Sculk Power,make target teleport randomly",
+
   "modifier.tinkers_thinking.soft": "Soft",
   "modifier.tinkers_thinking.soft.flavor": "Too Soft to use",
   "modifier.tinkers_thinking.soft.description": "Durability reduce",
@@ -261,6 +281,10 @@
   "modifier.tinkers_thinking.clay.flavor": "Clay!",
   "modifier.tinkers_thinking.clay.description": "Clay!!",
 
+  "modifier.tinkers_thinking.falling_attack": "Falling Attack",
+  "modifier.tinkers_thinking.falling_attack.flavor": "Over-Overkill",
+  "modifier.tinkers_thinking.falling_attack.description": "Deals more damage the farther a player falls",
+
   "modifier.tinkers_thinking.overeat": "Overeat",
   "modifier.tinkers_thinking.overeat.flavor": "Appetizer!",
   "modifier.tinkers_thinking.overeat.description": "Tool can eat Overslime and Gelatinous Slime Drop to repair itself",
@@ -272,7 +296,7 @@
 
   "modifier.tinkers_thinking.disarm": "Disarm",
   "modifier.tinkers_thinking.disarm.flavor": "Traditional kungfu, enough is enough",
-  "modifier.tinkers_thinking.disarm.description": "Make target cannot melee for a while",
+  "modifier.tinkers_thinking.disarm.description": "Make target cannot melee for a while,target will be immune to modifier in a few seconds",
 
   "modifier.tinkers_thinking.stimulation": "Stimulation",
   "modifier.tinkers_thinking.stimulation.flavor": "Stimulation!",
@@ -284,7 +308,7 @@
 
   "modifier.tinkers_thinking.lightly_speed": "Lightly Speed",
   "modifier.tinkers_thinking.lightly_speed.flavor": "Almost no resistance!",
-  "modifier.tinkers_thinking.lightly_speed.description": "Boost using item speed and moving speed",
+  "modifier.tinkers_thinking.lightly_speed.description": "Boost using item speed,velocity and moving speed",
 
   "modifier.tinkers_thinking.symbiotic": "Symbiotic",
   "modifier.tinkers_thinking.symbiotic.flavor": "The Healing Power of Friendship!",
@@ -294,12 +318,14 @@
   "modifier.tinkers_thinking.mock.flavor": "A coward need to hide",
   "modifier.tinkers_thinking.mock.description": "Attack give target Invisibility, increases the melee damage and projectile damage to target that has Invisibility",
   "modifier.tconstruct.mock.attack_damage": "Mock Damage",
+  "modifier.tinkers_thinking.mock.resistance": "Mock Resistance",
 
   "modifier.tinkers_thinking.shady": "Shady",
   "modifier.tinkers_thinking.shady.flavor":"Shade is everywhere",
   "modifier.tinkers_thinking.shady.description":"The daker sky light in here is,the faster mining speed and velocity is",
   "modifier.tconstruct.shady.mining_speed": "Shady Mining Speed",
   "modifier.tconstruct.shady.velocity": "Shady Velocity",
+  "modifier.tconstruct.shady.resistance": "Shady Damage Reduce",
 
   "modifier.tinkers_thinking.duritae": "Duritae",
   "modifier.tinkers_thinking.duritae.flavor": "Doesn't taste as good as it sounds.",
@@ -307,7 +333,7 @@
 
   "modifier.tinkers_thinking.repulsive": "Repulsive",
   "modifier.tinkers_thinking.repulsive.flavor": "Exclude dissidents",
-  "modifier.tinkers_thinking.repulsive.description": "After hit,makes livings nearby go flying further,no effect on other players",
+  "modifier.tinkers_thinking.repulsive.description": "After hit,makes other livings nearby go flying further,no effect on other players",
 
   "modifier.tinkers_thinking.sculk_catalyse": "Sculk Catalyse",
   "modifier.tinkers_thinking.sculk_catalyse.flavor": "It spreads!",
@@ -316,6 +342,19 @@
   "modifier.tinkers_thinking.sculk_boost": "Sculk Boost",
   "modifier.tinkers_thinking.sculk_boost.flavor": "A good grounding ensures success in what one does",
   "modifier.tinkers_thinking.sculk_boost.description": "While having Sculk Power,boost mining speed,melee speed,draw speed and velocity",
+  "modifier.tconstruct.sculk_boost.boost": "Sculk Boost Reinforcement",
+
+  "modifier.tinkers_thinking.sculk_levitate": "Sculk Levitate",
+  "modifier.tinkers_thinking.sculk_levitate.flavor": "Riding the wind and rising up",
+  "modifier.tinkers_thinking.sculk_levitate.description": "While having Sculk Power,make target keep levitating for a while,target will be immune to modifier in a few seconds",
+
+  "modifier.tinkers_thinking.sculk_gravity": "Sculk Gravity",
+  "modifier.tinkers_thinking.sculk_gravity.flavor": "Gravitational confinement",
+  "modifier.tinkers_thinking.sculk_gravity.description": "While having Sculk Power,make target cannot jump and fly,target will be immune to modifier in a few seconds",
+
+  "modifier.tinkers_thinking.sculk_teleport": "Sculk Teleport",
+  "modifier.tinkers_thinking.sculk_teleport.flavor": "Space Warp",
+  "modifier.tinkers_thinking.sculk_teleport.description": "While having Sculk Power,make target teleport randomly",
 
   "modifier.tinkers_thinking.backstabbing": "Backstabbing",
   "modifier.tinkers_thinking.backstabbing.flavor": "Make use of the precarious situation...",
@@ -329,9 +368,23 @@
   "modifier.tinkers_thinking.sprinting.flavor": "Sprinting! Sprinting!",
   "modifier.tinkers_thinking.sprinting.description": "Sprinting fast in horizontal direction,with no gravity temporarily",
 
+  "modifier.tinkers_thinking.extra_tank": "Extra Tank",
+  "modifier.tinkers_thinking.extra_tank.flavor": "bigger! Better!",
+  "modifier.tinkers_thinking.extra_tank.description": "Extra Tank",
+
+  "modifier.tinkers_thinking.countermeasures": "Countermeasures",
+  "modifier.tinkers_thinking.countermeasures.flavor": "Comprehensive protection",
+  "modifier.tinkers_thinking.countermeasures.description": "Boost Resistance to almost all protectable damage",
+  "modifier.tinkers_thinking.countermeasures.resistance": "Countermeasures Resistance",
+
+  "modifier.tinkers_thinking.spiky": "Spiky",
+  "modifier.tinkers_thinking.spiky.flavor": "Tit for tat",
+  "modifier.tinkers_thinking.spiky.description": "Reflect damage to attacker,attacker will be immune to modifier in a few seconds",
+
   "effect.tinkers_thinking.overweight": "Overweight",
   "effect.tinkers_thinking.weightless": "Weightless",
   "effect.tinkers_thinking.sculk_power": "Sculk Power",
+  "effect.tinkers_thinking.modifier_immune": "Modifier Immune",
   "item.minecraft.potion.effect.overweight_potion": "Potion of Overweight",
   "item.minecraft.potion.effect.overweight_potion_strong": "Potion of Overweight",
   "item.minecraft.potion.effect.overweight_potion_long": "Potion of Overweight",
@@ -350,6 +403,12 @@
   "item.minecraft.lingering_potion.effect.weightless_potion": "Lingering Potion of Weightless",
   "item.minecraft.lingering_potion.effect.weightless_potion_strong": "Lingering Potion of Weightless",
   "item.minecraft.lingering_potion.effect.weightless_potion_long": "Lingering Potion of Weightless",
+  "item.minecraft.potion.effect.enderference_potion": "Potion of Enderference",
+  "item.minecraft.potion.effect.enderference_potion_long": "Potion of Enderference",
+  "item.minecraft.splash_potion.effect.enderference_potion": "Splash Potion of Enderference",
+  "item.minecraft.splash_potion.effect.enderference_potion_long": "Splash Potion of Enderference",
+  "item.minecraft.lingering_potion.effect.enderference_potion": "Lingering Potion of Enderference",
+  "item.minecraft.lingering_potion.effect.enderference_potion_long": "Lingering Potion of Enderference",
 
   "recipe.tinkers_thinking.modifier.backstabbing.level_2": "Backstabbing II requires a different recipe for the first level",
   "recipe.tinkers_thinking.modifier.backstabbing.level_3": "Backstabbing III requires a different recipe for the first level"
