@@ -9,12 +9,6 @@
       "hunger": 1,
       "saturation": 0.02
     },
-   {
-      "type": "tconstruct:effect",
-      "name": "minecraft:haste",
-      "time": 5,
-      "level": 3
-    },
     {
       "type": "tconstruct:remove_effect",
       "effect": "minecraft:slowness"

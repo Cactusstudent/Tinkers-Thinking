@@ -5,6 +5,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.phys.EntityHitResult;
+import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.library.events.teleport.EnderdodgingTeleportEvent;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.ModifierHooks;
@@ -21,12 +22,12 @@ import slimeknights.tconstruct.library.utils.TeleportHelper;
 public class SculkTeleportModifier extends NoLevelsModifier implements MeleeHitModifierHook, ProjectileHitModifierHook {
     private static final TeleportHelper.ITeleportEventFactory FACTORY = EnderdodgingTeleportEvent::new;
     @Override
-    protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
+    protected void registerHooks(ModuleHookMap.@NotNull Builder hookBuilder) {
         super.registerHooks(hookBuilder);
         hookBuilder.addHook(this, ModifierHooks.MELEE_HIT,ModifierHooks.PROJECTILE_HIT);
     }
     @Override
-    public void afterMeleeHit(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float damageDealt) {
+    public void afterMeleeHit(@NotNull IToolStackView tool, @NotNull ModifierEntry modifier, ToolAttackContext context, float damageDealt) {
         if (!context.isExtraAttack() && context.isFullyCharged()) {
             LivingEntity attacker = context.getAttacker();
             LivingEntity target = context.getLivingTarget();
@@ -36,7 +37,7 @@ public class SculkTeleportModifier extends NoLevelsModifier implements MeleeHitM
         }
     }
     @Override
-    public boolean onProjectileHitEntity(ModifierNBT modifiers, NamespacedNBT persistentData, ModifierEntry modifier, Projectile projectile, EntityHitResult hit, @javax.annotation.Nullable LivingEntity attacker, @javax.annotation.Nullable LivingEntity target) {
+    public boolean onProjectileHitEntity(@NotNull ModifierNBT modifiers, @NotNull NamespacedNBT persistentData, @NotNull ModifierEntry modifier, Projectile projectile, EntityHitResult hit, @javax.annotation.Nullable LivingEntity attacker, @javax.annotation.Nullable LivingEntity target) {
         if (target!=null&&projectile instanceof AbstractArrow &&attacker!=null&&attacker.hasEffect(ModEffects.sculk_power.get())) {
                TeleportHelper.randomNearbyTeleport(target, FACTORY);
         }

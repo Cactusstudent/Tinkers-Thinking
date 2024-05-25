@@ -1,5 +1,4 @@
 {
-	"loader": "mantle:colored_block",
     "parent": "block/cube_all",
     "textures": {
         "all": "tinkers_thinking:block/tinkers_bronze_block"

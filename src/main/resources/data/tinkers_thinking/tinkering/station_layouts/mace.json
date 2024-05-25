@@ -16,21 +16,21 @@
       }
     },
     {
-      "icon": "tinkers_thinking:heavy_core",
-      "translation_key": "block.tinkers_thinking.heavy_core",
-      "x": 30,
-      "y": 44,
-      "filter": {
-        "item": "tinkers_thinking:heavy_core"
-      }
-    },
-    {
       "icon": "tconstruct:tool_handle",
       "translation_key": "item.tconstruct.tool_handle",
       "x": 12,
       "y": 62,
       "filter": {
         "item": "tconstruct:tool_handle"
+      }
+    },
+    {
+      "icon": "tinkers_thinking:heavy_core",
+      "translation_key": "block.tinkers_thinking.heavy_core",
+      "x": 30,
+      "y": 44,
+      "filter": {
+        "item": "tinkers_thinking:heavy_core"
       }
     }
   ]

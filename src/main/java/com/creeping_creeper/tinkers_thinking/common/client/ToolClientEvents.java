@@ -11,12 +11,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import slimeknights.mantle.data.listener.ISafeManagerReloadListener;
 import slimeknights.tconstruct.common.ClientEventBase;
 import slimeknights.tconstruct.library.client.materials.MaterialTooltipCache;
-import slimeknights.tconstruct.library.client.model.ArmorModelHelper;
 import slimeknights.tconstruct.library.client.model.DynamicTextureLoader;
 import slimeknights.tconstruct.library.client.model.TinkerItemProperties;
 import slimeknights.tconstruct.library.client.modifiers.ModifierModelManager;
 import slimeknights.tconstruct.library.modifiers.ModifierManager;
-import slimeknights.tconstruct.tools.client.PlateArmorModel;
 
 @SuppressWarnings("unused")
 
@@ -35,12 +33,10 @@ public class ToolClientEvents extends ClientEventBase {
         MaterialTooltipCache.init(manager);
         DynamicTextureLoader.init(manager);
         manager.registerReloadListener(MODIFIER_RELOAD_LISTENER);
-        manager.registerReloadListener(PlateArmorModel.RELOAD_LISTENER);
     }
 
     @SubscribeEvent
     static void clientSetupEvent(FMLClientSetupEvent event) {
-        ArmorModelHelper.init();
         event.enqueueWork(() -> {
             TinkerItemProperties.registerToolProperties(ModItems.paxel.get().asItem());
             TinkerItemProperties.registerToolProperties(ModItems.knife.get().asItem());

@@ -46,8 +46,7 @@
       "tconstruct:extra",
       "tconstruct:handle",
       "tconstruct:repair_kit",
-      "tconstruct:shield_core",
-      "tconstruct:wood"
+      "tconstruct:shield_core"
     ],
     "ignoreMaterialStats": false
   }

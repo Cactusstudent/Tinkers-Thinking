@@ -117,6 +117,14 @@ public class ModFluids {
     public static final ForgeFlowingFluid.Properties molten_echo_bronze = new ForgeFlowingFluid.Properties(
             ModFluidTypes.molten_echo_bronze, source_molten_echo_bronze,flowing_molten_echo_bronze).slopeFindDistance(2).levelDecreasePerBlock(2)
             .block(ModBlocks.molten_echo_bronze_block).bucket(ModItems.molten_echo_bronze_bucket);
+    public static final RegistryObject<FlowingFluid> source_molten_beetron = FLUIDS.register("molten_beetron",
+            ()->new ForgeFlowingFluid.Source(ModFluids.molten_beetron));
+    public static final RegistryObject<FlowingFluid> flowing_molten_beetron = FLUIDS.register("molten_beetron_flowing",
+            ()->new ForgeFlowingFluid.Flowing(ModFluids.molten_beetron));
+
+    public static final ForgeFlowingFluid.Properties molten_beetron = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.molten_beetron, source_molten_beetron,flowing_molten_beetron).slopeFindDistance(2).levelDecreasePerBlock(2)
+            .block(ModBlocks.molten_beetron_block).bucket(ModItems.molten_beetron_bucket);
     public static final RegistryObject<FlowingFluid> source_molten_echo = FLUIDS.register("molten_echo",
             ()->new ForgeFlowingFluid.Source(ModFluids.molten_echo));
     public static final RegistryObject<FlowingFluid> flowing_molten_echo = FLUIDS.register("molten_echo_flowing",

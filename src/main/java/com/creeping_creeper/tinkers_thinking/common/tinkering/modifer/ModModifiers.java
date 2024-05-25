@@ -14,7 +14,9 @@ public abstract class ModModifiers {
     public static final StaticModifier<Modifier> Stimulation = MODIFIERS.register("stimulation", StimulationModifier::new);
     public static final StaticModifier<Modifier> Inspired = MODIFIERS.register("inspired", InspiredModifier::new);
     public static final StaticModifier<Modifier> Mock = MODIFIERS.register("mock", MockModifier::new);
+    public static final StaticModifier<Modifier> Concealer = MODIFIERS.register("concealing", ConcealingModifier::new);
     public static final StaticModifier<Modifier> Shady = MODIFIERS.register("shady", ShadyModifier::new);
+    public static final StaticModifier<Modifier> Shadowing = MODIFIERS.register("shadowing", ShadowingModifier::new);
     public static final StaticModifier<Modifier> Repulsive = MODIFIERS.register("repulsive",RepulsiveModifier::new);
     public static final StaticModifier<Modifier> Prickly = MODIFIERS.register("prickly",PricklyModifier::new);
     public static final StaticModifier<Modifier> Sprinting = MODIFIERS.register("sprinting",SprintingModifier::new);
@@ -30,7 +32,7 @@ public abstract class ModModifiers {
     public static final StaticModifier<Modifier> FallingAttack = MODIFIERS.register("falling_attack",FallingAttackModifier::new);
     public static final StaticModifier<Modifier> Density = MODIFIERS.register("density",DensityModifier::new);
     public static final StaticModifier<Modifier> Spiky = MODIFIERS.register("spiky",SpikyModifier::new);
-
+    public static final StaticModifier<Modifier> Hungriness = MODIFIERS.register("hungriness",HungrinessModifier::new);
 
     public static void regeisters(IEventBus eventBus) {
         MODIFIERS.register(eventBus);}

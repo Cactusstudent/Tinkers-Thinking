@@ -7,6 +7,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraftforge.event.entity.player.PlayerEvent;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import slimeknights.mantle.client.TooltipKey;
 import slimeknights.tconstruct.TConstruct;
@@ -29,13 +30,13 @@ public class SculkBoostModifier extends Modifier implements TooltipModifierHook,
     private static final Component Boost = TConstruct.makeTranslation("modifier", "sculk_boost.boost");
 
     @Override
-    protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
+    protected void registerHooks(ModuleHookMap.@NotNull Builder hookBuilder) {
         super.registerHooks(hookBuilder);
 
         hookBuilder.addHook(this, ModifierHooks.TOOLTIP,ModifierHooks.BREAK_SPEED,ModifierHooks.CONDITIONAL_STAT);
     }
     @Override
-    public void onBreakSpeed(IToolStackView tool, ModifierEntry modifier, PlayerEvent.BreakSpeed event, Direction sideHit, boolean isEffective, float miningSpeedModifier) {
+    public void onBreakSpeed(@NotNull IToolStackView tool, @NotNull ModifierEntry modifier, PlayerEvent.@NotNull BreakSpeed event, @NotNull Direction sideHit, boolean isEffective, float miningSpeedModifier) {
         if (!isEffective) {
             return;
         }
@@ -44,7 +45,7 @@ public class SculkBoostModifier extends Modifier implements TooltipModifierHook,
         }
     }
     @Override
-    public float modifyStat(IToolStackView tool, ModifierEntry modifier, LivingEntity living, FloatToolStat stat, float baseValue, float multiplier) {
+    public float modifyStat(@NotNull IToolStackView tool, @NotNull ModifierEntry modifier, LivingEntity living, @NotNull FloatToolStat stat, float baseValue, float multiplier) {
         if (living.hasEffect(ModEffects.sculk_power.get())) {
             if (stat ==ToolStats.ATTACK_SPEED) {
                 return (float) (baseValue*( 1+(0.2*modifier.getLevel())));

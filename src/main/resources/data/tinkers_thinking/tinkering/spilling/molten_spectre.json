@@ -8,7 +8,7 @@
       "type": "tconstruct:effect",
       "name": "minecraft:invisibility",
       "time": 5,
-      "level": 3
+      "level": 1
     }
   ]
 }

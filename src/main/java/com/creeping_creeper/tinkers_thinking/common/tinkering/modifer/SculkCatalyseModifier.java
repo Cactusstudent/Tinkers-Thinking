@@ -42,7 +42,7 @@ public class SculkCatalyseModifier extends NoLevelsModifier implements ToolDamag
             }
     }
     @Override
-    protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
+    protected void registerHooks(ModuleHookMap.@NotNull Builder hookBuilder) {
         super.registerHooks(hookBuilder);
         hookBuilder.addHook(this, ModifierHooks.TOOL_DAMAGE);
     }

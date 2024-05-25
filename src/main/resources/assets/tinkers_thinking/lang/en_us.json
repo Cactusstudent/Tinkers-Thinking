@@ -39,12 +39,16 @@
   "item.tinkers_thinking.ender_slime_drop": "Gelatinous Enderslime Drop",
 
   "fluid_type.tinkers_thinking.syrup": "Syrup",
+  "block.tinkers_thinking.syrup_block": "Syrup",
   "item.tinkers_thinking.syrup_bucket": "Syrup Bucket",
   "fluid_type.tinkers_thinking.molten_cocoa": "Molten Cocoa",
+  "block.tinkers_thinking.molten_cocoa_block": "Molten Cocoa",
   "item.tinkers_thinking.molten_cocoa_bucket": "Molten Cocoa Bucket",
   "fluid_type.tinkers_thinking.molten_black_chocolate": "Molten Black Chocolate",
+  "block.tinkers_thinking.molten_black_chocolate_block": "Molten Black Chocolate",
   "item.tinkers_thinking.molten_black_chocolate_bucket": "Molten Black Chocolate Bucket",
   "fluid_type.tinkers_thinking.molten_white_chocolate": "Molten White Chocolate",
+  "block.tinkers_thinking.molten_white_chocolate_block": "Molten White Chocolate",
   "item.tinkers_thinking.molten_white_chocolate_bucket": "Molten White Chocolate Bucket",
   "item.tinkers_thinking.white_chocolate": "White Chocolate",
   "item.tinkers_thinking.black_chocolate": "Black Chocolate",
@@ -55,6 +59,7 @@
   "item.tinkers_thinking.tinkers_bronze_nugget":"Tinkers' Bronze Nugget",
   "block.tinkers_thinking.tinkers_bronze_block": "Block of Tinkers' Bronze",
   "fluid_type.tinkers_thinking.molten_tinkers_bronze": "Molten Tinkers' Bronze",
+  "block.tinkers_thinking.molten_tinkers_bronze_block": "Molten Tinkers' Bronze",
   "item.tinkers_thinking.molten_tinkers_bronze_bucket": "Molten Tinkers' Bronze Bucket",
 
   "item.tinkers_thinking.ardite_ingot": "Ardite Ingot",
@@ -64,6 +69,7 @@
   "item.tinkers_thinking.raw_ardite": "Raw Ardite",
   "block.tinkers_thinking.raw_ardite_block": "Block of Raw Ardite",
   "fluid_type.tinkers_thinking.molten_ardite": "Molten Ardite",
+  "block.tinkers_thinking.molten_ardite_block": "Molten Ardite",
   "item.tinkers_thinking.molten_ardite_bucket": "Molten Ardite Bucket",
   "block.tinkers_thinking.ardite_platform": "Ardite Platform",
 
@@ -75,6 +81,7 @@
   "item.tinkers_thinking.lightite_nugget": "Lightite Nugget",
   "block.tinkers_thinking.lightite_block": "Block of Lightite",
   "fluid_type.tinkers_thinking.molten_lightite": "Molten Lightite",
+  "block.tinkers_thinking.molten_lightite_block": "Molten Lightite",
   "item.tinkers_thinking.molten_lightite_bucket": "Molten Lightite Bucket",
 
   "block.tinkers_thinking.chlorophyll_ore": "Chlorophyll Ore",
@@ -86,6 +93,7 @@
   "item.tinkers_thinking.chlorophyte_nugget": "Chlorophyte Nugget",
   "block.tinkers_thinking.chlorophyte_block": "Chlorophyte Block",
   "fluid_type.tinkers_thinking.molten_chlorophyte": "Molten Chlorophyte",
+  "block.tinkers_thinking.molten_chlorophyte_block": "Molten Chlorophyte",
   "item.tinkers_thinking.molten_chlorophyte_bucket": "Molten Chlorophyte Bucket",
 
   "item.tinkers_thinking.spectre_compound": "Spectre Compound",
@@ -93,6 +101,7 @@
   "item.tinkers_thinking.spectre_nugget": "Spectre Nugget",
   "block.tinkers_thinking.spectre_block": "Spectre Block",
   "fluid_type.tinkers_thinking.molten_spectre": "Molten Spectre",
+  "block.tinkers_thinking.molten_spectre_block": "Molten Spectre",
   "item.tinkers_thinking.molten_spectre_bucket": "Molten Spectre Bucket",
 
   "item.tinkers_thinking.shroomite_compound": "Shroomite Compound",
@@ -100,27 +109,39 @@
   "item.tinkers_thinking.shroomite_nugget": "Shroomite Nugget",
   "block.tinkers_thinking.shroomite_block": "Shroomite Block",
   "fluid_type.tinkers_thinking.molten_shroomite": "Molten Shroomite",
+  "block.tinkers_thinking.molten_shroomite_block": "Molten Shroomite",
   "item.tinkers_thinking.molten_shroomite_bucket": "Molten Shroomite Bucket",
 
   "item.tinkers_thinking.obsidian_bronze_ingot": "Obsidian Bronze Ingot",
   "item.tinkers_thinking.obsidian_bronze_nugget": "Obsidian Bronze Nugget",
   "block.tinkers_thinking.obsidian_bronze_block": "Obsidian Bronze Block",
   "fluid_type.tinkers_thinking.molten_obsidian_bronze": "Molten Obsidian Bronze",
+  "block.tinkers_thinking.molten_obsidian_bronze_block": "Molten Obsidian Bronze",
   "item.tinkers_thinking.molten_obsidian_bronze_bucket": "Molten Obsidian Bronze Bucket",
 
   "item.tinkers_thinking.electrical_steel_ingot": "Electrical Steel Ingot",
   "item.tinkers_thinking.electrical_steel_nugget": "Electrical Steel Nugget",
   "block.tinkers_thinking.electrical_steel_block": "Electrical Steel Block",
   "fluid_type.tinkers_thinking.molten_electrical_steel": "Molten Electrical Steel",
+  "block.tinkers_thinking.molten_electrical_steel_block": "Molten Electrical Steel",
   "item.tinkers_thinking.molten_electrical_steel_bucket": "Molten Electrical Steel Bucket",
 
   "item.tinkers_thinking.echo_bronze_ingot": "Echo Bronze Ingot",
   "item.tinkers_thinking.echo_bronze_nugget": "Echo Bronze Nugget",
   "block.tinkers_thinking.echo_bronze_block": "Echo Bronze Block",
   "fluid_type.tinkers_thinking.molten_echo_bronze": "Molten Echo Bronze",
+  "block.tinkers_thinking.molten_echo_bronze_block": "Molten Echo Bronze",
   "item.tinkers_thinking.molten_echo_bronze_bucket": "Molten Echo Bronze Bucket",
   "fluid_type.tinkers_thinking.molten_echo": "Molten Echo",
+  "block.tinkers_thinking.molten_echo_block": "Molten Echo",
   "item.tinkers_thinking.molten_echo_bucket": "Molten Echo Bucket",
+
+  "item.tinkers_thinking.beetron_ingot": "Beetron Ingot",
+  "item.tinkers_thinking.beetron_nugget": "Beetron Nugget",
+  "block.tinkers_thinking.beetron_block": "Beetron Block",
+  "fluid_type.tinkers_thinking.molten_beetron": "Molten Beetron",
+  "block.tinkers_thinking.molten_beetron_block": "Molten Beetron",
+  "item.tinkers_thinking.molten_beetron_bucket": "Molten Beetron Bucket",
 
   "item.tinkers_thinking.verdant_frogcroaking": "Verdant Frogcroaking",
   "item.tinkers_thinking.ochre_frogcroaking": "Ochre Frogcroaking",
@@ -159,6 +180,7 @@
   "material.tinkers_thinking.cactus": "Cactus",
   "material.tinkers_thinking.cactus.flavor": "This is not Cactusstudent, and cannot help you translate mods, either",
   "material.tinkers_thinking.cactus.encyclopedia": "Add 0%~12% melee damage in random",
+  "material.tinkers_thinking.cactus.armor": "Reflect damage to attacker,attacker will be immune to modifier in 3 seconds",
 
   "material.tinkers_thinking.prismarine": "Prismarine",
   "material.tinkers_thinking.prismarine.flavor": "The power of ocean!",
@@ -176,10 +198,11 @@
   "material.tinkers_thinking.tinkers_bronze.flavor": "Not to be confused with Obsidian Bronze",
   "material.tinkers_thinking.tinkers_bronze.encyclopedia": "+5 mining speed  per lever when breaking some of blocks that can be cut in the stonecutter, such as stone",
   "material.tinkers_thinking.tinkers_bronze.ranged":"Arrows have 85% velocity, but do 130% projectile power",
+  "material.tinkers_thinking.tinkers_bronze.armor":"Grants 3% protection per level against all protectable damage per level",
 
   "material.tinkers_thinking.ardite": "Ardite",
   "material.tinkers_thinking.ardite.flavor": "A missing legend",
-  "material.tinkers_thinking.ardite.encyclopedia": "-0.417% durability damage pre block per level below 128, the maximum is 80%",
+  "material.tinkers_thinking.ardite.encyclopedia": "-0.417% durability damage pre block per level below 72, the maximum is 80%",
   
   "material.tinkers_thinking.stewium": "Stewium",
   "material.tinkers_thinking.stewium.flavor": "Drinking or eating?",
@@ -191,7 +214,8 @@
 
   "material.tinkers_thinking.lightite": "Lightite",
   "material.tinkers_thinking.lightite.flavor": "Lighter than the air",
-  "material.tinkers_thinking.lightite.encyclopedia": "+0.25 using item speed and 5% common speed per level",
+  "material.tinkers_thinking.lightite.encyclopedia": "+0.25 using item speed,5% velocity and 5% moving speed per level",
+  "material.tinkers_thinking.lightite.armor": "+10% moving speed per level",
 
   "material.tinkers_thinking.black_chocolate": "Black Chocolate",
   "material.tinkers_thinking.black_chocolate.flavor": "Dark Oak Trapdoor?",
@@ -203,15 +227,19 @@
 
   "material.tinkers_thinking.chlorophyte": "Chlorophyte",
   "material.tinkers_thinking.chlorophyte.flavor": "Life Essence",
-  "material.tinkers_thinking.chlorophyte.encyclopedia": "After eating tool or launchering arrow,heal 20% lost heart and damage 5 durability",
- 
+  "material.tinkers_thinking.chlorophyte.encyclopedia": "After melee attack,have 15% chance per level  to heal 20% heart and damage 8 durability",
+  "material.tinkers_thinking.chlorophyte.ranged": "After launch arrow,have 15% chance per level to heal 20% heart and damage 8 durability",
+  "material.tinkers_thinking.chlorophyte.armor": "After taking damage,have 15% chance per level to heal 20% heart and damage 8 durability",
+
   "material.tinkers_thinking.spectre": "Spectre",
   "material.tinkers_thinking.spectre.flavor": "Of Course, Ghasts are made from cats",
   "material.tinkers_thinking.spectre.encyclopedia": "Attack give target Invisibility for 10 seconds, increases the melee damage and projectile damage of 20% to target that has Invisibility per level",
+  "material.tinkers_thinking.spectre.armor": "After taking damage,give self Invisibility for 10 seconds, grants protection of 4% while has Invisibility per level",
 
   "material.tinkers_thinking.shroomite": "Shroomite",
   "material.tinkers_thinking.shroomite.flavor": "Mushroom Ore",
   "material.tinkers_thinking.shroomite.encyclopedia": "While the sky light reduce 1 level,increases the mining speed and velocity of 1.5%",
+  "material.tinkers_thinking.shroomite.armor": "While the sky light reduce 3 level,reduces 0.2 damage per level",
 
   "material.tinkers_thinking.obsidian_bronze": "Obsidian Bronze",
   "material.tinkers_thinking.obsidian_bronze.flavor": "Not to be confused with Echo Bronze",
@@ -219,8 +247,9 @@
 
   "material.tinkers_thinking.electrical_steel": "Electrical Steel",
   "material.tinkers_thinking.electrical_steel.flavor": "Is it really okay to just make mistakes mistakes?",
-  "material.tinkers_thinking.electrical_steel.encyclopedia": "After melee hit,makes livings nearby  go flying further,no effect on other players",
-  "material.tinkers_thinking.electrical_steel.ranged":"After projectile hit,makes livings nearby  go flying further,no effect on other players",
+  "material.tinkers_thinking.electrical_steel.encyclopedia": "After melee hit,makes livings nearby go flying further,no effect on other players",
+  "material.tinkers_thinking.electrical_steel.ranged":"After projectile hit,makes livings nearby go flying further,no effect on other players",
+  "material.tinkers_thinking.electrical_steel.armor":"After taking damage,makes livings nearby go flying further,no effect on other players",
 
   "material.tinkers_thinking.echo_bronze": "Echo Bronze",
   "material.tinkers_thinking.echo_bronze.flavor": "Not to be confused with Tinkers' Bronze",
@@ -238,6 +267,11 @@
   "material.tinkers_thinking.pearlescent_frogcroaking": "Pearlescent Frogcroaking",
   "material.tinkers_thinking.pearlescent_frogcroaking.flavor": "Ender Sculk",
   "material.tinkers_thinking.pearlescent_frogcroaking.encyclopedia": "While having Sculk Power,make target teleport randomly",
+
+  "material.tinkers_thinking.beetron": "Beetron",
+  "material.tinkers_thinking.beetron.flavor": "No blood but beetroot soup",
+  "material.tinkers_thinking.beetron.encyclopedia": "While Hunger Value reduce 1,increases the mining speed of 2%",
+  "material.tinkers_thinking.beetron.ranged":"While Hunger Value reduce 1,increases the velocity of 2%",
 
   "modifier.tinkers_thinking.soft": "Soft",
   "modifier.tinkers_thinking.soft.flavor": "Too Soft to use",
@@ -312,20 +346,26 @@
 
   "modifier.tinkers_thinking.symbiotic": "Symbiotic",
   "modifier.tinkers_thinking.symbiotic.flavor": "The Healing Power of Friendship!",
-  "modifier.tinkers_thinking.symbiotic.description": "After eating tool or launchering arrow,tool can use durability to heal you",
+  "modifier.tinkers_thinking.symbiotic.description": "After tool melee hitting ,tool launching arrow or armor being hit,use durability to heal you randomly",
 
   "modifier.tinkers_thinking.mock": "Mock",
   "modifier.tinkers_thinking.mock.flavor": "A coward need to hide",
   "modifier.tinkers_thinking.mock.description": "Attack give target Invisibility, increases the melee damage and projectile damage to target that has Invisibility",
   "modifier.tconstruct.mock.attack_damage": "Mock Damage",
-  "modifier.tinkers_thinking.mock.resistance": "Mock Resistance",
+  "modifier.tinkers_thinking.concealing": "Concealing",
+  "modifier.tinkers_thinking.concealing.flavor": "A coward need to hide",
+  "modifier.tinkers_thinking.concealing.description": "After taking damage,give self Invisibility,grants protection while has Invisibility",
+  "modifier.tinkers_thinking.concealing.resistance": "Concealing Resistance",
 
   "modifier.tinkers_thinking.shady": "Shady",
   "modifier.tinkers_thinking.shady.flavor":"Shade is everywhere",
   "modifier.tinkers_thinking.shady.description":"The daker sky light in here is,the faster mining speed and velocity is",
   "modifier.tconstruct.shady.mining_speed": "Shady Mining Speed",
   "modifier.tconstruct.shady.velocity": "Shady Velocity",
-  "modifier.tconstruct.shady.resistance": "Shady Damage Reduce",
+  "modifier.tinkers_thinking.shadowing": "Shadowing",
+  "modifier.tinkers_thinking.shadowing.flavor":"Shade is everywhere",
+  "modifier.tinkers_thinking.shadowing.description":"The daker sky light in here is,the less attack damage you are taken",
+  "modifier.tconstruct.shadowing.resistance": "Shadowing Damage Reduce",
 
   "modifier.tinkers_thinking.duritae": "Duritae",
   "modifier.tinkers_thinking.duritae.flavor": "Doesn't taste as good as it sounds.",
@@ -333,7 +373,7 @@
 
   "modifier.tinkers_thinking.repulsive": "Repulsive",
   "modifier.tinkers_thinking.repulsive.flavor": "Exclude dissidents",
-  "modifier.tinkers_thinking.repulsive.description": "After hit,makes other livings nearby go flying further,no effect on other players",
+  "modifier.tinkers_thinking.repulsive.description": "After tool hitting or armor being hit,makes other livings nearby go flying further,no effect on other players",
 
   "modifier.tinkers_thinking.sculk_catalyse": "Sculk Catalyse",
   "modifier.tinkers_thinking.sculk_catalyse.flavor": "It spreads!",
@@ -374,12 +414,18 @@
 
   "modifier.tinkers_thinking.countermeasures": "Countermeasures",
   "modifier.tinkers_thinking.countermeasures.flavor": "Comprehensive protection",
-  "modifier.tinkers_thinking.countermeasures.description": "Boost Resistance to almost all protectable damage",
+  "modifier.tinkers_thinking.countermeasures.description": "Grants protection against damage all protectable damage",
   "modifier.tinkers_thinking.countermeasures.resistance": "Countermeasures Resistance",
 
   "modifier.tinkers_thinking.spiky": "Spiky",
   "modifier.tinkers_thinking.spiky.flavor": "Tit for tat",
   "modifier.tinkers_thinking.spiky.description": "Reflect damage to attacker,attacker will be immune to modifier in a few seconds",
+
+  "modifier.tinkers_thinking.hungriness": "Hungriness",
+  "modifier.tinkers_thinking.hungriness.flavor": "You are really hungry",
+  "modifier.tinkers_thinking.hungriness.description": "The lower Hunger Value is,faster mining speed and velocity is",
+  "modifier.tconstruct.hungriness.mining_speed": "Hungriness Mining Speed",
+  "modifier.tconstruct.hungriness.velocity": "Hungriness Velocity",
 
   "effect.tinkers_thinking.overweight": "Overweight",
   "effect.tinkers_thinking.weightless": "Weightless",

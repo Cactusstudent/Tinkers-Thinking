@@ -2,7 +2,7 @@
   "modifier.tinkers_thinking": 
   {
     "prickly":       "#639631",
-    "spiky":       "#639631",
+    "spiky":         "#639631",
     "hellish":       "#562121",
     "withernic":     "#562121",
     "repayed":       "#FFCA18",
@@ -21,7 +21,9 @@
     "inspired":      "#dba76d",
     "backstabbing":  "#b1b1b1",
     "mock":          "#58dbff",
+    "concealing":          "#58dbff",
     "shady":         "#008cf4",
+    "shadowing":         "#008cf4",
     "sprinting":     "#EF6F05",
     "duritae":       "#a28b48",
     "repulsive":     "#b4b499",
@@ -30,7 +32,8 @@
     "sculk_boost":   "#009295",
     "sculk_levitate":"#bde1b7",
     "sculk_gravity":"#f7df92",
-    "sculk_teleport":"#d4bfc8"
+    "sculk_teleport":"#d4bfc8",
+    "hungriness": "#b6484c"
   },
   "material.tinkers_thinking": 
   {
@@ -53,6 +56,7 @@
     "iecho_bronze":   "#009295",
     "verdant_frogcroaking":"#bde1b7",
     "ochre_frogcroaking":"#f7df92",
-    "pearlescent_frogcroaking":"#d4bfc8"
+    "pearlescent_frogcroaking":"#d4bfc8",
+    "beetron": "#b6484c"
   }
 }

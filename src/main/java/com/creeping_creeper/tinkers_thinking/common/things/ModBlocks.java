@@ -4,6 +4,8 @@ import com.creeping_creeper.tinkers_thinking.TinkersThinking;
 import com.creeping_creeper.tinkers_thinking.common.things.block.DryingRackBlock;
 import com.creeping_creeper.tinkers_thinking.common.things.block.HeavyCoreBlock;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -11,6 +13,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import slimeknights.tconstruct.fluids.block.BurningLiquidBlock;
+import slimeknights.tconstruct.fluids.block.MobEffectLiquidBlock;
 import slimeknights.tconstruct.shared.block.PlatformBlock;
 
 import static net.minecraft.world.level.block.SoundType.DEEPSLATE;
@@ -53,6 +57,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> echo_bronze_block = BLOCKS.register("echo_bronze_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).explosionResistance(400).sound(METAL).lightLevel((p_50886_) -> {
                 return 3;}).sound(SCULK).color(COLOR_BLACK)));
+    public static final RegistryObject<Block> beetron_block = BLOCKS.register("beetron_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(7f).explosionResistance(400).requiresCorrectToolForDrops().sound(METAL).color(COLOR_RED)));
+
     public static final RegistryObject<Block> ardite_platform = BLOCKS.register("ardite_platform",
             () -> new PlatformBlock(BlockBehaviour.Properties.of(Material.METAL).strength(30f).explosionResistance(1200).requiresCorrectToolForDrops().sound(ANCIENT_DEBRIS).color(COLOR_ORANGE)));
     public static final RegistryObject<Block> heavy_core = BLOCKS.register("heavy_core",
@@ -74,33 +81,35 @@ public class ModBlocks {
     public static final RegistryObject<Block> drying_rack = BLOCKS.register("drying_rack",
             () -> new DryingRackBlock(BlockBehaviour.Properties.of(Material.DECORATION).strength(0.6f).sound(WOOD)));
     public static final RegistryObject<LiquidBlock> molten_ardite_block = BLOCKS.register("molten_ardite_block",
-            ()->new LiquidBlock(ModFluids.source_molten_ardite,CommonLiquid));
+            ()->new BurningLiquidBlock(ModFluids.source_molten_ardite,CommonLiquid,10,9f));
     public static final RegistryObject<LiquidBlock> molten_tinkers_bronze_block = BLOCKS.register("molten_tinkers_bronze_block",
-            ()->new LiquidBlock(ModFluids.source_molten_tinkers_bronze,CommonLiquid));
+            ()->new BurningLiquidBlock(ModFluids.source_molten_tinkers_bronze,CommonLiquid,10,5f));
     public static final RegistryObject<LiquidBlock> molten_obsidian_bronze_block = BLOCKS.register("molten_obsidian_bronze_block",
-            ()->new LiquidBlock(ModFluids.source_molten_obsidian_bronze,CommonLiquid));
+            ()->new BurningLiquidBlock(ModFluids.source_molten_obsidian_bronze,CommonLiquid,10,6f));
     public static final RegistryObject<LiquidBlock> molten_lightite_block = BLOCKS.register("molten_lightite_block",
-            ()->new LiquidBlock(ModFluids.source_molten_lightite,CommonLiquid));
+            ()->new BurningLiquidBlock(ModFluids.source_molten_lightite,CommonLiquid,10,4f));
     public static final RegistryObject<LiquidBlock> molten_cocoa_block = BLOCKS.register("molten_cocoa_block",
-            ()->new LiquidBlock(ModFluids.source_molten_cocoa,CommonLiquid));
+            ()->new MobEffectLiquidBlock(ModFluids.source_molten_cocoa,CommonLiquid,() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100)));
     public static final RegistryObject<LiquidBlock> molten_black_chocolate_block = BLOCKS.register("molten_black_chocolate_block",
-            ()->new LiquidBlock(ModFluids.source_molten_black_chocolate,CommonLiquid));
+            ()->new MobEffectLiquidBlock(ModFluids.source_molten_black_chocolate,CommonLiquid,() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100)));
     public static final RegistryObject<LiquidBlock> molten_white_chocolate_block = BLOCKS.register("molten_white_chocolate_block",
-            ()->new LiquidBlock(ModFluids.source_molten_white_chocolate,CommonLiquid));
+            ()->new MobEffectLiquidBlock(ModFluids.source_molten_white_chocolate,CommonLiquid,() -> new MobEffectInstance(MobEffects.DIG_SPEED, 100)));
     public static final RegistryObject<LiquidBlock> molten_chlorophyte_block = BLOCKS.register("molten_chlorophyte_block",
-            ()->new LiquidBlock(ModFluids.source_molten_chlorophyte,CommonLiquid));
+            ()->new BurningLiquidBlock(ModFluids.source_molten_chlorophyte,CommonLiquid,10,5f));
     public static final RegistryObject<LiquidBlock> molten_spectre_block = BLOCKS.register("molten_spectre_block",
-            ()->new LiquidBlock(ModFluids.source_molten_spectre,CommonLiquid));
+            ()->new BurningLiquidBlock(ModFluids.source_molten_spectre,CommonLiquid,10,5f));
     public static final RegistryObject<LiquidBlock> molten_shroomite_block = BLOCKS.register("molten_shroomite_block",
-            ()->new LiquidBlock(ModFluids.source_molten_shroomite,CommonLiquid));
+            ()->new BurningLiquidBlock(ModFluids.source_molten_shroomite,CommonLiquid,10,5f));
     public static final RegistryObject<LiquidBlock> molten_electrical_steel_block = BLOCKS.register("molten_electrical_steel_block",
-            ()->new LiquidBlock(ModFluids.source_molten_electrical_steel,CommonLiquid));
+            ()->new BurningLiquidBlock(ModFluids.source_molten_electrical_steel,CommonLiquid,10,6f));
     public static final RegistryObject<LiquidBlock> molten_echo_bronze_block = BLOCKS.register("molten_echo_bronze_block",
-            ()->new LiquidBlock(ModFluids.source_molten_electrical_steel,CommonLiquid));
+            ()->new BurningLiquidBlock(ModFluids.source_molten_electrical_steel,CommonLiquid,6,3f));
+    public static final RegistryObject<LiquidBlock> molten_beetron_block = BLOCKS.register("molten_beetron_block",
+            ()->new BurningLiquidBlock(ModFluids.source_molten_beetron,CommonLiquid,10,4f));
     public static final RegistryObject<LiquidBlock> syrup_block = BLOCKS.register("syrup_block",
-            ()->new LiquidBlock(ModFluids.source_syrup,BlockBehaviour.Properties.copy(Blocks.WATER)));
+            ()->new MobEffectLiquidBlock(ModFluids.source_syrup,BlockBehaviour.Properties.copy(Blocks.WATER), () -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100)));
     public static final RegistryObject<LiquidBlock> molten_echo_block = BLOCKS.register("molten_echo_block",
-            ()->new LiquidBlock(ModFluids.source_molten_echo,BlockBehaviour.Properties.copy(Blocks.WATER)));
+            ()->new MobEffectLiquidBlock(ModFluids.source_molten_echo,BlockBehaviour.Properties.copy(Blocks.WATER),() -> new MobEffectInstance(MobEffects.DARKNESS, 100)));
 
     public static void registers(IEventBus eventBus) {
         BLOCKS.register(eventBus);

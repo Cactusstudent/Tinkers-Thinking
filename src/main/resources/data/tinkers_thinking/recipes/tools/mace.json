@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:tool_building",
   "extra_requirements": [
-  { "item": "tinkers_thinking:heavy_core" }
-],
+    { "item": "tinkers_thinking:heavy_core" }
+  ],
   "result": "tinkers_thinking:mace"
 }

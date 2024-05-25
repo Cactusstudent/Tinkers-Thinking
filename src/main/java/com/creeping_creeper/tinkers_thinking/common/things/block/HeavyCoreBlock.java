@@ -23,6 +23,7 @@ public class HeavyCoreBlock extends Block implements SimpleWaterloggedBlock {
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public HeavyCoreBlock(Properties p_49795_) {
         super(p_49795_);
+        this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
     }
     @Override
     public @NotNull RenderShape getRenderShape(BlockState p_49232_) {

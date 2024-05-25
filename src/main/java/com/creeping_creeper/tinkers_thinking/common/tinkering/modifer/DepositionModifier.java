@@ -19,7 +19,6 @@ import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
 
 import javax.annotation.Nullable;
 import java.util.List;
-import java.util.Objects;
 
 public class DepositionModifier extends Modifier implements ToolDamageModifierHook, TooltipModifierHook {
     @Override
@@ -28,11 +27,11 @@ public class DepositionModifier extends Modifier implements ToolDamageModifierHo
     }
     private static final Component prefix = TConstruct.makeTranslation("modifier", "deposition.chance");
     @Override
-    protected void registerHooks(ModuleHookMap.Builder hookBuilder) {
+    protected void registerHooks(ModuleHookMap.@NotNull Builder hookBuilder) {
         super.registerHooks(hookBuilder);
         hookBuilder.addHook(this, ModifierHooks.TOOL_DAMAGE,ModifierHooks.TOOLTIP);
     }
-    public int onDamageTool(IToolStackView tool, ModifierEntry modifier, int amount, @Nullable LivingEntity holder)  {
+    public int onDamageTool(@NotNull IToolStackView tool, @NotNull ModifierEntry modifier, int amount, @Nullable LivingEntity holder)  {
         if (holder != null){
             float y = (float) (holder.getY());
             if (y < 72) {
@@ -49,15 +48,16 @@ public class DepositionModifier extends Modifier implements ToolDamageModifierHo
         }
         return amount;
     }
-    public void addTooltip(IToolStackView tool, @NotNull ModifierEntry modifier, @Nullable Player player, List<Component> tooltip, TooltipKey tooltipKey, TooltipFlag tooltipFlag) {  if (tool.hasTag(TinkerTags.Items.RANGED) || tool.hasTag(TinkerTags.Items.MELEE)) {
-            Level world = Objects.requireNonNull(player).getCommandSenderWorld();
+    public void addTooltip(IToolStackView tool, @NotNull ModifierEntry modifier, @Nullable Player player, @NotNull List<Component> tooltip, TooltipKey tooltipKey, TooltipFlag tooltipFlag) {  if (tool.hasTag(TinkerTags.Items.RANGED) || tool.hasTag(TinkerTags.Items.MELEE)) {
+        if (player != null) {
+             Level world = player.getCommandSenderWorld();
             float chance = 0;
-        float y = (float) (player.getY() - world.getMinBuildHeight());
-             if (y < 72) {
-               chance = (float) Math.min((72 - y)/136 * modifier.getLevel() * 0.40,0.80);
-             }
-        TooltipModifierHook.addPercentBoost(this,prefix,chance,tooltip);
+            float y = (float) (player.getY() - world.getMinBuildHeight());
+            if (y < 72) {
+                chance = (float) Math.min((72 - y) / 136 * modifier.getLevel() * 0.40, 0.80);
+            }
+            TooltipModifierHook.addPercentBoost(this, prefix, chance, tooltip);
         }
+     }
     }
-
 }

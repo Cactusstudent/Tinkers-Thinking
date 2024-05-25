@@ -39,12 +39,16 @@
   "item.tinkers_thinking.ender_slime_drop": "胶状末影黏液液滴",
 
   "fluid_type.tinkers_thinking.syrup": "糖浆",
+  "block.tinkers_thinking.syrup_block": "糖浆",
   "item.tinkers_thinking.syrup_bucket": "糖浆桶",
   "fluid_type.tinkers_thinking.molten_cocoa": "熔融可可",
+  "block.tinkers_thinking.molten_cocoa_block": "熔融可可",
   "item.tinkers_thinking.molten_cocoa_bucket": "熔融可可桶",
   "fluid_type.tinkers_thinking.molten_black_chocolate": "熔融黑巧克力",
+  "block.tinkers_thinking.molten_black_chocolate_block": "熔融黑巧克力",
   "item.tinkers_thinking.molten_black_chocolate_bucket": "熔融黑巧克力桶",
   "fluid_type.tinkers_thinking.molten_white_chocolate": "熔融白巧克力",
+  "block.tinkers_thinking.molten_white_chocolate_block": "熔融白巧克力",
   "item.tinkers_thinking.molten_white_chocolate_bucket": "熔融白巧克力桶",
   "item.tinkers_thinking.white_chocolate": "白巧克力",
   "item.tinkers_thinking.black_chocolate": "黑巧克力",
@@ -55,6 +59,7 @@
   "item.tinkers_thinking.tinkers_bronze_nugget": "工匠青铜粒",
   "block.tinkers_thinking.tinkers_bronze_block": "工匠青铜块",
   "fluid_type.tinkers_thinking.molten_tinkers_bronze": "熔融工匠青铜",
+  "block.tinkers_thinking.molten_tinkers_bronze_block": "熔融工匠青铜",
   "item.tinkers_thinking.molten_tinkers_bronze_bucket": "熔融工匠青铜桶",
 
   "item.tinkers_thinking.ardite_ingot": "阿迪特锭",
@@ -64,6 +69,7 @@
   "item.tinkers_thinking.raw_ardite": "粗阿迪特",
   "block.tinkers_thinking.raw_ardite_block": "粗阿迪特块",
   "fluid_type.tinkers_thinking.molten_ardite": "熔融阿迪特",
+  "block.tinkers_thinking.molten_ardite_block": "熔融阿迪特",
   "item.tinkers_thinking.molten_ardite_bucket": "熔融阿迪特桶",
   "block.tinkers_thinking.ardite_platform": "阿迪特平台",
 
@@ -75,6 +81,7 @@
   "item.tinkers_thinking.lightite_nugget": "轻悠粒",
   "block.tinkers_thinking.lightite_block": "轻悠块",
   "fluid_type.tinkers_thinking.molten_lightite": "熔融轻悠",
+  "block.tinkers_thinking.molten_lightite_block": "熔融轻悠",
   "item.tinkers_thinking.molten_lightite_bucket": "熔融轻悠桶",
 
   "block.tinkers_thinking.chlorophyll_ore": "叶绿素矿石",
@@ -86,6 +93,7 @@
   "item.tinkers_thinking.chlorophyte_nugget": "叶绿粒",
   "block.tinkers_thinking.chlorophyte_block": "叶绿块",
   "fluid_type.tinkers_thinking.molten_chlorophyte": "熔融叶绿",
+  "block.tinkers_thinking.molten_chlorophyte_block": "熔融叶绿",
   "item.tinkers_thinking.molten_chlorophyte_bucket": "熔融叶绿桶",
 
   "item.tinkers_thinking.spectre_compound": "幽灵混合物",
@@ -93,6 +101,7 @@
   "item.tinkers_thinking.spectre_nugget": "幽灵粒",
   "block.tinkers_thinking.spectre_block": "幽灵块",
   "fluid_type.tinkers_thinking.molten_spectre": "熔融幽灵",
+  "block.tinkers_thinking.molten_spectre_block": "熔融幽灵",
   "item.tinkers_thinking.molten_spectre_bucket": "熔融幽灵桶",
 
   "item.tinkers_thinking.shroomite_compound": "蘑菇矿混合物",
@@ -100,27 +109,39 @@
   "item.tinkers_thinking.shroomite_nugget": "蘑菇矿粒",
   "block.tinkers_thinking.shroomite_block": "蘑菇矿块",
   "fluid_type.tinkers_thinking.molten_shroomite": "熔融蘑菇矿",
+  "block.tinkers_thinking.molten_shroomite_block": "熔融蘑菇矿",
   "item.tinkers_thinking.molten_shroomite_bucket": "熔融蘑菇矿桶",
 
   "item.tinkers_thinking.obsidian_bronze_ingot": "黑曜石青铜锭",
   "item.tinkers_thinking.obsidian_bronze_nugget": "黑曜石青铜粒",
   "block.tinkers_thinking.obsidian_bronze_block": "黑曜石青铜块",
   "fluid_type.tinkers_thinking.molten_obsidian_bronze": "熔融黑曜石青铜",
+  "block.tinkers_thinking.molten_obsidian_bronze_block": "熔融黑曜石青铜",
   "item.tinkers_thinking.molten_obsidian_bronze_bucket": "熔融黑曜石青铜桶",
 
   "item.tinkers_thinking.electrical_steel_ingot": "电工钢锭",
   "item.tinkers_thinking.electrical_steel_nugget": "电工钢粒",
   "block.tinkers_thinking.electrical_steel_block": "电工钢块",
   "fluid_type.tinkers_thinking.molten_electrical_steel": "熔融电工钢",
+  "block.tinkers_thinking.molten_electrical_steel_block": "熔融电工钢",
   "item.tinkers_thinking.molten_electrical_steel_bucket": "熔融电工钢桶",
 
   "item.tinkers_thinking.echo_bronze_ingot": "回响青铜锭",
   "item.tinkers_thinking.echo_bronze_nugget": "回响青铜粒",
   "block.tinkers_thinking.echo_bronze_block": "回响青铜块",
   "fluid_type.tinkers_thinking.molten_echo_bronze": "熔融回响青铜",
+  "block.tinkers_thinking.molten_echo_bronze_block": "熔融回响青铜",
   "item.tinkers_thinking.molten_echo_bronze_bucket": "熔融回响青铜桶",
   "fluid_type.tinkers_thinking.molten_echo": "熔融回响",
+  "block.tinkers_thinking.molten_echo_block": "熔融回响",
   "item.tinkers_thinking.molten_echo_bucket": "熔融回响桶",
+
+  "item.tinkers_thinking.beetron_ingot": "甜菜钢锭",
+  "item.tinkers_thinking.beetron_nugget": "甜菜钢粒",
+  "block.tinkers_thinking.beetron_block": "甜菜钢块",
+  "fluid_type.tinkers_thinking.molten_beetron": "熔融甜菜钢",
+  "block.tinkers_thinking.molten_beetron_block": "熔融甜菜钢",
+  "item.tinkers_thinking.molten_beetron_bucket": "熔融甜菜钢桶",
 
   "item.tinkers_thinking.verdant_frogcroaking": "青翠蛙鸣体",
   "item.tinkers_thinking.ochre_frogcroaking": "赭黄蛙鸣体",
@@ -159,6 +180,7 @@
   "material.tinkers_thinking.cactus": "仙人掌",
   "material.tinkers_thinking.cactus.flavor": "这不是Cactusstudent，也不能帮你翻译模组",
   "material.tinkers_thinking.cactus.encyclopedia": "额外随机造成0%~12%的伤害",
+  "material.tinkers_thinking.cactus.armor": "反弹攻击者伤害，目标在3秒内免疫此特性",
   
   "material.tinkers_thinking.prismarine": "海晶石",
   "material.tinkers_thinking.prismarine.flavor": "愿陪你纵横七海，请伴我阅遍千秋",
@@ -176,10 +198,11 @@
   "material.tinkers_thinking.tinkers_bronze.flavor": "别和黑曜石青铜搞混了",
   "material.tinkers_thinking.tinkers_bronze.encyclopedia": "每级对部分可被切石机切割的方块+5采掘速度，例如石头",
   "material.tinkers_thinking.tinkers_bronze.ranged":"每级减少15%初速度，但弹射物伤害增加30%",
+  "material.tinkers_thinking.tinkers_bronze.armor":"每级提升3%对大多数可减免伤害的抗性",
 
   "material.tinkers_thinking.ardite": "阿迪特",
   "material.tinkers_thinking.ardite.flavor": "遗失的传说",
-  "material.tinkers_thinking.ardite.encyclopedia": "自128格往下每级每降低1格，消耗耐久度的概率减少0.417%，最高减少80%",
+  "material.tinkers_thinking.ardite.encyclopedia": "自72格往下每级每降低1格，消耗耐久度的概率减少0.417%，最高减少80%",
 
   "material.tinkers_thinking.stewium": "钖",
   "material.tinkers_thinking.stewium.flavor": "要喝掉它还是吃掉它？",
@@ -192,6 +215,7 @@
   "material.tinkers_thinking.lightite": "轻悠",
   "material.tinkers_thinking.lightite.flavor": "轻悠悠!",
   "material.tinkers_thinking.lightite.encyclopedia": "每级+0.25使用时速度，+5%移动速度",
+  "material.tinkers_thinking.lightite.armor": "每级+10%移动速度",
 
   "material.tinkers_thinking.black_chocolate": "黑巧克力",
   "material.tinkers_thinking.black_chocolate.flavor": "深色橡木活板门？",
@@ -203,15 +227,19 @@
 
   "material.tinkers_thinking.chlorophyte": "叶绿",
   "material.tinkers_thinking.chlorophyte.flavor": "生命源质",
-  "material.tinkers_thinking.chlorophyte.encyclopedia": "食用工具或发射弹射物后，概率消耗5点耐久度回复20%已损失生命值",
+  "material.tinkers_thinking.chlorophyte.encyclopedia": "近战攻击后，每级有15%概率消耗8点耐久度回复20%生命值",
+  "material.tinkers_thinking.chlorophyte.ranged": "发射箭矢后，每级有15%概率消耗8点耐久度回复20%生命值",
+  "material.tinkers_thinking.chlorophyte.armor": "受到伤害后,每级有15%概率消耗8点耐久度回复20%生命值",
 
   "material.tinkers_thinking.spectre": "幽灵",
   "material.tinkers_thinking.spectre.flavor": "当然，恶魂是用猫做成的",
   "material.tinkers_thinking.spectre.encyclopedia": "攻击使目标获得10秒隐身，每级增加20%对隐身生物的伤害",
+  "material.tinkers_thinking.spectre.armor": "受到伤害后获得10秒隐身,每级隐身期间增加4%抗性",
 
   "material.tinkers_thinking.shroomite": "蘑菇矿",
   "material.tinkers_thinking.shroomite.flavor": "蘑菇矿石",
   "material.tinkers_thinking.shroomite.encyclopedia": "所在位置天空光每降低一级，挖掘速度和初速度增加1.5%",
+  "material.tinkers_thinking.shroomite.armor": "所在位置天空光每降低三级，受到伤害减少0.2点",
 
   "material.tinkers_thinking.obsidian_bronze": "黑曜石青铜",
   "material.tinkers_thinking.obsidian_bronze.flavor": "别和回响青铜搞混了",
@@ -219,8 +247,9 @@
 
   "material.tinkers_thinking.electrical_steel": "电工钢",
   "material.tinkers_thinking.electrical_steel.flavor": "将错就错真的好吗？",
-  "material.tinkers_thinking.electrical_steel.encyclopedia": "近战攻击命中后击飞自身附近的所有生物，对其他玩家无效",
-  "material.tinkers_thinking.electrical_steel.ranged":"弹射物命中后击飞自身附近的所有生物，对其他玩家无效 ",
+  "material.tinkers_thinking.electrical_steel.encyclopedia": "近战攻击命中后击飞自身附近的其他所有生物，对其他玩家无效",
+  "material.tinkers_thinking.electrical_steel.ranged":"弹射物命中后击飞自身附近的其他其他生物，对其他玩家无效 ",
+  "material.tinkers_thinking.electrical_steel.armor":"受到伤害后击飞自身附近的所有生物，对其他玩家无效 ",
 
   "material.tinkers_thinking.echo_bronze": "回响青铜",
   "material.tinkers_thinking.echo_bronze.flavor": "别和工匠青铜搞混了",
@@ -238,6 +267,11 @@
   "material.tinkers_thinking.pearlescent_frogcroaking": "珠光蛙鸣体",
   "material.tinkers_thinking.pearlescent_frogcroaking.flavor": "影之幽匿",
   "material.tinkers_thinking.pearlescent_frogcroaking.encyclopedia": "拥有幽匿能量效果时可令目标随机传送",
+
+  "material.tinkers_thinking.beetron": "甜菜钢",
+  "material.tinkers_thinking.beetron.flavor": "不是血， 这是甜菜汤",
+  "material.tinkers_thinking.beetron.encyclopedia": "饥饿度每降低1点， 工具的挖掘速度提高2%",
+  "material.tinkers_thinking.beetron.ranged":"饥饿度每降低1点， 工具的初速度提高2%",
 
   "modifier.tinkers_thinking.soft": "柔软",
   "modifier.tinkers_thinking.soft.flavor": "软弱无力",
@@ -312,20 +346,26 @@
 
   "modifier.tinkers_thinking.symbiotic": "共生",
   "modifier.tinkers_thinking.symbiotic.flavor": "友谊的治愈力！",
-  "modifier.tinkers_thinking.symbiotic.description": "食用工具或发射弹射物后，工具会消耗耐久度治愈你",
+  "modifier.tinkers_thinking.symbiotic.description": "工具近战攻击命中，工具发射箭矢或盔甲受到伤害后，有概率会消耗耐久度治愈你",
 
   "modifier.tinkers_thinking.mock": "嘲弄",
   "modifier.tinkers_thinking.mock.flavor": "懦夫才需要躲藏",
   "modifier.tinkers_thinking.mock.description": "攻击使目标隐身，对隐身目标造成额外伤害",
   "modifier.tconstruct.mock.attack_damage": "嘲弄伤害",
-  "modifier.tinkers_thinking.mock.resistance": "嘲弄抗性",
+  "modifier.tinkers_thinking.concealing": "匿迹",
+  "modifier.tinkers_thinking.concealing.flavor": "懦夫才需要躲藏",
+  "modifier.tinkers_thinking.concealing.description": "受到伤害后隐身，隐身时提升抗性",
+  "modifier.tinkers_thinking.concealing.resistance": "匿迹抗性",
 
   "modifier.tinkers_thinking.shady": "阴生",
   "modifier.tinkers_thinking.shady.flavor": "阴影无处不在",
   "modifier.tinkers_thinking.shady.description": "天空光照越低，工具的采掘速度和初速度越快",
   "modifier.tconstruct.shady.mining_speed": "阴影挖掘速度",
   "modifier.tconstruct.shady.velocity": "阴影初速度",
-  "modifier.tconstruct.shady.resistance": "阴影伤害减免",
+  "modifier.tinkers_thinking.shadowing": "影蔽",
+  "modifier.tinkers_thinking.shadowing.flavor":"阴影无处不在",
+  "modifier.tinkers_thinking.shadowing.description":"天空光照越低，你受到伤害越少",
+  "modifier.tconstruct.shadowing.resistance": "影蔽伤害减免",
 
   "modifier.tinkers_thinking.duritae": "久脆",
   "modifier.tinkers_thinking.duritae.flavor": "用起来不像听起来那么好",
@@ -333,7 +373,7 @@
 
   "modifier.tinkers_thinking.repulsive": "排斥",
   "modifier.tinkers_thinking.repulsive.flavor": "排除异己",
-  "modifier.tinkers_thinking.repulsive.description": "攻击命中后击飞自身附近的所有生物，对玩家无效",
+  "modifier.tinkers_thinking.repulsive.description": "工具攻击命中或盔甲被攻击后击飞自身附近的其他所有生物，对玩家无效",
 
   "modifier.tinkers_thinking.sculk_catalyse": "幽匿催生",
   "modifier.tinkers_thinking.sculk_catalyse.flavor": "它蔓延了！",
@@ -374,12 +414,18 @@
 
   "modifier.tinkers_thinking.countermeasures": "反制",
   "modifier.tinkers_thinking.countermeasures.flavor": "全方位保护",
-  "modifier.tinkers_thinking.countermeasures.description": "提升对大多数伤害的抗性",
+  "modifier.tinkers_thinking.countermeasures.description": "提升对大多数可减免伤害的抗性",
   "modifier.tinkers_thinking.countermeasures.resistance": "反制抗性",
 
   "modifier.tinkers_thinking.spiky": "棘刺",
   "modifier.tinkers_thinking.spiky.flavor": "以牙还牙",
   "modifier.tinkers_thinking.spiky.description": "反弹攻击者伤害，目标在一段时间内免疫此特性",
+
+  "modifier.tinkers_thinking.hungriness": "饥渴",
+  "modifier.tinkers_thinking.hungriness.flavor": "你是真的饿了",
+  "modifier.tinkers_thinking.hungriness.description": "饥饿度越低， 工具的挖掘速度和初速度越高",
+  "modifier.tconstruct.hungriness.mining_speed": "饥渴挖掘速度",
+  "modifier.tconstruct.hungriness.velocity": "饥渴初速度",
 
   "effect.tinkers_thinking.overweight": "超重",
   "effect.tinkers_thinking.weightless": "失重",

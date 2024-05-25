@@ -3,6 +3,9 @@
   "values": [
     "#tconstruct:molten_tinkers_bronze",
     "#tconstruct:molten_lightite",
-    "#tconstruct:molten_obsidian_bronze"
+    "#tconstruct:molten_obsidian_bronze",
+    "#tconstruct:molten_electrical_steel",
+    "#tconstruct:molten_echo_bronze",
+    "#tconstruct:molten_beetron"
   ]
 }
